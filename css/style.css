@@ -338,7 +338,7 @@ body{
 }
 
 #istimg{
-    background: url(/images/ist.jpg);
+    background: url("https://i.ibb.co/M1JsqyX/ist.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -366,7 +366,7 @@ body{
 }
 
 #fsuimg{
-    background: url(/images/fsu.jpg);
+    background: url("https://i.ibb.co/JnPz8BY/fsu.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -394,7 +394,7 @@ body{
 }
 
 #udemyimg{
-    background: url(/images/udemy.png);
+    background: url("https://i.ibb.co/Rc17Nqm/udemy.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
