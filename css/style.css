@@ -1,5 +1,5 @@
 /*  ---------- BODY ----------- */
-body{
+body {
     background-image: url(../images/mountains.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -78,7 +78,7 @@ body{
     position: absolute;
     width: 60px;
     height: 60px;
-    background: url("https://i.ibb.co/g6DQVZT/llwhite.png");
+    background: url("/images/llwhite.png");
     background-size: cover;
     bottom:30px;
     left: 30px;
@@ -109,7 +109,7 @@ body{
     position: absolute;
     width: 80px;
     height: 850px;
-    background: rgba(0, 128, 0, 0);
+    background: rgba(0, 0, 0, 0);
     bottom: 0;
     right:0;
     border-left: rgb(180, 180, 180) solid 1px;
@@ -229,7 +229,7 @@ body{
 /* --------- HOME TRANSITIONS --------- */
 .nameappear{
     animation: nameappear 1s normal;
-    animation-delay: 3s;
+    animation-delay: 1.7s;
     animation-fill-mode: forwards;
 }
 
@@ -241,7 +241,7 @@ body{
 .typewriter{
   animation: typewriter 2s steps(24) 1s 1 normal both,
              blinkTextCursor 2.3s steps(1) normal;
-    animation-delay: 4s;
+    animation-delay: 2.7s;
 }
 
 @keyframes typewriter{
@@ -256,7 +256,7 @@ body{
 
 .buttonappear{
     animation: buttonappear 1s ease-in-out;
-    animation-delay: 7s;
+    animation-delay: 5.2s;
     animation-fill-mode: forwards;
 }
 
@@ -274,28 +274,48 @@ body{
     position: absolute;
     width:100%;
     height:100%;
-    background: rgba(255, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
 }
 
-.about h1{
+#aboutimg{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: rgb(199, 199, 199) solid 2px;
+    top: 20%;
+    left: 41%;
+    background: url("/images/headshot.png");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 0px 100px rgb(59, 59, 59) inset;
+}
+
+#abouth1{
     position: absolute;
     font-size: 40px;
-    left: 0;
+    top: 55%;
+    left: 30%;
     color: white;
     font-weight: 100;
     font-family: 'Righteous', cursive;
     opacity: 0;
+
 }
 
-.about p{
+#aboutp{
     position: absolute;
     font-size: 20px;
     width: 700px;
     line-height: 1.5;
-    left: 0;
+    text-align: center;
+    top: 60%;
+    left: 27%;
     color: white;
     font-weight: 100;
-    opacity: 0;
+    font-family: Ubuntu;
+    opacity: 1;
+    line-height: 2;
 }
 
 
@@ -313,20 +333,36 @@ body{
     position: absolute;
     font-size: 60px;
     left: 0;
-    top: -5%;
+    top: 5%;
     color: white;
     font-weight: 100;
     font-family: 'Righteous', cursive;
-    opacity: 1;
-}   
+    opacity: 0;
+}
 
-#istbox{
+#istbox, #fsubox, #udemybox {
     position: absolute;
     height: 400px;
     width: 450px;
-    top: 25%;
-    left: 5%;
-    background: rgb(233, 233, 233);
+    top: 35%;
+    background: rgb(255, 255, 255);
+    border-bottom-left-radius: 1%;
+    border-bottom-right-radius: 1%;
+    overflow: hidden;
+    box-shadow: 0px 20px 30px rgb(0, 0, 0);
+    opacity: 0;
+}
+
+#istdate, #fsudate, #udemydate {
+    position: absolute;
+    color: rgb(240, 240, 240);
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    top:1%;
+    right:1%;
+
 }
 
 #istimg, #fsuimg, #udemyimg{
@@ -335,82 +371,101 @@ body{
     width: 100%;
     top: 0;
     left: 0;
+    box-shadow: 0px 0px 150px inset rgba(15, 15, 15, 0.61);
+}
+
+#isth1, #fsuh1, #udemyh1 {
+    color: white;
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 34%;
+    left: 5%;
+    font-family: Ubuntu;
+    font-size: 30px;
+}
+
+#istp, #fsup, #udemyp {
+    color: black;
+    position: absolute;
+    width: 90%;
+    height: auto;
+    top: 50%;
+    left: 5%;
+    font-family: Ubuntu;
+    line-height: 1.5;
+}
+
+#istbutton, #fsubutton, #udemybutton{
+    position: absolute;
+    z-index: 2;
+    background: rgb(202, 202, 202);
+    color: rgb(63, 63, 63);
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding-top:8px;
+    border-radius: 5%;
+    bottom:3%;
+    left: 5%;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    
+}
+
+#istbox{
+    left: 0%;
+    z-index: 2;
+}
+
+#istdate{
+    z-index:2;
 }
 
 #istimg{
-    background: url("https://i.ibb.co/M1JsqyX/ist.jpg");
+    background: url(/images/ist.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 1;
-}
-
-#istp{
-    color: black;
-    position: absolute;
-    width: 90%;
-    height: auto;
-    top: 50%;
-    left: 5%;
-    font-family: Ubuntu;
-    line-height: 1.5;
 }
 
 #fsubox{
-    position: absolute;
-    height: 400px;
-    width: 400px;
-    top: 25%;
-    left: 40%;
-    background: rgb(233, 233, 233);
+    left: 0%;
+    z-index:1;
+}
+
+#fsudate{
+    z-index:1;
 }
 
 #fsuimg{
-    background: url("https://i.ibb.co/JnPz8BY/fsu.jpg");
+    background: url(/images/fsu.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 1;
-}
-
-#fsup{
-    color: black;
-    position: absolute;
-    width: 90%;
-    height: auto;
-    top: 50%;
-    left: 5%;
-    font-family: Ubuntu;
-    line-height: 1.5;
 }
 
 #udemybox{
-    position: absolute;
-    height: 400px;
-    width: 400px;
-    top: 25%;
-    left: 72%;
-    background:rgb(233, 233, 233);
+    left: 0%;
+}
+
+#udemydate{
+    z-index:1;
 }
 
 #udemyimg{
-    background: url("https://i.ibb.co/Rc17Nqm/udemy.png");
+    background: url(/images/udemy.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 1;
 }
 
-#udemyp{
-    color: black;
-    position: absolute;
-    width: 90%;
-    height: auto;
-    top: 50%;
-    left: 5%;
-    font-family: Ubuntu;
-    line-height: 1.5;
-}
+
 
 
 
@@ -442,10 +497,53 @@ body{
     top: 20%;
     color: white;
     font-weight: 100;
+    font-family: Ubuntu;
     opacity: 0;
 }
 
+.cdots{
+    position: absolute;
+    bottom: -20%;
+    left: 41%;
+    width: 150px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0);
+    opacity: 0
+}
 
+#cdot1{
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top:40%;
+    left: 28%;
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+#cdot2{
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top:40%;
+    left: 48%;
+    opacity: 0.6;
+}
+
+#cdot3{
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top:40%;
+    left: 68%;
+    opacity: 0.6;
+}
 
 
 /*  ---------- CODING GALLERY ----------- */
@@ -455,6 +553,7 @@ body{
     height: 70%;
     bottom: 0;
     background: rgba(0, 0, 0, 0);
+    font-family: Ubuntu;
     
 }
 
@@ -464,7 +563,7 @@ body{
     background-size: cover;
     height: 40px;
     width: 40px;
-    top: 47%;
+    top: 53%;
     left: -20%;
     opacity: 0;
 }
@@ -475,7 +574,7 @@ body{
     background-size: cover;
     height: 40px;
     width: 40px;
-    top: 47%;
+    top: 53%;
     right: -20%;
     opacity: 0;
 }
@@ -495,7 +594,6 @@ body{
 
 
 
-
 /*  ---------- CODING GALLERY: Weather App ----------- */
 #weatherapp {
     position: absolute;
@@ -510,21 +608,18 @@ body{
     background: url(../images/Weatherapp.png);
     background-size: contain;
     background-repeat: no-repeat;
-    right: 0;
-    top: 105px;
+    right: 2%;
+    top: 140px;
     opacity: 0;
 }
 
 #weatherapph1{
     position: absolute;
-    width: 43%;
+    width: 40%;
     height: 10%;
-    left: 3%;
-    top: 20%;
-    text-align: left;
-    font-family: 'Righteous', cursive;
-    font-weight: 200;
-    font-size: 40px;
+    left: 2%;
+    top: 40%;
+    text-align: center;
     color: white;
     opacity: 0;
 }
@@ -532,13 +627,16 @@ body{
 #weatherappp {
     position: absolute;
     height: 30%;
-    width: 43%;
-    left: 3%;
-    top: 35%;
-    text-align: left;
+    width: 40%;
+    left: 2%;
+    top: 53%;
+    text-align: center;
+    font-family: Ubuntu;
+    line-height: 1.5;
     color: white;
     opacity: 0;
 }
+
 
 
 
@@ -557,32 +655,32 @@ body{
     background: url(../images/portfolio.png);
     background-size: contain;
     background-repeat: no-repeat;
-    left: 0;
-    top: 55px;  
+    left: 2%;
+    top: 85px;  
 }
 
 #portfolioh1{
     position: absolute;
-    width: 43%;
+    width: 40%;
     height: 10%;
-    left: 53%;
-    top: 10%;
-    text-align: right;
-    font-family: 'Righteous', cursive;
-    font-weight: 200;
-    font-size: 40px;
+    left: 57%;
+    top: 25%;
+    text-align: center;
     color: white;
 }
 
 #portfoliop {
     position: absolute;
     height: 30%;
-    width: 43%;
-    left: 53%;
-    top: 25%;
-    text-align: right;
+    width: 40%;
+    left: 57%;
+    top: 37%;
+    text-align: center;
     color: white;
+    font-family: Ubuntu;
+    line-height: 1.5;
 }
+
 
 
 
@@ -601,31 +699,30 @@ body{
     background: url(../images/resume.png);
     background-size: contain;
     background-repeat: no-repeat;
-    right: 0;
-    top: 55px;  
+    right: 2%;
+    top: 85px;  
 }
 
 #resumeh1{
     position: absolute;
-    width: 43%;
+    width: 40%;
     height: 10%;
-    left: 3%;
-    top: 10%;
-    text-align: left;
-    font-family: 'Righteous', cursive;
-    font-weight: 200;
-    font-size: 40px;
+    left: 2%;
+    top: 25%;
+    text-align: center;
     color: white;
 }
 
 #resumep {
     position: absolute;
     height: 30%;
-    width: 43%;
-    left: 3%;
-    top: 25%;
-    text-align: left;   
+    width: 40%;
+    left: 2%;
+    top: 37%;
+    text-align: center;
     color: white;
+    font-family: Ubuntu;
+    line-height: 1.5;
 }
 
 
@@ -660,7 +757,65 @@ body{
     color: white;
     font-weight: 100;
     opacity: 0;
+    font-family: Ubuntu;
 }
+
+.adots{
+    position: absolute;
+    bottom: -20%;
+    left: 41%;
+    width: 150px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0);
+    opacity: 0
+}
+
+#adot1{
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top:40%;
+    left: 18%;
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+#adot2{
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top:40%;
+    left: 38%;
+    opacity: 0.6;
+}
+
+#adot3{
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top:40%;
+    left: 58%;
+    opacity: 0.6;
+}
+
+#adot4{
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top:40%;
+    left: 78%;
+    opacity: 0.6;
+}
+
+
 
 /*  ---------- ANIMATION GALLERY: Doughnuts ----------- */
 #doughnuts {
@@ -676,18 +831,18 @@ body{
     background: url(../images/Doughnuts.png);
     background-size: contain;
     background-repeat: no-repeat;
-    right: 0;
-    top: 105px;
+    right: 2%;
+    top: 140px;
     opacity: 0;
 }
 
 #doughnutsh1{
     position: absolute;
-    width: 43%;
+    width: 40%;
     height: 10%;
-    left: 3%;
-    top: 20%;
-    text-align: left;
+    left: 2%;
+    top: 40%;
+    text-align: center;
     color: white;
     opacity: 0;
 }
@@ -695,10 +850,12 @@ body{
 #doughnutsp {
     position: absolute;
     height: 30%;
-    width: 43%;
-    left: 3%;
-    top: 35%;
-    text-align: left;
+    width: 40%;
+    left: 2%;
+    top: 53%;
+    text-align: center;
+    font-family: Ubuntu;
+    line-height: 1.5;
     color: white;
     opacity: 0;
 }
@@ -720,28 +877,30 @@ body{
     background: url(../images/Bowling.png);
     background-size: contain;
     background-repeat: no-repeat;
-    left: 0;
-    top: 55px;  
+    left: 2%;
+    top: 85px;  
 }
 
 #bowlingh1{
     position: absolute;
-    width: 43%;
+    width: 40%;
     height: 10%;
-    left: 53%;
-    top: 10%;
-    text-align: right;
+    left: 57%;
+    top: 25%;
+    text-align: center;
     color: white;
 }
 
 #bowlingp {
     position: absolute;
     height: 30%;
-    width: 43%;
-    left: 53%;
-    top: 25%;
-    text-align: right;
+    width: 40%;
+    left: 57%;
+    top: 37%;
+    text-align: center;
     color: white;
+    font-family: Ubuntu;
+    line-height: 1.5;
 }
 
 
@@ -761,28 +920,30 @@ body{
     background: url(../images/Concrete.png);
     background-size: contain;
     background-repeat: no-repeat;
-    right: 0;
-    top: 55px;  
+    right: 2%;
+    top: 85px;  
 }
 
 #concreteh1{
     position: absolute;
-    width: 43%;
+    width: 40%;
     height: 10%;
-    left: 3%;
-    top: 10%;
-    text-align: left;
+    left: 2%;
+    top: 25%;
+    text-align: center;
     color: white;
 }
 
 #concretep {
     position: absolute;
     height: 30%;
-    width: 43%;
-    left: 3%;
-    top: 25%;
-    text-align: left;   
+    width: 40%;
+    left: 2%;
+    top: 37%;
+    text-align: center;
     color: white;
+    font-family: Ubuntu;
+    line-height: 1.5;
 }
 
 /*  ---------- ANIMATION GALLERY: Flag ----------- */
@@ -799,28 +960,30 @@ body{
     background: url(../images/Flag.gif);
     background-size: contain;
     background-repeat: no-repeat;
-    left: 0;
-    top: 55px;  
+    left: 2%;
+    top: 85px;  
 }
 
 #flagh1{
     position: absolute;
-    width: 43%;
+    width: 40%;
     height: 10%;
-    left: 53%;
-    top: 10%;
-    text-align: right;
+    left: 57%;
+    top: 25%;
+    text-align: center;
     color: white;
 }
 
 #flagp {
     position: absolute;
     height: 30%;
-    width: 43%;
-    left: 53%;
-    top: 25%;
-    text-align: right;
+    width: 40%;
+    left: 57%;
+    top: 37%;
+    text-align: center;
     color: white;
+    font-family: Ubuntu;
+    line-height: 1.5;
 }
 
 
@@ -873,14 +1036,14 @@ body{
 
 .hideleft{
     opacity: 0;
-    transition: .7s;
-    animation: swipeleft 4s;
+    transition: .5s;
+    animation: swipeleft 5s;
 }
 
 .hideright{
     opacity: 0;
-    transition: .7s;
-    animation: swiperight 4s;
+    transition: .5s;
+    animation: swiperight 5s;
 }
 
 .invisible{
@@ -889,8 +1052,8 @@ body{
 
 .display{
     opacity: 1;
-    transition: 1s ease-in-out;
-    transition-delay: .7s;
+    transition: .5s ease-in-out;
+    transition-delay: .5s;
 }
 
 @keyframes swipeleft{
