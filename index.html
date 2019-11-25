@@ -2,9 +2,11 @@
 <html lang="en">
 
   <head>
+
     <meta name=”viewport” content=”width=device-width, initial-scale=1″>
     
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sarina&display=swap" rel="stylesheet">
@@ -13,7 +15,10 @@
   </head>
 
   <body>
+
     <div class="frame">
+        
+      <div id="bird"></div>
 
       <!--  Navigation Bar  -->
       <div class="navbar">
@@ -28,7 +33,17 @@
           </ul>
       </div>
 
-      <!--  Left Section  -->
+      <!-- Navigation Bar (Mobile) -->
+      <div id="navbarmobile">
+        <div id="menuicon"></div>
+        <a id="navmobhome">Home</a>
+        <a id="navmobabout">About</a>
+        <a id="navmobeducation">Education</a>
+        <a id="navmobcoding">Coding</a>
+        <a id="navmobanimation">Animation</a>
+      </div>
+
+      <!--  Left Box  -->
       <div class="left-box"></div>
 
       <!--  Right Box  -->
@@ -38,6 +53,9 @@
           <a id="twitter" class="smicon" href="https://twitter.com/leoleveron" target="_blank"></a>
           <a id="instagram" class="smicon" href="https://www.instagram.com/leo.leveron/" target="_blank"></a>
       </div>
+
+      <div id="nextsection" class="nextprevsection">Next Section</div>
+      <div id="prevsection" class="nextprevsection">Previous Section</div>
 
       <div class="innerframe">
 
@@ -52,7 +70,15 @@
         <div class="about hidden invisible">
           <div id="aboutimg"></div>
           <h1 id="abouth1">About Me</h1>
-          <p id="aboutp">My name is Leandro Leberon, I'm 22 years old and I'm an Information and Communications Technology senior at Florida State University. I was born in the very center of Central America, Honduras, and I have a passion for programming and 3D animation.</p>
+          <div id="plane1"></div>
+          <div id="plane2"></div>
+          <p id="aboutp">I'm 22 years old and I'm a senior at Florida State University majoring in Information and Communications Technology.</p>
+          <p id="hondurasp">I was born at the very center of Central America, Honduras, where I attended high school and lived my childhood. </p>
+          <div id="hondurasimg"></div>
+          <p id="panamap">After graduating from high school, I found about FSU's 2+2 Program, which involved completing two years of college in Panama.</p>
+          <div id="panamaimg"></div>
+          <p id="floridap">After completing two years of college in Panama, I transfered to FSU's main campus and I'm now finishing my major. </p>
+          <div id="floridaimg"></div>
         </div>
 
         <!--  Education Section  -->
@@ -63,8 +89,8 @@
             <div id="istdate">2015</div>
             <div id="istimg"></div>
             <h1 id="isth1">International School</h1>
-            <p id="istp">I completed Middle School and High School at International School Tegucigalpa. </p>
-            <div id="istbutton">More</div>
+            <p id="istp">I completed Middle School and High School at International School Tegucigalpa. I graduated from IST on Summer 2015. </p>
+            <a id="istbutton" href="http://internationalschool.hn/about-us/" target="_blank">More</a>
           </div>
           
           <div id="fsubox">
@@ -72,24 +98,25 @@
             <div id="fsuimg"></div>
             <h1 id="fsuh1">Florida State University</h1>
             <p id="fsup">I am currently pursuing a major in Information and Communications Technology at Florida State University. I'm expecting to graduate Summer 2020.</p>
-            <div id="fsubutton">More</div>
+            <a id="fsubutton" href="https://ischool.cci.fsu.edu/programs/undergrad-programs/information-communication-and-technology/" target="_blank">More</a>
           </div>
 
           <div id="udemybox">
             <div id="udemydate">Ongoing</div>
             <div id="udemyimg"></div>
             <h1 id="udemyh1">Udemy</h1>
-            <p id="udemyp">I completed a 3D Animation course and a Drawing course in 2018 and I'm currently enrolled in a Web Deveolpment course.
+            <p id="udemyp">I completed a 3D Animation course and a Drawing course in 2018 and I'm currently enrolled in a Web Development course.
             </p>
-            <div id="udemybutton">More</div>
+            <a id="udemybutton" href="https://www.udemy.com/user/leandro-leberon/" target="_blank">More</a>
           </div>
         </div>
 
         <!--  Coding Section  -->
         <div class="coding hidden invisible">
           <h1 id="codingh1">Coding Gallery</h1>
-          <p id="codingp">Programming is my career and my passion. I enjoy learning new languages, developing websites or creating simple software.</p>
-          
+          <p id="codingp">Programming is a great part of my career. I enjoy learning new languages, developing websites and creating small software.</p>
+          <div id="codinglines"></div>
+
           <div class="cdots">
             <div id="cdot1"></div>
             <div id="cdot2"></div>
@@ -101,22 +128,29 @@
             <div id="codingprev" class="previous"></div>
             <div id="codingnext" class="next"></div>
 
-            <div id="weatherapp" class="display">
+            <div id="imgborder"></div>
+
+            <div id="weatherapp" class="*">
               <h1 id="weatherapph1">Weather App</h1>
-              <p id="weatherappp">Description: A simple software I created with Python's Tkinter. The program gets a city as a user input and outputs the current weather conditions.</p>
+              <p id="weatherappp">A simple software I created with Python's Tkinter. The program gets a City as a user input and outputs the current weather conditions in the specified city.</p>
               <div id="weatherappimg" class="galleryimage"></div>
+              <a id="weatherappbtn1" class="gallerybtn" href="https://github.com/leandroleberon/weather-app" target="_blank">code</a>
+              <a id="weatherappbtn2" class="gallerybtn" href="https://github.com/leandroleberon/weather-app/raw/master/dist/WeatherApp.exe" target="_blank">.exe</a>
             </div>
 
             <div id="portfolio" class="hidden invisible">
               <h1 id="portfolioh1">Online Portfolio</h1>
-              <p id="portfoliop">Description: This very website! I developed my online portfolio from scratch using HTML5, CSS, and JQuery. This was a project for my IT Perspectives course at FSU.</p>
+              <p id="portfoliop">This very website! I developed my online portfolio from scratch using HTML5, CSS, and JQuery. This was a project for my IT Perspectives course at FSU.</p>
               <div id="portfolioimg" class="galleryimage"></div>
+              <a id="portfoliobtn" class="gallerybtn" href="https://github.com/leandroleberon/Portfolio" target="_blank">code</a>
             </div>
 
             <div id="resume" class="hidden invisible">
               <h1 id="resumeh1">Online Resume</h1>
-              <p id="resumep">Description: This was my first project for the IT Perspectives course at FSU and also the first website I created. I developed my online resume using HTML5, CSS, Bootstrap and JavaSript.</p>
+              <p id="resumep">This was my first project for the IT Perspectives course at FSU and also the first website I ever created. I developed my online resume using HTML5, CSS, Bootstrap and JavaSript.</p>
               <div id="resumeimg" class="galleryimage"></div>
+              <a id="resumebtn1" class="gallerybtn" href="https://github.com/leandroleberon/Resume" target="_blank">code</a>
+              <a id="resumebtn2" class="gallerybtn" href="https://leandroleberon.github.io/Resume/" target="_blank">visit</a>
             </div>
 
           </div>
@@ -125,8 +159,9 @@
         <!--  Animation Section  -->
         <div class="animation hidden invisible">
           <h1 id="animationh1">Animation Gallery</h1>
-          <p id="animationp">Animation is my hobby and my passion. I can spend hours experimenting with 3D modeling and learning new techniques.</p>
-          
+          <p id="animationp">I do 3D modeling as a hobby in my free time. I enjoy being creative once in a while and bring my ideas to life.</p>
+          <div id="animationlines"></div>
+
           <div class="adots">
             <div id="adot1"></div>
             <div id="adot2"></div>
@@ -139,28 +174,32 @@
             <div id="animationprev" class="previous"></div>
             <div id="animationnext" class="next"></div>
 
-            <div id="doughnuts" class="display">
+            <div id="doughnuts" class="*">
               <h1 id="doughnutsh1">Coffee and Doughnuts</h1>
-              <p id="doughnutsp">Description: This is a rendered scene of some coffee and doughnuts sitting in a table. I used Blender to create this scene.</p>
+              <p id="doughnutsp">This is a rendered scene of some coffee and doughnuts sitting in a table. I used Blender to create this scene.</p>
               <div id="doughnutsimg" class="galleryimage"></div>
+              <a id="doughnutsbtn" class="gallerybtn" href="https://github.com/leandroleberon/Portfolio/raw/master/animation/Doughnuts%20and%20Coffee.blend" target="_blank">.blend</a>
             </div>
 
             <div id="bowling" class="hidden invisible">
               <h1 id="bowlingh1">Bowling Scene</h1>
-              <p id="bowlingp">Description: This is a rendered scene of a bowling ball hitting some pins and it is one of several projects I did as part of a Udemy course. I used Blender to create this scene.</p>
+              <p id="bowlingp">This is a rendered scene of a bowling ball hitting some pins and it is one of several projects I did as part of a Udemy course. I used Blender to create this scene.</p>
               <div id="bowlingimg" class="galleryimage"></div>
+              <a id="bowlingbtn" class="gallerybtn" href="https://github.com/leandroleberon/Portfolio/raw/master/animation/Bowling%20Scene.blend" target="_blank">.blend</a>
             </div>
 
             <div id="concrete" class="hidden invisible">
               <h1 id="concreteh1">Reflections</h1>
-              <p id="concretep">Description: This is a rendered scene of a shiny ball reflecting light on a concrete floor. I created this while experimenting with Blender reflection maps. </p>
+              <p id="concretep">This is a rendered scene of a shiny ball reflecting light on a concrete floor. I created this while experimenting with Blender reflection maps. </p>
               <div id="concreteimg" class="galleryimage"></div>
+              <a id="concretebtn" class="gallerybtn" href="https://github.com/leandroleberon/Portfolio/raw/master/animation/Concrete%20Plane%20and%20Shining%20Ball.blend" target="_blank">.blend</a>
             </div>
 
             <div id="flag" class="hidden invisible">
               <h1 id="flagh1">Wavering Flag</h1>
-              <p id="flagp">Description: This is a rendered video of a wavering flag. I created this while experimenting with Blender's physics engine.</p>
+              <p id="flagp">This is a rendered video of a wavering flag. I created this while experimenting with Blender's physics engine.</p>
               <div id="flagimg" class="galleryimage"></div>
+              <a id="flagbtn" class="gallerybtn" href="https://github.com/leandroleberon/Portfolio/raw/master/animation/Brazil%20Flag.blend" target="_blank">.blend</a>
             </div>
   
           </div>
@@ -168,8 +207,43 @@
 
         <!--  Contact Section  -->
         <div class="contact hidden invisible">
-          <h1 class="">Get In Touch</h1>
-          <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia adipisci eveniet, voluptatum blanditiis doloremque facere, sit minima quas tempore expedita modi odit ratione tempora magnam culpa suscipit corrupti omnis excepturi!</p>
+          <h1 id="contacth1">Get In Touch</h1>
+
+          <form id="contactform" action="https://formspree.io/leandroleveron@gmail.com" method="POST" target="_blank">
+				
+            <div id="contactname">
+              <input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
+            </div>
+            
+            <div id="contactemail">
+              <input type="email" placeholder="Your Email" class="form-control" name="email" id="email">
+            </div>
+            
+            <div id="contactsubject">
+              <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
+            </div>
+            
+            <div id="contactmessage">
+              <textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>	
+            </div>
+            
+            <div id="contactsubmit">
+              <input type="submit" id="contact-submit" class="btn btn-transparent" value="Send">
+            </div>						
+            
+          </form>
+
+          <div id="contactleftbox">
+
+            <p id="contactp">Please feel free to contact me regarding questions, internships, or job opportunities.</p>
+            <i class="fas fa-envelope" id="emailicon"></i>
+            <p id="emailp" class="btn" title="Copy to Clipboard." data-clipboard-text="leandroleveron@gmail.com">leandroleveron@gmail.com</p>
+            <i class="fas fa-phone" id="phoneicon"></i>
+            <p id="phonep">+1(850)345-7072</p>
+            <i class="fas fa-home" id="adressicon"></i>
+            <p id="adressp">501 Chapel Dr.</p>
+            
+          </div>
         </div>
 
       </div>
@@ -178,7 +252,8 @@
 
     </div>
 
-    
+    <script src="js/clipboard.js-master/dist/clipboard.min.js"></script>
+    <script src="https://kit.fontawesome.com/741946e2e6.js" crossorigin="anonymous"></script>
     <script src="js/jquery/dist/jquery.js"></script>
     <script src="js/main.js"></script>
 
