@@ -9,7 +9,7 @@
     }
 
     .frame{
-        width: 100%;
+        width: 150%;
         height: 600vh;
 
     }
@@ -17,7 +17,7 @@
     .innerframe{
         top: 0%;
         left: 0%;
-        width: 100%;
+        width: 150%;
         height: 100%;
     }
 
