@@ -4,7 +4,8 @@
         background-position: center;
         width: auto;
         height: 200vh;
-        overflow:hidden;
+        overflow-x:hidden;
+        overflow-y:visible;
     }
 
     .frame{
