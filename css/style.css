@@ -5,8 +5,8 @@ body {
     background-attachment: fixed;
     background-size: cover;
     overflow: hidden;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 
@@ -22,7 +22,21 @@ body {
     left: 0;
 }
 
+#bird{
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    background: url("/images/bird.gif");
+    background-size: contain;
+    width: 40px;
+    height: 30px;
+    opacity: 1;
+    cursor: pointer;
+}
 
+#navbarmobile{
+    visibility: hidden;
+}
 
 
 /*  ---------- NAVIGATION BAR ----------- */
@@ -158,7 +172,29 @@ body {
 }
 
 
+/*  ---------- NEXT AND PREVIOUS SECTION ----------- */
 
+#nextsection{
+    position: absolute;
+    color: white;
+    font-family: Ubuntu;
+    font-size: 15px;
+    bottom: 2%;
+    right: 6%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#prevsection{
+    position: absolute;
+    color: white;
+    font-family: Ubuntu;
+    font-size: 15px;
+    bottom: 2%;
+    left: 6%;
+    opacity: 0;
+    visibility: hidden;
+}
 
 /*  ---------- INNER FRAME ----------- */
 
@@ -216,12 +252,13 @@ body {
     border: solid white 2px;
     padding: 10px;
     opacity: 0;
+    border-radius: 0%;
 }
 
 .home #button:hover{
     cursor: pointer;
     background: white;
-    color: rgb(75, 75, 75);
+    color: rgb(29, 29, 29);
     transition: .3s;
 }
 
@@ -284,42 +321,151 @@ body {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    border: rgb(199, 199, 199) solid 2px;
     top: 20%;
-    left: 41%;
-    background: url("https://i.ibb.co/4K3gZpB/headshot.png");
-    background-size: cover;
+    left: 22%;
+    background: url("/images/headshot2.jpg");
+    background-size: contain;
     background-position: center;
-    box-shadow: 0px 0px 100px rgb(59, 59, 59) inset;
+    border: rgb(59, 59, 59) solid 1px;
+    opacity: 0;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.514); 
 }
 
 #abouth1{
     position: absolute;
-    font-size: 40px;
-    top: 55%;
-    left: 30%;
+    transform:translate(-50%);
+    font-size: 50px;
+    left: 50%;
+    top: 5%;
     color: white;
-    font-weight: 100;
+    font-weight: 200;
     font-family: 'Righteous', cursive;
     opacity: 0;
-
 }
 
 #aboutp{
     position: absolute;
-    font-size: 20px;
-    width: 700px;
+    font-size: 22px;
+    width: 38%;
+    padding-left: 10px;
     line-height: 1.5;
     text-align: center;
-    top: 60%;
-    left: 27%;
+    top: 24%;
+    left: 37%;
     color: white;
     font-weight: 100;
     font-family: Ubuntu;
-    opacity: 1;
+    opacity: 0;
+    line-height: 2;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-top: solid rgb(209, 209, 209) 1px;
+    border-bottom: solid rgb(209, 209, 209)1px;
+}
+
+#plane1{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: url("/images/plane.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 17%;
+    left: 20%;
+    opacity: 0;
+}
+
+#plane2{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: url("/images/plane.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 15%;
+    right: 43%;
+    opacity: 0;
+    transform: rotate(-8deg);
+}
+
+#hondurasp{
+    position: absolute;
+    font-size: 17px;
+    width: 400px;
+    line-height: 1.5;
+    text-align: center;
+    top: 59%;
+    left: 6%;
+    color: white;
+    font-weight: 100;
+    font-family: Ubuntu;
+    opacity: 0;
     line-height: 2;
 }
 
+#hondurasimg{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 75%;
+    left: 9.5%;
+    background: url("/images/honduras.png");
+    background-size: contain;
+    opacity: 0;
+}
+
+#panamap{
+    position: absolute;
+    font-size: 17px;
+    width: 400px;
+    height: 350px;
+    line-height: 1.5;
+    text-align: center;
+    top: 59%;
+    left: 37%;
+    color: white;
+    font-weight: 100;
+    font-family: Ubuntu;
+    opacity: 0;
+    line-height: 2;
+}
+
+#panamaimg{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 75%;
+    left: 40.5%;
+    background: url("/images/panama.png");
+    background-size: contain;
+    opacity:0;
+}
+
+#floridap{
+    position: absolute;
+    font-size: 17px;
+    width: 400px;
+    line-height: 1.5;
+    text-align: center;
+    top: 59%;
+    right: 6%;
+    color: white;
+    font-weight: 100;
+    font-family: Ubuntu;
+    opacity: 0;
+    line-height: 2;
+}
+
+#floridaimg{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 83%;
+    right: 12%;
+    background: url("/images/florida.png");
+    background-size: contain;
+    opacity: 0;
+}
 
 
 
@@ -333,8 +479,9 @@ body {
 
 #educationh1{
     position: absolute;
-    font-size: 60px;
-    left: 0;
+    font-size: 50px;
+    transform:translate(-50%);
+    left: 50%;
     top: 5%;
     color: white;
     font-weight: 100;
@@ -346,12 +493,13 @@ body {
     position: absolute;
     height: 400px;
     width: 450px;
-    top: 35%;
-    background: rgb(255, 255, 255);
+    top: 30%;
+    border: rgba(53, 53, 53, 0.603) solid 6px;
+    background: rgba(53, 53, 53, 0.603);
     border-bottom-left-radius: 1%;
     border-bottom-right-radius: 1%;
     overflow: hidden;
-    box-shadow: 0px 20px 30px rgb(0, 0, 0);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.637);
     opacity: 0;
 }
 
@@ -362,8 +510,8 @@ body {
     font-size: 20px;
     font-weight: 700;
     text-align: center;
-    top:1%;
-    right:1%;
+    top:2%;
+    right:2%;
 
 }
 
@@ -382,23 +530,25 @@ body {
     width: auto;
     height: auto;
     top: 34%;
-    left: 5%;
+    left: 3%;
     font-family: Ubuntu;
     font-size: 30px;
 }
 
 #istp, #fsup, #udemyp {
-    color: black;
+    color: white;
     position: absolute;
     width: 90%;
     height: auto;
     top: 50%;
-    left: 5%;
+    left: 3%;
     font-family: Ubuntu;
-    line-height: 1.5;
+    font-size: 17px;
+    font-weight: 100;
+    line-height: 1.7;
 }
 
-#istbutton, #fsubutton, #udemybutton{
+#istbutton, #fsubutton, #udemybutton{   
     position: absolute;
     z-index: 2;
     background: rgb(202, 202, 202);
@@ -414,6 +564,7 @@ body {
     width: 80px;
     height: 30px;
     cursor: pointer;
+    text-decoration: none;
     
 }
 
@@ -481,8 +632,9 @@ body {
 
 #codingh1{
     position: absolute;
-    font-size: 60px;
-    left: 0;
+    transform:translate(-50%);
+    font-size: 50px;
+    left: 50%;
     top: 5%;
     color: white;
     font-weight: 200;
@@ -493,13 +645,28 @@ body {
 #codingp{
     position: absolute;
     font-size: 20px;
+    transform:translate(-50%);
     width: 700px;
     line-height: 1.5;
-    left: 0;
-    top: 20%;
+    left: 50%;
+    text-align: center;
+    top: 25%;
     color: white;
     font-weight: 100;
     font-family: Ubuntu;
+    opacity: 0;
+}
+
+#codinglines{
+    position: absolute;
+    background: rgba(212, 212, 212, 0);
+    width: 700px; 
+    height: 100px;
+    border-top: solid rgba(211, 211, 211) 1px;
+    border-bottom: solid rgba(211, 211, 211) 1px;
+    transform:translate(-50%);
+    top: 25%;
+    left: 50%;
     opacity: 0;
 }
 
@@ -589,11 +756,35 @@ body {
 
 .galleryimage{
     position: absolute;
-    border: solid black 1px;
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.541);
     width: 51.8%;
     height: 80%;
 }
 
+.gallerybtn{
+    position: absolute;
+    height: 5.5%;
+    background: rgba(0, 0, 0, 0);
+    border: white solid 2px;
+    color: white;
+    border-radius: 5%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 550;
+    font-family: Ubuntu;
+    padding-top: 3px;
+    text-decoration: none;
+}
+
+#imgborder{
+    position: absolute;
+    width: 1px;
+    height: 20%;
+    background: rgb(163, 163, 163);
+    top: 48%;
+    left: 45%;
+    opacity: 0;
+}
 
 
 /*  ---------- CODING GALLERY: Weather App ----------- */
@@ -620,7 +811,7 @@ body {
     width: 40%;
     height: 10%;
     left: 2%;
-    top: 40%;
+    top: 35%;
     text-align: center;
     color: white;
     opacity: 0;
@@ -631,7 +822,7 @@ body {
     height: 30%;
     width: 40%;
     left: 2%;
-    top: 53%;
+    top: 47%;
     text-align: center;
     font-family: Ubuntu;
     line-height: 1.5;
@@ -639,8 +830,19 @@ body {
     opacity: 0;
 }
 
+#weatherappbtn1{
+    width: 4.5%;
+    bottom: 25%;
+    left: 15.5%;
+    opacity: 0;
+}
 
-
+#weatherappbtn2{
+    width: 4.5%;
+    bottom: 25%;
+    left: 23%;
+    opacity: 0;
+}
 
 
 /*  ---------- CODING GALLERY: Portfolio ----------- */
@@ -683,6 +885,11 @@ body {
     line-height: 1.5;
 }
 
+#portfoliobtn{
+    width: 4.5%;
+    bottom: 35%;
+    right: 20.6%;
+}
 
 
 
@@ -727,7 +934,17 @@ body {
     line-height: 1.5;
 }
 
+#resumebtn1{
+    width: 4.5%;
+    bottom: 30%;
+    left: 15.5%;
+}
 
+#resumebtn2{
+    width: 4.5%;
+    bottom: 30%;
+    left: 23%;
+}
 
 
 /*  ---------- ANIMATION ----------- */
@@ -740,8 +957,9 @@ body {
 
 #animationh1{
     position: absolute;
-    font-size: 60px;
-    left: 0;
+    transform:translate(-50%);
+    font-size: 50px;
+    left: 50%;
     top: 5%;
     color: white;
     font-weight: 200;
@@ -752,14 +970,29 @@ body {
 #animationp{
     position: absolute;
     font-size: 20px;
+    transform:translate(-50%);
     width: 700px;
     line-height: 1.5;
-    left: 0;
-    top: 20%;
+    text-align: center;
+    left: 50%;
+    top: 25%;
     color: white;
     font-weight: 100;
     opacity: 0;
     font-family: Ubuntu;
+}
+
+#animationlines{
+    position: absolute;
+    background: rgba(212, 212, 212, 0);
+    width: 700px; 
+    height: 100px;
+    border-top: solid rgba(211, 211, 211) 1px;
+    border-bottom: solid rgba(211, 211, 211) 1px;
+    transform:translate(-50%);
+    top: 25%;
+    left: 50%;
+    opacity: 0;
 }
 
 .adots{
@@ -843,7 +1076,7 @@ body {
     width: 40%;
     height: 10%;
     left: 2%;
-    top: 40%;
+    top: 35%;
     text-align: center;
     color: white;
     opacity: 0;
@@ -854,7 +1087,7 @@ body {
     height: 30%;
     width: 40%;
     left: 2%;
-    top: 53%;
+    top: 47%;
     text-align: center;
     font-family: Ubuntu;
     line-height: 1.5;
@@ -862,6 +1095,12 @@ body {
     opacity: 0;
 }
 
+#doughnutsbtn{
+    width: 5%;
+    bottom: 25%;
+    left: 18.5%;
+    opacity: 0;
+}
 
 
 
@@ -905,6 +1144,11 @@ body {
     line-height: 1.5;
 }
 
+#bowlingbtn{
+    width: 5%;
+    bottom: 30%;
+    right: 20.3%;
+}
 
 
 
@@ -930,7 +1174,7 @@ body {
     position: absolute;
     width: 40%;
     height: 10%;
-    left: 2%;
+    left: 1.2%;
     top: 25%;
     text-align: center;
     color: white;
@@ -946,6 +1190,12 @@ body {
     color: white;
     font-family: Ubuntu;
     line-height: 1.5;
+}
+
+#concretebtn{
+    width: 5%;
+    bottom: 35%;
+    left: 18.5%;
 }
 
 /*  ---------- ANIMATION GALLERY: Flag ----------- */
@@ -988,7 +1238,11 @@ body {
     line-height: 1.5;
 }
 
-
+#flagbtn{
+    width: 5%;
+    bottom: 35%;
+    right: 20.3%;
+}
 
 
 
@@ -1000,24 +1254,165 @@ body {
     background: rgba(255, 0, 0, 0);
 }
 
-.contact h1{
+
+#contacth1{
     position: absolute;
-    font-size: 40px;
-    left: 0;
+    font-size: 50px;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
     color: white;
     font-weight: 100;
     font-family: 'Righteous', cursive;
     opacity: 0;
 }
 
-.contact p{
+#contactleftbox{
     position: absolute;
-    font-size: 20px;
-    width: 700px;
+    top: 37%;
+    left: 2.5%;
+    width: 40%;
+    height: 40%;
+}
+
+#contactp{
+    position: absolute;
+    font-size: 30px;
     line-height: 1.5;
-    left: 0;
+    top: 10%;
     color: white;
+    text-align: center;
+    font-family: Ubuntu;
     font-weight: 100;
+    opacity: 0;
+    
+}
+
+#emailicon, #phoneicon, #adressicon{
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    left: 30%;
+    opacity: 0;
+}
+
+#emailicon{
+top: 60%;
+}
+
+#phoneicon{
+top: 75%;
+}
+
+#adressicon{
+top: 90%;
+}
+
+#emailp, #phonep, #adressp {
+    position: absolute;
+    color: white;
+    font-family: Ubuntu;
+    font-size: 17px;
+    left: 36%;
+    opacity: 0;
+}
+
+#emailp{
+    top: 54.5%;
+}
+
+#phonep{
+    top: 69.5%;
+}
+
+#adressp{
+    top: 85%;
+}
+
+#contactform{
+    position: absolute;
+    height: 70%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 75%;
+    border-left: solid rgb(224, 224, 224) .5px;
+    opacity: 0;
+
+}
+
+#contactform::placeholder{
+    color: rgb(190, 190, 190);
+}
+
+#contactform input{
+    position: absolute;
+    outline: none;
+    border: solid rgb(190, 190, 190) 1px;
+    border-radius: 11px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(0, 0, 0, 0.226);
+    color: white;
+    font-family: Ubuntu;
+    font-size: 16px;
+}
+
+#contactname input{
+    top: 10%;
+    left: 40%;
+    width: 400px;
+    height: 40px;
+    opacity: 0;
+}
+
+#contactemail input{
+    top: 20%;
+    left: 40%;
+    width: 400px;
+    height: 40px;
+    opacity: 0;
+}
+
+#contactsubject input{
+    top: 30%;
+    left: 40%;
+    width: 400px;
+    height: 40px;
+    opacity: 0;
+}
+
+#contactmessage textarea{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 398px;
+    height: 200px;
+    outline: none;
+    border: solid rgb(190, 190, 190) 1px;
+    border-radius: 13px;
+    resize: none;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.226);
+    color: white;
+    font-family: Ubuntu;
+    font-size: 16px;
+    opacity: 0;
+}
+
+#contactsubmit input{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    top: 85%;
+    left: 60%;
+    border: solid rgb(190, 190, 190) 1px;
+    border-radius: 6px;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.226);
+    color: rgb(190, 190, 190);
+    font-size: 20px;
+    font-family: Ubuntu;
     opacity: 0;
 }
 
@@ -1034,6 +1429,11 @@ body {
 .hidden {
     opacity: 0;
     transition: .5s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+    transition: 1s ease-in-out;
 }
 
 .hideleft{

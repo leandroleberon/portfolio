@@ -1,0 +1,294 @@
+@media only screen and (max-width: 600px) {
+    body{
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 200vh;
+        overflow-y: visible;
+        overflow-x: hidden;
+    }
+
+    .frame{
+        width: 100%;
+        height: 600vh;
+
+    }
+
+    .innerframe{
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar, .left-box, .right-box, .nextprevsection{
+        visibility: hidden;
+        color: transparent;
+    }
+    
+    ::-webkit-scrollbar {
+        width: 8px;                                   /* Change scrollbar style */
+        height: 8px;
+        background-color: rgba(0, 0, 0, 0.9);
+      }
+      /* Add a thumb */                               /* Change scrollbar style */
+      ::-webkit-scrollbar-thumb {
+          background: rgba(250, 250, 250, 0.5);
+      }
+    
+
+    /* Navigation Bar */
+    #navbarmobile{
+        visibility: visible;
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 55px;
+        background: rgb(51, 51, 51);
+        border-bottom: solid black 1px;
+        color: white;
+        font-family: Ubuntu;
+        z-index: 3;
+        overflow: hidden;
+    }
+    
+    #menuicon{
+        position: absolute;
+        transform: translate(0%, -50%);
+        top: 50%;
+        left: 2%;
+        width: 25px;
+        height: 25px;
+        background: url("/images/menu.png");
+        background-size: contain;
+        cursor: pointer;
+    }
+
+    #navbarmobile a{
+        position: relative;
+        transform: translate(0%, -50%);
+        left: 30%;
+        top: 33%;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+ 
+
+    /* Home */
+    
+    .home{
+        position: relative;
+        height: 16.5%;
+
+    }
+
+    .home h1{
+        font-size: 50px;
+    }  
+
+    @keyframes nameappear{
+        from {top:0; opacity: 0;}
+        to {top:35%; opacity: 1;}
+    }
+
+    .line-1{
+        top: 33%;  
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 20px;
+    }
+
+    .home #button {
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 15px;
+        padding: 8px;
+    }
+
+    .logo{
+        left: 2%;
+        bottom: 2%;
+        width: 50px;
+        height: 50px;
+    }
+
+    /* About */
+    .about{
+        position: relative;
+        height: 16.5%;
+        visibility: visible;
+        opacity: 1;
+
+    }
+
+    #aboutimg{
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        transform: translate(-50%,-50%);
+        top: 27%;
+        left: 23%;
+        background: url("/images/headshot2.jpg");
+        background-size: contain;
+        background-position: center;
+        border: rgb(59, 59, 59) solid 1px;
+        opacity: 1;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.514); 
+    }
+    
+    #abouth1{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        font-size: 40px;
+        left: 50%;
+        top: 10%;
+        color: white;
+        font-weight: 200;
+        font-family: 'Righteous', cursive;
+        opacity: 1;
+    }
+    
+    #aboutp{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        font-size: 15px;
+        width: 50%;
+        padding-left: 10px;
+        line-height: 1.5;
+        text-align: center;
+        top: 25.5%;
+        left: 62%;
+        color: white;
+        font-weight: 100;
+        font-family: Ubuntu;
+        opacity: 1;
+        line-height: 2;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        border-top: solid rgb(209, 209, 209) 1px;
+        border-bottom: solid rgb(209, 209, 209)1px;
+    }
+    
+    #plane1{
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        background: url("/images/plane.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        bottom: 17%;
+        left: 20%;
+        opacity: 0;
+    }
+    
+    #plane2{
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        background: url("/images/plane.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        bottom: 15%;
+        right: 43%;
+        opacity: 0;
+        transform: rotate(-8deg);
+    }
+    
+    #hondurasp{
+        position: absolute;
+        font-size: 13px;
+        width: 250px;
+        line-height: 1.5;
+        text-align: center;
+        top: 42.5%;
+        left: 40%;
+        color: white;
+        font-weight: 100;
+        font-family: Ubuntu;
+        opacity: 1;
+        line-height: 2;
+    }
+    
+    #hondurasimg{
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        top: 40%;
+        left: 10%;
+        background: url("/images/honduras.png");
+        background-size: contain;
+        opacity: 1;
+    }
+    
+    #panamap{
+        position: absolute;
+        font-size: 13px;
+        width: 270px;
+        height: 350px;
+        line-height: 1.5;
+        text-align: center;
+        top: 59.5%;
+        left: 14%;
+        color: white;
+        font-weight: 100;
+        font-family: Ubuntu;
+        opacity: 1;
+        line-height: 2;
+    }
+    
+    #panamaimg{
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        top: 58%;
+        left: 65%;
+        background: url("/images/panama.png");
+        background-size: contain;
+        opacity:1;
+    }
+    
+    #floridap{
+        position: absolute;
+        font-size: 13px;
+        width: 250px;
+        line-height: 1.5;
+        text-align: center;
+        top: 80.5%;
+        left: 40%;
+        color: white;
+        font-weight: 100;
+        font-family: Ubuntu;
+        opacity: 1;
+        line-height: 2;
+    }
+    
+    #floridaimg{
+        position: absolute;
+        width: 130px;
+        height: 130px;
+        top: 80%;
+        left: 12%;
+        background: url("/images/florida.png");
+        background-size: contain;
+        opacity: 1;
+    }
+
+    /* Education */
+
+
+    /* Coding */
+
+
+    /* Animation */
+
+
+    /* Contact */
+
+
+
+
+
+}
