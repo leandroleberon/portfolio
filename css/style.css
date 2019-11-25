@@ -26,7 +26,7 @@ body {
     position: absolute;
     top: 65%;
     left: 20%;
-    background: url("/images/bird.gif");
+    background-image: url(../images/bird.gif);
     background-size: contain;
     width: 40px;
     height: 30px;
@@ -94,7 +94,7 @@ body {
     position: absolute;
     width: 60px;
     height: 60px;
-    background: url("https://i.ibb.co/g6DQVZT/llwhite.png");
+    background-image: url(../images/llwhite.png);
     background-size: cover;
     bottom:30px;
     left: 30px;
@@ -323,7 +323,7 @@ body {
     border-radius: 50%;
     top: 20%;
     left: 22%;
-    background: url("/images/headshot2.jpg");
+    background-image: url(../images/headshot2.jpg);
     background-size: contain;
     background-position: center;
     border: rgb(59, 59, 59) solid 1px;
@@ -367,7 +367,7 @@ body {
     position: absolute;
     width: 25px;
     height: 25px;
-    background: url("/images/plane.png");
+    background-image: url(../images/plane.png);
     background-size: contain;
     background-repeat: no-repeat;
     bottom: 17%;
@@ -379,7 +379,7 @@ body {
     position: absolute;
     width: 25px;
     height: 25px;
-    background: url("/images/plane.png");
+    background-image: url(../images/plane.png);
     background-size: contain;
     background-repeat: no-repeat;
     bottom: 15%;
@@ -409,7 +409,7 @@ body {
     height: 300px;
     top: 75%;
     left: 9.5%;
-    background: url("/images/honduras.png");
+    background-image: url(../images/honduras.png);
     background-size: contain;
     opacity: 0;
 }
@@ -436,7 +436,7 @@ body {
     height: 300px;
     top: 75%;
     left: 40.5%;
-    background: url("/images/panama.png");
+    background-image: url(../images/panama.png);
     background-size: contain;
     opacity:0;
 }
@@ -462,7 +462,7 @@ body {
     height: 200px;
     top: 83%;
     right: 12%;
-    background: url("/images/florida.png");
+    background-image: url(../images/florida.png);
     background-size: contain;
     opacity: 0;
 }
@@ -578,7 +578,7 @@ body {
 }
 
 #istimg{
-    background: url("https://i.ibb.co/M1JsqyX/ist.jpg");
+    background-image: url(../images/ist.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -595,7 +595,7 @@ body {
 }
 
 #fsuimg{
-    background: url("https://i.ibb.co/JnPz8BY/fsu.jpg");
+    background-image: url(../images/fsu.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -611,7 +611,7 @@ body {
 }
 
 #udemyimg{
-    background: url("https://i.ibb.co/Rc17Nqm/udemy.png");
+    background-image: url(../images/udemy.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -728,7 +728,7 @@ body {
 
 .previous{
     position: absolute;
-    background: url(../images/previous.png);
+    background-image: url(../images/previous.png);
     background-size: cover;
     height: 40px;
     width: 40px;
@@ -739,7 +739,7 @@ body {
 
 .next{
     position: absolute;
-    background: url(../images/next.png);
+    background-image: url(../images/next.png);
     background-size: cover;
     height: 40px;
     width: 40px;
@@ -798,7 +798,7 @@ body {
 }
 
 #weatherappimg {
-    background: url(../images/Weatherapp.png);
+    background-image: url(../images/Weatherapp.png);
     background-size: contain;
     background-repeat: no-repeat;
     right: 2%;
@@ -856,7 +856,7 @@ body {
 }
 
 #portfolioimg {
-    background: url(../images/portfolio.png);
+    background-image: url(../images/portfolio.png);
     background-size: contain;
     background-repeat: no-repeat;
     left: 2%;
@@ -905,7 +905,7 @@ body {
 }
 
 #resumeimg {
-    background: url(../images/resume.png);
+    background-image: url(../images/resume.png);
     background-size: contain;
     background-repeat: no-repeat;
     right: 2%;
@@ -1063,7 +1063,7 @@ body {
 }
 
 #doughnutsimg {
-    background: url(../images/Doughnuts.png);
+    background-image: url(../images/Doughnuts.png);
     background-size: contain;
     background-repeat: no-repeat;
     right: 2%;
@@ -1115,7 +1115,7 @@ body {
 }
 
 #bowlingimg {
-    background: url(../images/Bowling.png);
+    background-image: url(../images/Bowling.png);
     background-size: contain;
     background-repeat: no-repeat;
     left: 2%;
@@ -1163,7 +1163,7 @@ body {
 }
 
 #concreteimg {
-    background: url(../images/Concrete.png);
+    background-image: url(../images/Concrete.png);
     background-size: contain;
     background-repeat: no-repeat;
     right: 2%;
@@ -1209,7 +1209,7 @@ body {
 }
 
 #flagimg {
-    background: url(../images/Flag.gif);
+    background-image: url(../images/Flag.gif);
     background-size: contain;
     background-repeat: no-repeat;
     left: 2%;
