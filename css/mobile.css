@@ -2,14 +2,14 @@
     body{
         background-size: cover;
         background-position: center;
-        width: 50vw;
+        width: 100vw;
         height: 200vh;
         overflow-y: visible;
         overflow-x: hidden;
     }
 
     .frame{
-        width: 100%;
+        width: 100vw;
         height: 600vh;
 
     }
@@ -17,7 +17,7 @@
     .innerframe{
         top: 0%;
         left: 0%;
-        width: 100%;
+        width: 100vw;
         height: 100%;
     }
 
