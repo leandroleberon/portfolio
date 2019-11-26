@@ -176,7 +176,6 @@
     });
 
 
-    if ($(window).width() >= 601){
     //Home Button
     $(".home #button").click(function(){
         hidehome();
@@ -189,7 +188,6 @@
         shownextsection();
         showprevsection();
     });
-    }
 
 
 
