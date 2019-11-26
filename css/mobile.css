@@ -3,30 +3,24 @@
         background-image: url(../images/mountainsmobile.png);
         background-size: cover;
         background-position: center;
-        width: 100vw;
-        height: 200vh;
-        overflow-y: visible;
-        overflow-x: hidden;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        width: 98vw;
+        height: 100vh;
     }
 
     .frame{
-        width: 100%;
-        height: 600vh;
-
-    }
-
-    .innerframe{
-        top: 0%;
-        left: 0%;
+        position: relative;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
-    }
-
-    .navbar, .left-box, .right-box, .nextprevsection{
-        visibility: hidden;
-        color: transparent;
+        border: solid red;
+        background-color: rgba(0, 0, 0, 0.377);
     }
     
+
+    /* --------- SCROLL BAR --------- */
     ::-webkit-scrollbar {
         width: 8px;                                   /* Change scrollbar style */
         height: 8px;
@@ -38,19 +32,18 @@
       }
     
 
-    /* Navigation Bar */
+    /* --------- NAVIGATION BAR --------- */
     #navbarmobile{
-        visibility: visible;
-        position: sticky;
+        position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 80px;
+        width: 100vw;
+        height: 7vh;
         background: rgb(51, 51, 51);
         border-bottom: solid black 1px;
         color: white;
         font-family: Ubuntu;
-        font-size: 23px;
+        font-size: 1.8vh;
         z-index: 3;
         overflow: hidden;
     }
@@ -60,8 +53,8 @@
         transform: translate(0%, -50%);
         top: 50%;
         left: 2%;
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         background-image: url(../images/menu.png);
         background-size: contain;
         cursor: pointer;
@@ -69,180 +62,265 @@
 
     #navbarmobile a{
         position: relative;
-        transform: translate(-50%);
-        left: 20%;
         top: 35%;
-        margin-right: 30px;
+        left: 15vw;
+        float: left;
+        margin-left: 3.5vw;
         cursor: pointer;
     }
  
 
-    /* Home */
+    /* --------- HOME --------- */
     
-    .home{
+    .home {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        text-align: center;
+    }
+    
+    .home h1{
         position: relative;
-        height: 16.5%;
-
+        top: 30%;
+        font-size: 10vw;
+        color: white;
+        font-weight: 100;
+        font-family: 'Righteous', cursive;
+        opacity: 0;
+    }
+    
+    .line-1{
+        position: relative;
+        transform: translate(-50%);
+        top: 32%;  
+        left: 50%;
+        width: 24em;
+        border-right: 2px solid transparent;
+        font-size: 4vw;
+        color: white;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    .home #button {
+        position: absolute;
+        transform: translate(-50%);
+        top: 53%;
+        left: 50%;
+        font-family: 'Ubuntu', sans-serif;
+        color: white;
+        font-size: 3vw;
+        border: solid white 2px;
+        padding: 10px;
+        opacity: 0;
+        border-radius: 0%;
+    }
+    
+    .home #button:hover{
+        cursor: pointer;
+        background: white;
+        color: rgb(29, 29, 29);
+        transition: .3s;
     }
 
-    .home h1{
-        font-size: 80px;
-    }  
+    /* --------- HOME TRANSITIONS --------- */
+    .nameappear{
+        animation: nameappear 1s normal;
+        animation-delay: 1.7s;
+        animation-fill-mode: forwards;
+    }
 
     @keyframes nameappear{
         from {top:0; opacity: 0;}
-        to {top:38%; opacity: 1;}
+        to {top:35%; opacity: 1;}
     }
 
-    .line-1{
-        top: 36%;  
-        left: 50%;
-        transform: translate(-50%);
-        font-size: 30px;
+    .typewriter{
+    animation: typewriter 2s steps(24) 1s 1 normal both,
+                blinkTextCursor 2.3s steps(1) normal;
+        animation-delay: 2.7s;
     }
 
-    .home #button {
-        top: 52%;
-        left: 50%;
-        transform: translate(-50%);
-        font-size: 25px;
-        padding: 10px;
+    @keyframes typewriter{
+    from{width: 0;}
+    to{width: 10.5em;}
     }
 
-    .logo{
-        left: 2%;
-        bottom: 2%;
-        width: 50px;
-        height: 50px;
+    @keyframes blinkTextCursor{
+    from{border-right-color: rgb(255, 255, 255);}
+    to{border-right-color: white;}
     }
 
-    /* About */
+    .buttonappear{
+        animation: buttonappear 1s ease-in-out;
+        animation-delay: 5.2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes buttonappear{
+        from {opacity: 0; visibility: hidden;}
+        to {opacity: 1; visibility: visible;}
+    }
+
+
+
+    /* --------- ABOUT SECTION --------- */
     .about{
-        position: relative;
-        height: 16.5%;
-        visibility: visible;
-        opacity: 1;
-
+        position: absolute;
+        width:100%;
+        height:100%;
+        background-color: rgba(0, 0, 0, 0);
     }
-
-
+    
     #abouth1{
         position: absolute;
-        transform: translate(-50%,-50%);
-        font-size: 70px;
+        transform:translate(-50%);
+        font-size: 8vw;
         left: 50%;
-        top: 10%;
+        top: 6%;
+        color: white;
+        font-weight: 200;
+        font-family: 'Righteous', cursive;
         opacity: 1;
     }
 
     #aboutimg{
         position: absolute;
-        width: 200px;
-        height: 200px;
-        transform: translate(-50%,-50%);
-        top: 26%;
+        transform: translate(-50%);
+        width: 27vw;
+        height: 27vw;
+        border-radius: 50%;
+        top: 17%;
         left: 50%;
+        background-image: url(../images/headshot2.png);
+        background-size: contain;
+        background-position: center;
+        border: rgb(59, 59, 59) solid 1px;
         opacity: 1;
-
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.514); 
     }
     
     #aboutp{
         position: absolute;
-        transform: translate(-50%,-50%);
-        font-size: 25px;
-        width: 80%;
-        top: 41%;
+        font-size: 3vw;
+        transform: translate(-50%);
+        width: 70%;
+        line-height: 1.5;
+        text-align: center;
+        top: 33%;
         left: 50%;
+        color: white;
+        font-weight: 100;
+        font-family: Ubuntu;
         opacity: 1;
-        line-height: 2;
         padding-top: 2%;
         padding-bottom: 2%;
+        border-top: solid rgb(209, 209, 209) 1px;
+        border-bottom: solid rgb(209, 209, 209)1px;
     }
     
     #plane1{
         position: absolute;
         width: 25px;
         height: 25px;
-        background: url("/images/plane.png");
+        background-image: url(../images/plane.png);
         background-size: contain;
         background-repeat: no-repeat;
         bottom: 17%;
         left: 20%;
-        opacity: 0;
+        opacity: 1;
     }
     
     #plane2{
         position: absolute;
         width: 25px;
         height: 25px;
-        background: url("/images/plane.png");
+        background-image: url(../images/plane.png);
         background-size: contain;
         background-repeat: no-repeat;
         bottom: 15%;
         right: 43%;
-        opacity: 0;
+        opacity: 1;
         transform: rotate(-8deg);
     }
     
     #hondurasp{
         position: absolute;
-        font-size: 20px;
-        width: 400px;
-        top: 53%;
-        left: 43%;
+        font-size: 2.5vw;
+        width: 50%;
+        line-height: 1.5;
+        text-align: center;
+        top: 51%;
+        right: 6%;
+        color: white;
+        font-weight: 100;
+        font-family: Ubuntu;
         opacity: 1;
-        line-height: 2;
     }
     
     #hondurasimg{
         position: absolute;
-        width: 250px;
-        height: 250px;
-        top: 50%;
-        left: 10%;
+        width: 30vw;
+        height: 30vw;
+        top: 47%;
+        left: 8%;
+        background-image: url(../images/honduras.png);
+        background-size: contain;
         opacity: 1;
     }
     
     #panamap{
         position: absolute;
-        font-size: 20px;
-        width: 400px;
-        height: 350px;
-        top: 69%;
+        font-size: 2.5vw;
+        width: 50%;
+        line-height: 1.5;
+        text-align: center;
+        top: 66%;
         left: 6%;
+        color: white;
+        font-weight: 100;
+        font-family: Ubuntu;
         opacity: 1;
-        line-height: 2;
     }
     
     #panamaimg{
         position: absolute;
-        width: 260px;
-        height: 260px;
-        top: 66%;
-        left: 60%;
+        width: 32vw;
+        height: 32vw;
+        top: 63%;
+        right: 8%;
+        background-image: url(../images/panama.png);
+        background-size: contain;
         opacity:1;
     }
     
     #floridap{
         position: absolute;
-        font-size: 20px;
-        width: 400px;
-        top: 87%;
-        left: 43%;
+        font-size: 2.5vw;
+        width: 50%;
+        line-height: 1.5;
+        text-align: center;
+        top: 84%;
+        right: 6%;
+        color: white;
+        font-weight: 100;
+        font-family: Ubuntu;
         opacity: 1;
-        line-height: 2;
     }
     
     #floridaimg{
         position: absolute;
-        width: 230px;
-        height: 230px;
-        top: 85%;
-        left: 10%;
+        width: 28vw;
+        height: 28vw;
+        top: 81%;
+        left: 8%;
+        background-image: url(../images/florida.png);
+        background-size: contain;
         opacity: 1;
     }
 
-    
+
     /* Education */
 
 

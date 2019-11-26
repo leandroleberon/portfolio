@@ -11,7 +11,6 @@ body {
 
 
 
-
 /*  ---------- FRAME ----------- */
 .frame {
     position: absolute;
@@ -37,6 +36,9 @@ body {
 #navbarmobile{
     visibility: hidden;
 }
+
+
+
 
 
 /*  ---------- NAVIGATION BAR ----------- */
