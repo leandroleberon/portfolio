@@ -4,6 +4,10 @@
         height: 100vh;
     }
 
+    html {
+        scroll-behavior: smooth;
+      }
+
     body:after{
         content:"";
         position:fixed; /* stretch a fixed position to the whole screen */
