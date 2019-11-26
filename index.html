@@ -2,16 +2,14 @@
 <html lang="en">
 
   <head>
-
-    <meta name="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=0.5">
     
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mobile.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sarina&display=swap" rel="stylesheet">
 
     <title>Leandro's Portfolio</title>
+
   </head>
 
   <body>
@@ -31,16 +29,6 @@
               <li><a id="navcontact" class="" href="#">Contact</a></li>
               <div class="underlined"></div>
           </ul>
-      </div>
-
-      <!-- Navigation Bar (Mobile) -->
-      <div id="navbarmobile">
-        <div id="menuicon"></div>
-        <a id="navmobhome">Home</a>
-        <a id="navmobabout">About</a>
-        <a id="navmobeducation">Education</a>
-        <a id="navmobcoding">Coding</a>
-        <a id="navmobanimation">Animation</a>
       </div>
 
       <!--  Left Box  -->
@@ -252,6 +240,11 @@
 
     </div>
 
+    <script type="text/javascript">
+      if (screen.width <= 1200) {
+      document.location = "mobile.html";
+      }
+    </script>
     <script src="js/clipboard.js-master/dist/clipboard.min.js"></script>
     <script src="https://kit.fontawesome.com/741946e2e6.js" crossorigin="anonymous"></script>
     <script src="js/jquery/dist/jquery.js"></script>
