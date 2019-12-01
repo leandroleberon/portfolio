@@ -1,26 +1,32 @@
 
-(function($) {
-    //Home Button
-    $("#button").click(function(){
-        $(this).css("background-color","white");
-        $(this).css("color","rgb(29, 29, 29)");
-        $(this).css("transition",".3s");
-    });
+jQuery(function ($) { "use strict";
 
-    //Smooth Scrolling
-    $('a[href*="#"]').on('click', function(e) {
-      e.preventDefault()
-    
-      $('html, body').animate(
-        {
-          scrollTop: $($(this).attr('href')).offset().top,
-        },
-        300,
-        'linear'
-      )
-    })
+  //Smooth Scrolling
+  var scroll = new SmoothScroll('a[href*="#"]');
+  
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    speed: 500,
+    effect: 'slide',
 
-})(jQuery);
+    // If we need pagination
+    pagination: {
+    el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+
+  });
+
+});
+
+
 
 
 
