@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=0.5">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="description" content="Leandro Leberon's Portfolio">
     
+    <meta name="author" content="Leandro Leberon">
+    
+    <title>Leandro's Portfolio</title>
+    
+    <!-- Main CSS File -->
     <link rel="stylesheet" href="css/mobile.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="js/swiper-5.2.0/package/css/swiper.css">
+
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sarina&display=swap" rel="stylesheet">
 
-    <title>Leandro's Portfolio</title>
   </head>
 
   <body>
@@ -15,11 +28,11 @@
     <!-- Navigation Bar (Mobile) -->
     <div id="navbarmobile">
         <div id="menuicon"></div>
-        <a href="#home" id="navmobhome">Home</a>
-        <a href="#about" id="navmobabout">About</a>
-        <a href="#education" id="navmobeducation">Education</a>
-        <a href="#coding" id="navmobcoding">Coding</a>
-        <a href="#animation" id="navmobanimation">Animation</a>
+        <a data-scroll href="#home" id="navmobhome">Home</a>
+        <a data-scroll href="#about" id="navmobabout">About</a>
+        <a data-scroll href="#education" id="navmobeducation">Education</a>
+        <a data-scroll href="#coding" id="navmobcoding">Coding</a>
+        <a data-scroll href="#animation" id="navmobanimation">Animation</a>
     </div>
 
     <!-- Home Section (Mobile) -->
@@ -51,7 +64,7 @@
     <!-- Education Section (Mobile) -->
     <div id="education" class="frame">
         <div class="education hidden invisible">
-            
+
             <h1 id="educationh1">Education</h1>
 
             <div id="istbox" class="flip-card">
@@ -95,57 +108,53 @@
                     </div>
                 </div>
             </div>
-            
+        
 
         </div>
     </div>
 
-    <!-- Education Section (Mobile) -->
+    <!-- Coding Section (Mobile) -->
     <div id="coding" class="frame">
         <div class="coding">
             <h1 id="codingh1">Coding Gallery</h1>
             <p id="codingp">Programming is a great part of my career. I enjoy learning new languages, developing websites and creating small software.</p>
-            <div id="codinglines"></div>
+            <div id="codinglines"></div>    
 
-            <div class="cdots">
-                <div id="cdot1"></div>
-                <div id="cdot2"></div>
-                <div id="cdot3"></div>
-            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
 
-            <div id="codingframe" class="galleryframe">
-
-                <div id="codingprev" class="previous"></div>
-            <div id="codingnext" class="next"></div>
-
-            <div id="imgborder"></div>
-                
-                <div id="carousel" class="single-item">
-                    <div id="weatherapp" class="*">
-                        <h1 id="weatherapph1">Weather App</h1>
-                        <p id="weatherappp">A simple software I created with Python's Tkinter. The program gets a City as a user input and outputs the current weather conditions in the specified city.</p>
+                    <div id="weatherapp" class="swiper-slide">
+                        <h1 id="weatherapph1" class="galleryh1">Weather App</h1>
+                        <p id="weatherappp" class="galleryp">A simple software I created with Python's Tkinter. The program gets a City as a user input and outputs the current weather conditions in the specified city.</p>
                         <div id="weatherappimg" class="galleryimage"></div>
                         <a id="weatherappbtn1" class="gallerybtn" href="https://github.com/leandroleberon/weather-app" target="_blank">code</a>
                         <a id="weatherappbtn2" class="gallerybtn" href="https://github.com/leandroleberon/weather-app/raw/master/dist/WeatherApp.exe" target="_blank">.exe</a>
                     </div>
-
-                    <div id="portfolio" class="hidden invisible">
-                        <h1 id="portfolioh1">Online Portfolio</h1>
-                        <p id="portfoliop">This very website! I developed my online portfolio from scratch using HTML5, CSS, and JQuery. This was a project for my IT Perspectives course at FSU.</p>
+        
+                    <div id="portfolio" class="swiper-slide">
+                        <h1 id="portfolioh1" class="galleryh1">Online Portfolio</h1>
+                        <p id="portfoliop" class="galleryp">This very website! I developed my online portfolio from scratch using HTML5, CSS, and JQuery. This was a project for my IT Perspectives course at FSU.</p>
                         <div id="portfolioimg" class="galleryimage"></div>
                         <a id="portfoliobtn" class="gallerybtn" href="https://github.com/leandroleberon/Portfolio" target="_blank">code</a>
                     </div>
-
-                    <div id="resume" class="hidden invisible">
-                        <h1 id="resumeh1">Online Resume</h1>
-                        <p id="resumep">This was my first project for the IT Perspectives course at FSU and also the first website I ever created. I developed my online resume using HTML5, CSS, Bootstrap and JavaSript.</p>
+        
+                    <div id="resume" class="swiper-slide">
+                        <h1 id="resumeh1" class="galleryh1">Online Resume</h1>
+                        <p id="resumep" class="galleryp">This was my first project for the IT Perspectives course at FSU and also the first website I ever created. I developed my online resume using HTML5, CSS, Bootstrap and JavaSript.</p>
                         <div id="resumeimg" class="galleryimage"></div>
                         <a id="resumebtn1" class="gallerybtn" href="https://github.com/leandroleberon/Resume" target="_blank">code</a>
                         <a id="resumebtn2" class="gallerybtn" href="https://leandroleberon.github.io/Resume/" target="_blank">visit</a>
                     </div>
+                    ...
                 </div>
 
+                <div class="swiper-pagination"></div>
+            
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
             </div>
+
         </div>
     </div>
 
@@ -154,81 +163,84 @@
     <div id="animation" class="frame">
         <div class="animation">
             <h1 id="animationh1">Animation Gallery</h1>
-            <p id="animationp">I do 3D modeling as a hobby in my free time. I enjoy being creative once in a while and bring my ideas to life.</p>
+            <p id="animationp">I do 3D modeling as a hobby. I enjoy being creative once in a while and bring my ideas to life.</p>
             <div id="animationlines"></div>
+            
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
 
-            <div class="adots">
-                <div id="adot1"></div>
-                <div id="adot2"></div>
-                <div id="adot3"></div>
-                <div id="adot4"></div>
+                    <div id="doughnuts" class="swiper-slide">
+                        <h1 id="doughnutsh1" class="galleryh1">Coffee and Doughnuts</h1>
+                        <p id="doughnutsp" class="galleryp">This is a rendered scene of some coffee and doughnuts sitting in a table. I used Blender to create this scene.</p>
+                        <div id="doughnutsimg" class="galleryimage"></div>
+                        <a id="doughnutsbtn" class="gallerybtn" href="https://github.com/leandroleberon/Portfolio/raw/master/animation/Doughnuts%20and%20Coffee.blend" target="_blank">.blend</a>
+                    </div>
+
+                    <div id="bowling" class="swiper-slide">
+                        <h1 id="bowlingh1" class="galleryh1">Bowling Scene</h1>
+                        <p id="bowlingp" class="galleryp">This is a rendered scene of a bowling ball hitting some pins and it is one of several projects I did as part of a Udemy course. I used Blender to create this scene.</p>
+                        <div id="bowlingimg" class="galleryimage"></div>
+                        <a id="bowlingbtn" class="gallerybtn" href="https://github.com/leandroleberon/Portfolio/raw/master/animation/Bowling%20Scene.blend" target="_blank">.blend</a>
+                    </div>
+
+                    <div id="concrete" class="swiper-slide">
+                        <h1 id="concreteh1" class="galleryh1">Reflections</h1>
+                        <p id="concretep" class="galleryp">This is a rendered scene of a shiny ball reflecting light on a concrete floor. I created this while experimenting with Blender reflection maps. </p>
+                        <div id="concreteimg" class="galleryimage"></div>
+                        <a id="concretebtn" class="gallerybtn" href="https://github.com/leandroleberon/Portfolio/raw/master/animation/Concrete%20Plane%20and%20Shining%20Ball.blend" target="_blank">.blend</a>
+                    </div>
+
+                    <div id="flag" class="swiper-slide">
+                        <h1 id="flagh1" class="galleryh1">Wavering Flag</h1>
+                        <p id="flagp" class="galleryp">This is a rendered video of a wavering flag. I created this while experimenting with Blender's physics engine.</p>
+                        <div id="flagimg" class="galleryimage"></div>
+                        <a id="flagbtn" class="gallerybtn" href="https://github.com/leandroleberon/Portfolio/raw/master/animation/Brazil%20Flag.blend" target="_blank">.blend</a>
+                    </div>
+                    ...
+                </div>
+
+                <div class="swiper-pagination"></div>
+            
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
             </div>
 
-            <div id="animationframe" class="galleryframe">
 
-                <div id="animationprev" class="previous"></div>
-                <div id="animationnext" class="next"></div>
-
-                <div id="doughnuts" class="*">
-                    <h1 id="doughnutsh1">Coffee and Doughnuts</h1>
-                    <p id="doughnutsp">This is a rendered scene of some coffee and doughnuts sitting in a table. I used Blender to create this scene.</p>
-                    <div id="doughnutsimg" class="galleryimage"></div>
-                    <a id="doughnutsbtn" class="gallerybtn" href="https://github.com/leandroleberon/Portfolio/raw/master/animation/Doughnuts%20and%20Coffee.blend" target="_blank">.blend</a>
-                </div>
-
-                <div id="bowling" class="hidden invisible">
-                    <h1 id="bowlingh1">Bowling Scene</h1>
-                    <p id="bowlingp">This is a rendered scene of a bowling ball hitting some pins and it is one of several projects I did as part of a Udemy course. I used Blender to create this scene.</p>
-                    <div id="bowlingimg" class="galleryimage"></div>
-                    <a id="bowlingbtn" class="gallerybtn" href="https://github.com/leandroleberon/Portfolio/raw/master/animation/Bowling%20Scene.blend" target="_blank">.blend</a>
-                </div>
-
-                <div id="concrete" class="hidden invisible">
-                    <h1 id="concreteh1">Reflections</h1>
-                    <p id="concretep">This is a rendered scene of a shiny ball reflecting light on a concrete floor. I created this while experimenting with Blender reflection maps. </p>
-                    <div id="concreteimg" class="galleryimage"></div>
-                    <a id="concretebtn" class="gallerybtn" href="https://github.com/leandroleberon/Portfolio/raw/master/animation/Concrete%20Plane%20and%20Shining%20Ball.blend" target="_blank">.blend</a>
-                </div>
-
-                <div id="flag" class="hidden invisible">
-                    <h1 id="flagh1">Wavering Flag</h1>
-                    <p id="flagp">This is a rendered video of a wavering flag. I created this while experimenting with Blender's physics engine.</p>
-                    <div id="flagimg" class="galleryimage"></div>
-                    <a id="flagbtn" class="gallerybtn" href="https://github.com/leandroleberon/Portfolio/raw/master/animation/Brazil%20Flag.blend" target="_blank">.blend</a>
-                </div>
-
-            </div>
         </div>
     </div>
 
 
 
 
-
-
-
+    <!-- Mobile or PC Detection Script-->
 
     <script type="text/javascript">
     if (screen.width > 1200) {
     document.location = "index.html";
     }
     </script>
-    <script src="js/clipboard.js-master/dist/clipboard.min.js"></script> <!-- Copy to Clipboard -->
-    <script src="https://kit.fontawesome.com/741946e2e6.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
-    <script type="text/javascript" src="plugins/slick-carousel/slick/slick.min.js"></script> <!-- Slick Gallery -->
-    <script src="js/jquerymobile/jquery.mobile-1.4.5.min.js"></script> <!-- JQuery Mobile-->
-    <script src="js/jquery/dist/jquery.min.js"></script> <!-- JQuery -->
-    <script src="js/mobile.js"></script> <!-- My JavaScript File -->
-    
- 
+
+    <!-- Jquery and Jquery Mobile JS Files -->
+    <script src="js/jquery/dist/jquery.min.js"></script> 
+    <script src="js/jquerymobile/jquery.mobile-1.4.5.min.js"></script> 
+
+    <!-- Main JS File -->
+    <script src="js/mobile.js"></script> 
+
+    <!-- Copy to Clipboard Plugin -->
+    <script src="js/clipboard.js-master/dist/clipboard.min.js"></script> 
+
+    <!-- Font Awesome Plugin -->
+    <script src="https://kit.fontawesome.com/741946e2e6.js" crossorigin="anonymous"></script> 
+
+    <!-- Smooth Scroll Plugin -->
+    <script src="js/smooth-scroll/dist/js/smooth-scroll.min.js"></script> 
+
+    <!-- Swiper Gallery -->
+    <script src="js/swiper-5.2.0/package/js/swiper.js"></script>
     
 
   </body>
-
-
-
-
-
-
 
 </html>
