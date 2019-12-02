@@ -154,9 +154,9 @@ body:after{
     -webkit-transform:translate(-50%);
     top: 32%;  
     left: 50%;
-    width: 26em;
+    width: 30em;
     border-right: 2px solid transparent;
-    font-size: 35px;
+    font-size: 30px;
     color: white;
     white-space: nowrap;
     overflow: hidden;
@@ -168,7 +168,7 @@ body:after{
     -webkit-transform:translate(-50%);
     top: 52%;
     left: 50%;
-    font-family: ''Ubuntu'';
+    font-family: 'Ubuntu';
     color: white;
     font-size: 3vw;
     border: solid white 2px;
