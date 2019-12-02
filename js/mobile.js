@@ -27,19 +27,29 @@ jQuery(function ($) { "use strict";
 
   //Menu
   $("#menuicon").hover(function(){
-    $("#menu").css("visibility","visible");
     $("#menu").css("transform","translateX(500px)")
     $("#menu").css("-webkit-transform","translateX(500px)")
-  },function(){
-    $("#menu").css("transform","translateX(0px)");
-    $("#menu").css("-webkit-transform","translateX(0px)")
-    setTimeout(function(){
-      $("#menu").css("visibility", "hidden");
-    }, 500);
   });
 
+  $(".frame").hover(function(){
+    $("#menu").css("transform","translateX(0px)");
+    $("#menu").css("-webkit-transform","translateX(0px)")
+    $("#contact").css("transform","translateX(0px)");
+    $("#contact").css("-webkit-transform","translateX(0px)")
+  });
 
+  //Contact 
+  $("#contactbtn").hover(function(){
+    $("#contact").css("transform","translateX(-500px)");
+    $("#contact").css("-webkit-transform","translateX(-500px)")
+  },function(){
+      $("#contact").css("transform","translateX(0px)");
+      $("#contact").css("-webkit-transform","translateX(0px)")
+  });
 
+  
+  //Copy to Clipboard
+  new ClipboardJS('.btn');
 });
 
 
