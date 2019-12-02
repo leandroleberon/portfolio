@@ -1,685 +1,742 @@
-@media only screen and (max-width: 1200px){
-    body{
-        width: 100vw;
-        height: 100vh;
-        overflow-x: hidden;
-    }
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
 
-    
-    body:after{
-        content:"";
-        position:fixed; /* stretch a fixed position to the whole screen */
-        top:0;
-        height:100vh; /* fix for mobile browser address bar appearing disappearing */
-        left:0;
-        right:0;
-        z-index:-1; /* needed to keep in the background */
-        background: url(../images/mountains.png) center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-  }
+
+body:after{
+    content:"";
+    position:fixed; /* stretch a fixed position to the whole screen */
+    top:0;
+    height:100vh; /* fix for mobile browser address bar appearing disappearing */
+    left:0;
+    right:0;
+    z-index:-1; /* needed to keep in the background */
+    background: url(../images/mountains.png) center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.frame{
+    position: relative;
+    top: 0;
+    left: -1%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.377);
+}
+
+
+
+
+/* --------- GLOBAL --------- */
+.home, .about, .education, .coding, .animation {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+}
+
+#abouth1, #educationh1, #codingh1, #animationh1{
+    position: absolute;
+    transform:translate(-50%);
+    font-size: 8vw;
+    left: 50%;
+    top: 6%;
+    color: white;
+    font-weight: 200;
+    font-family: 'Righteous', cursive;
+    opacity: 1;
+}
+
+#codingh1, #animationh1{
+    width: 70vw;
+}
+
+
+/* --------- SCROLL BAR --------- */
+::-webkit-scrollbar {
+    width: 8px;                                  
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+/* Add a thumb */                               
+::-webkit-scrollbar-thumb {
+    background: rgba(250, 250, 250, 0.5);
+}
+
+
+
+
+
+/* --------- NAVIGATION BAR --------- */
+#navbarmobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 7vh;
+    background: rgb(51, 51, 51);
+    border-bottom: solid black 1px;
+    color: white;
+    font-family: Ubuntu;
+    font-size: 1.8vh;
+    z-index: 3;
+    overflow: hidden;
+}
+
+#menuicon{
+    position: absolute;
+    transform: translate(0%, -50%);
+    top: 50%;
+    left: 2%;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/menu.png);
+    background-size: contain;
+    cursor: pointer;
+}
+
+#navbarmobile a{
+    position: relative;
+    top: 35%;
+    left: 15vw;
+    float: left;
+    margin-left: 3.5vw;
+    cursor: pointer;
+    text-decoration: none;
+    text-decoration-color: white;
+
+}
+
+#navbarmobile a{
+    color: white;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+#navbarmobile a:active{
+    color:rgb(177, 177, 177);
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+#navbarmobile a:visited{
+    color: white;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+
+
+
+/* --------- HOME --------- */
+
+.home h1{
+    position: relative;
+    top: 30%;
+    font-size: 10vw;
+    color: white;
+    font-weight: 100;
+    font-family: 'Righteous', cursive;
+    opacity: 0;
+}
+
+.line-1{
+    position: relative;
+    transform: translate(-50%);
+    top: 32%;  
+    left: 50%;
+    width: 24em;
+    border-right: 2px solid transparent;
+    font-size: 35px;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.home #button {
+    position: absolute;
+    transform: translate(-50%);
+    top: 53%;
+    left: 50%;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 3vw;
+    border: solid white 2px;
+    padding: 10px;
+    opacity: 0;
+    border-radius: 0%;
+    text-decoration: none;
+}
+
+.home #button:hover{
+    background: white;
+    color: rgb(29, 29, 29);
+    transition: .3s;
+}
+
+
+
+
+/* --------- HOME TRANSITIONS --------- */
+.nameappear{
+    animation: nameappear 1s normal;
+    animation-delay: 1.7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes nameappear{
+    from {top:0; opacity: 0;}
+    to {top:35%; opacity: 1;}
+}
+
+.typewriter{
+animation: typewriter 2s steps(24) 1s 1 normal both,
+            blinkTextCursor 2.3s steps(1) normal;
+    animation-delay: 2.7s;
+}
+
+@keyframes typewriter{
+from{width: 0;}
+to{width: 10.5em;}
+}
+
+@keyframes blinkTextCursor{
+from{border-right-color: rgb(255, 255, 255);}
+to{border-right-color: white;}
+}
+
+.buttonappear{
+    animation: buttonappear 1s ease-in-out;
+    animation-delay: 5.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes buttonappear{
+    from {opacity: 0; visibility: hidden;}
+    to {opacity: 1; visibility: visible;}
+}
+
+
+
+
+
+/* --------- ABOUT SECTION --------- */ 
+#aboutimg{
+    position: absolute;
+    transform: translate(-50%);
+    width: 27vw;
+    height: 27vw;
+    border-radius: 50%;
+    top: 17%;
+    left: 50%;
+    background-image: url(../images/headshot2.png);
+    background-size: contain;
+    background-position: center;
+    border: rgb(59, 59, 59) solid 1px;
+    opacity: 1;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.514); 
+}
+
+#aboutp{
+    position: absolute;
+    font-size: 3vw;
+    transform: translate(-50%);
+    width: 70%;
+    line-height: 1.5;
+    text-align: center;
+    top: 33%;
+    left: 50%;
+    color: white;
+    font-weight: 100;
+    font-family: Ubuntu;
+    opacity: 1;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-top: solid rgb(209, 209, 209) 1px;
+    border-bottom: solid rgb(209, 209, 209)1px;
+}
+
+#hondurasimg, #panamaimg, #floridaimg{
+    position: absolute;
+    background-size: contain;
+    opacity: 1;
+}
+
+#hondurasp, #panamap, #floridap{
+    position: absolute;
+    font-size: 2.5vw;
+    width: 50%;
+    line-height: 1.5;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    font-family: Ubuntu;
+    opacity: 1;
+}
+
+#hondurasimg{
+    width: 30vw;
+    height: 30vw;
+    top: 47%;
+    left: 8%;
+    background-image: url(../images/honduras.png);
+}
+
+#hondurasp{
+    top: 51%;
+    right: 6%;
+}
+
+#panamaimg{
+    width: 32vw;
+    height: 32vw;
+    top: 63%;
+    right: 8%;
+    background-image: url(../images/panama.png);
+}
+
+#panamap{
+    top: 66%;
+    left: 6%;
+}
+
+#floridaimg{
+    width: 28vw;
+    height: 28vw;
+    top: 81%;
+    left: 8%;
+    background-image: url(../images/florida.png);
+}
+
+#floridap{
+    top: 84%;
+    right: 6%;
+}
+
+
+#plane1, #plane2{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+
+#plane1{
+    background-image: url(../images/plane.png);
+    bottom: 17%;
+    left: 20%;
+}
+
+#plane2{
+    background-image: url(../images/plane.png);
+    bottom: 15%;
+    right: 43%;
+    transform: rotate(-8deg);
+}
+
+
+
+
+
+/* --------- EDUCATION SECTION --------- */ 
+
+#istdate, #fsudate, #udemydate {
+    position: absolute;
+    color: rgb(240, 240, 240);
+    font-family: Ubuntu;
+    font-size: 3vw;
+    font-weight: 700;
+    text-align: center;
+    top:2%;
+    right:2%;
+}
+
+#istimg, #fsuimg, #udemyimg{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 150px inset rgba(15, 15, 15, 0.61);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+}
+
+#isth1, #fsuh1, #udemyh1 {
+    color: white;
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 70%;
+    left: 3%;
+    font-family: Ubuntu;
+    font-size: 4vw;
+    opacity: 1;
+}
+
+#istp, #fsup, #udemyp {
+    color: white;
+    position: absolute;
+    width: 90%;
+    height: auto;
+    transform: translate(-50%);
+    top: 5%;
+    left: 50%;
+    font-family: Ubuntu;
+    font-size: 2.3vw;
+    font-weight: 100;
+    line-height: 1.7;
+    opacity: 1;
+}
+
+#istbutton, #fsubutton, #udemybutton{   
+    position: absolute;
+    background: rgb(202, 202, 202);
+    color: rgb(63, 63, 63);
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding-top:8px;
+    border-radius: 5%;
+    transform: translate(-50%);
+    bottom:10%;
+    left: 50%;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 1;
+}
+
+#istbox{
+    top: 25%;
+    left: 20%;
+}
+
+#istimg{
+    background-image: url(../images/ist.jpg);
+}
+
+#fsubox{
+    top: 45%;
+    left: 20%;
+}
+
+#fsuimg{
+    background-image: url(../images/fsu.jpg);
+}
+
+#udemybox{
+    top: 65%;
+    left: 20%;
+}
+
+#udemyimg{
+    background-image: url(../images/udemy.png);
+}
+
+/* --------- FLIP CARDS --------- */ 
+.flip-card {
+    position: absolute;
+    background-color: transparent;
+    height: 15vh;
+    width: 60vw;
+    perspective: 1000px; 
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border: rgba(53, 53, 53, 0.603) solid 7px;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: rgb(59, 59, 59);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+
+/* --------- CODING SECTION --------- */ 
+#codingp, #animationp{
+    position: absolute;
+    font-size: 2.9vw;
+    transform:translate(-50%);
+    width: 85%;
+    line-height: 2;
+    left: 50%;
+    text-align: center;
+    top: 20%;
+    color: white;
+    font-weight: 100;
+    font-family: Ubuntu;
+    opacity: 1;
+}
+
+#codinglines, #animationlines{
+    position: absolute;
+    background: rgba(212, 212, 212, 0);
+    width: 85%; 
+    height: 10%;
+    border-top: solid rgba(211, 211, 211) 1px;
+    border-bottom: solid rgba(211, 211, 211) 1px;
+    transform:translate(-50%);
+    top: 20%;
+    left: 50%;
+    opacity: 1;
+}
+
+.swiper-container {
+    top: 38%;
+    width: 90%;
+    height: 55%;
+}
+
+
+.galleryh1{
+    position: absolute;
+    transform: translate(-50%);
+    width: 90%;
+    height: auto;
+    left: 50%;
+    top: 0%;
+    text-align: center;
+    color: white;
+    font-family: Ubuntu;
+    font-size: 6vw;
+    opacity: 1;
+}
+
+.galleryp{
+    position: absolute;
+    transform: translate(-50%);
+    height: 30%;
+    width: 80%;
+    left: 50%;
+    top: 12%;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 2.5vw;
+    line-height: 1.5;
+    color: white;
+    opacity: 1;
+}
+
+.galleryimage{
+    position: absolute;
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.541);
+    width: 75%;
+    height: 39%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 53%;
+    opacity: 1;
+}
+
+.gallerybtn{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 80%;
+    height: auto;
+    width: auto;
+    background: rgba(0, 0, 0, 0);
+    border: white solid 2px;
+    color: white;
+    border-radius: 5%;
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: 550;
+    font-family: Ubuntu;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+/*  ---------- CODING GALLERY: Weather App ----------- */
+
+#weatherappimg {
+    background-image: url(../images/Weatherapp.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#weatherappbtn1{
+    left: 44%;
+    opacity: 1;
+}
+
+#weatherappbtn2{
+    left: 56%;
+    opacity: 1;
+}
+
+/*  ---------- CODING GALLERY: Portfolio ----------- */
+#portfolioimg {
+    background-image: url(../images/portfolio.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#portfoliobtn{
+    left: 50%;
+}
+
+/*  ---------- CODING GALLERY: Resume ----------- */
+#resumeimg {
+    background-image: url(../images/resume.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#resumebtn1{
+    left: 44%;
+}
+
+#resumebtn2{
+    left: 56%;
+}
+
+/* --------- ANIMATION SECTION --------- */ 
+
+/*  ---------- ANIMATION GALLERY: DOUGHNUTS ----------- */
+#doughnutsimg {
+    background-image: url(../images/Doughnuts.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#doughnutsbtn{
+    left: 50%;
+    opacity: 1;
+}
+
+/*  ---------- ANIMATION GALLERY: BOWLING ----------- */
+#bowlingimg {
+    background-image: url(../images/Bowling.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#bowlingbtn{
+    left: 50%;
+    opacity: 1;
+}
+
+/*  ---------- ANIMATION GALLERY: CONCRETE ----------- */
+#concreteimg {
+    background-image: url(../images/Concrete.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#concretebtn{
+    left: 50%;
+    opacity: 1;
+}
+
+/*  ---------- ANIMATION GALLERY: FLAG ----------- */
+#flagimg {
+    background-image: url(../images/Flag.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#flagbtn{
+    left: 50%;
+    opacity: 1;
+}
+
+/* --------- CONTACT SECTION --------- */ 
+
+
+@media only screen and (orientation : landscape){
 
     .frame{
-        position: relative;
-        top: 0;
-        left: -1%;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.377);
-    }
-    
-
-
-
-    /* --------- GLOBAL --------- */
-    .home, .about, .education, .coding, .animation {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0);
-        text-align: center;
+        height: 300%;
+        width: 101%
     }
 
-    #abouth1, #educationh1, #codingh1, #animationh1{
-        position: absolute;
-        transform:translate(-50%);
-        font-size: 8vw;
-        left: 50%;
-        top: 6%;
-        color: white;
-        font-weight: 200;
-        font-family: 'Righteous', cursive;
-        opacity: 1;
-    }
-
-    #codingh1, #animationh1{
-        width: 70vw;
-    }
-
-
-    /* --------- SCROLL BAR --------- */
-    ::-webkit-scrollbar {
-        width: 8px;                                  
-        height: 8px;
-        background-color: rgba(0, 0, 0, 0.9);
-    }
-    /* Add a thumb */                               
-    ::-webkit-scrollbar-thumb {
-        background: rgba(250, 250, 250, 0.5);
-    }
-    
-
-    
-
-
-    /* --------- NAVIGATION BAR --------- */
     #navbarmobile{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 7vh;
-        background: rgb(51, 51, 51);
-        border-bottom: solid black 1px;
-        color: white;
-        font-family: Ubuntu;
-        font-size: 1.8vh;
-        z-index: 3;
-        overflow: hidden;
-    }
-    
-    #menuicon{
-        position: absolute;
-        transform: translate(0%, -50%);
-        top: 50%;
-        left: 2%;
-        width: 50px;
-        height: 50px;
-        background-image: url(../images/menu.png);
-        background-size: contain;
-        cursor: pointer;
+        height: 14%;
     }
 
     #navbarmobile a{
-        position: relative;
-        top: 35%;
-        left: 15vw;
-        float: left;
-        margin-left: 3.5vw;
-        cursor: pointer;
-        text-decoration: none;
-        text-decoration-color: white;
-
-    }
-    
-    #navbarmobile a{
-        color: white;
-        text-decoration: none;
-        text-decoration-color: white;
-    }
-
-    #navbarmobile a:active{
-        color:rgb(177, 177, 177);
-        text-decoration: none;
-        text-decoration-color: white;
-    }
-
-    #navbarmobile a:visited{
-        color: white;
-        text-decoration: none;
-        text-decoration-color: white;
-    }
-
-
-
-
-    /* --------- HOME --------- */
-    
-    .home h1{
-        position: relative;
+        font-size: 3vw;
         top: 30%;
-        font-size: 10vw;
-        color: white;
-        font-weight: 100;
-        font-family: 'Righteous', cursive;
-        opacity: 0;
     }
-    
+
+    #menuicon{
+        width: 70px;
+        height: 70px;
+    }
+
+    #home{
+        height: 80%;
+    }
+
+    .home h1{
+        font-size: 8vw;
+    }
+
     .line-1{
-        position: relative;
-        transform: translate(-50%);
-        top: 32%;  
-        left: 50%;
-        width: 24em;
-        border-right: 2px solid transparent;
+        top: 27%;  
         font-size: 35px;
-        color: white;
-        white-space: nowrap;
-        overflow: hidden;
     }
     
     .home #button {
-        position: absolute;
-        transform: translate(-50%);
-        top: 53%;
-        left: 50%;
-        font-family: 'Ubuntu', sans-serif;
-        color: white;
-        font-size: 3vw;
-        border: solid white 2px;
-        padding: 10px;
-        opacity: 0;
-        border-radius: 0%;
-        text-decoration: none;
-    }
-    
-    .home #button:hover{
-        background: white;
-        color: rgb(29, 29, 29);
-        transition: .3s;
-    }
-
-
-
-
-    /* --------- HOME TRANSITIONS --------- */
-    .nameappear{
-        animation: nameappear 1s normal;
-        animation-delay: 1.7s;
-        animation-fill-mode: forwards;
-    }
-
-    @keyframes nameappear{
-        from {top:0; opacity: 0;}
-        to {top:35%; opacity: 1;}
-    }
-
-    .typewriter{
-    animation: typewriter 2s steps(24) 1s 1 normal both,
-                blinkTextCursor 2.3s steps(1) normal;
-        animation-delay: 2.7s;
-    }
-
-    @keyframes typewriter{
-    from{width: 0;}
-    to{width: 10.5em;}
-    }
-
-    @keyframes blinkTextCursor{
-    from{border-right-color: rgb(255, 255, 255);}
-    to{border-right-color: white;}
-    }
-
-    .buttonappear{
-        animation: buttonappear 1s ease-in-out;
-        animation-delay: 5.2s;
-        animation-fill-mode: forwards;
-    }
-
-    @keyframes buttonappear{
-        from {opacity: 0; visibility: hidden;}
-        to {opacity: 1; visibility: visible;}
-    }
-
-
-
-
-
-    /* --------- ABOUT SECTION --------- */ 
-    #aboutimg{
-        position: absolute;
-        transform: translate(-50%);
-        width: 27vw;
-        height: 27vw;
-        border-radius: 50%;
-        top: 17%;
-        left: 50%;
-        background-image: url(../images/headshot2.png);
-        background-size: contain;
-        background-position: center;
-        border: rgb(59, 59, 59) solid 1px;
-        opacity: 1;
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.514); 
-    }
-    
-    #aboutp{
-        position: absolute;
-        font-size: 3vw;
-        transform: translate(-50%);
-        width: 70%;
-        line-height: 1.5;
-        text-align: center;
-        top: 33%;
-        left: 50%;
-        color: white;
-        font-weight: 100;
-        font-family: Ubuntu;
-        opacity: 1;
-        padding-top: 2%;
-        padding-bottom: 2%;
-        border-top: solid rgb(209, 209, 209) 1px;
-        border-bottom: solid rgb(209, 209, 209)1px;
-    }
-    
-    #hondurasimg, #panamaimg, #floridaimg{
-        position: absolute;
-        background-size: contain;
-        opacity: 1;
-    }
-
-    #hondurasp, #panamap, #floridap{
-        position: absolute;
-        font-size: 2.5vw;
-        width: 50%;
-        line-height: 1.5;
-        text-align: center;
-        color: white;
-        font-weight: 100;
-        font-family: Ubuntu;
-        opacity: 1;
-    }
-
-    #hondurasimg{
-        width: 30vw;
-        height: 30vw;
-        top: 47%;
-        left: 8%;
-        background-image: url(../images/honduras.png);
-    }
-
-    #hondurasp{
-        top: 51%;
-        right: 6%;
-    }
-    
-    #panamaimg{
-        width: 32vw;
-        height: 32vw;
-        top: 63%;
-        right: 8%;
-        background-image: url(../images/panama.png);
-    }
-    
-    #panamap{
-        top: 66%;
-        left: 6%;
-    }
-    
-    #floridaimg{
-        width: 28vw;
-        height: 28vw;
-        top: 81%;
-        left: 8%;
-        background-image: url(../images/florida.png);
-    }
-    
-    #floridap{
-        top: 84%;
-        right: 6%;
-    }
-    
-
-    #plane1, #plane2{
-        position: absolute;
-        width: 25px;
-        height: 25px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        opacity: 0;
-    }
-
-    #plane1{
-        background-image: url(../images/plane.png);
-        bottom: 17%;
-        left: 20%;
-    }
-    
-    #plane2{
-        background-image: url(../images/plane.png);
-        bottom: 15%;
-        right: 43%;
-        transform: rotate(-8deg);
-    }
-
-
-
-
-
-    /* --------- EDUCATION SECTION --------- */ 
-    
-    #istdate, #fsudate, #udemydate {
-        position: absolute;
-        color: rgb(240, 240, 240);
-        font-family: Ubuntu;
-        font-size: 3vw;
-        font-weight: 700;
-        text-align: center;
-        top:2%;
-        right:2%;
-    }
-    
-    #istimg, #fsuimg, #udemyimg{
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        box-shadow: 0px 0px 150px inset rgba(15, 15, 15, 0.61);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        opacity: 1;
-    }
-    
-    #isth1, #fsuh1, #udemyh1 {
-        color: white;
-        position: absolute;
         width: auto;
         height: auto;
-        top: 70%;
-        left: 3%;
-        font-family: Ubuntu;
-        font-size: 4vw;
-        opacity: 1;
+        top: 90%;
+        left: 50%;
+        font-size: 3vw;
+        padding: 15px;
     }
-    
-    #istp, #fsup, #udemyp {
-        color: white;
-        position: absolute;
-        width: 90%;
+
+    #istbox, #fsubox, #udemybox{
+        height: 16%;
+    }
+
+    #istbutton, #fsubutton, #udemybutton{
         height: auto;
-        transform: translate(-50%);
-        top: 5%;
-        left: 50%;
-        font-family: Ubuntu;
-        font-size: 2.3vw;
-        font-weight: 100;
-        line-height: 1.7;
-        opacity: 1;
-    }
-    
-    #istbutton, #fsubutton, #udemybutton{   
-        position: absolute;
-        background: rgb(202, 202, 202);
-        color: rgb(63, 63, 63);
-        font-family: Ubuntu;
-        font-size: 18px;
-        font-weight: bold;
-        text-align: center;
-        padding-top:8px;
-        border-radius: 5%;
-        transform: translate(-50%);
-        bottom:10%;
-        left: 50%;
-        width: 80px;
-        height: 30px;
-        cursor: pointer;
-        text-decoration: none;
-        opacity: 1;
-    }
-    
-    #istbox{
-        top: 25%;
-        left: 20%;
-    }
-    
-    #istimg{
-        background-image: url(../images/ist.jpg);
-    }
-    
-    #fsubox{
-        top: 45%;
-        left: 20%;
-    }
-    
-    #fsuimg{
-        background-image: url(../images/fsu.jpg);
-    }
-    
-    #udemybox{
-        top: 65%;
-        left: 20%;
-    }
-
-    #udemyimg{
-        background-image: url(../images/udemy.png);
-    }
-
-    /* --------- FLIP CARDS --------- */ 
-    .flip-card {
-        position: absolute;
-        background-color: transparent;
-        height: 15vh;
-        width: 60vw;
-        perspective: 1000px; 
-    }
-
-    .flip-card-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.8s;
-        transform-style: preserve-3d;
-        border: rgba(53, 53, 53, 0.603) solid 7px;
-    }
-    
-    .flip-card:hover .flip-card-inner {
-        transform: rotateY(180deg);
-    }
-    
-    .flip-card-front, .flip-card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-    }
-    
-    .flip-card-front {
-        background-color: #bbb;
-        color: black;
-    }
-
-    .flip-card-back {
-        background-color: rgb(59, 59, 59);
-        color: white;
-        transform: rotateY(180deg);
-    }
-
-
-    /* --------- CODING SECTION --------- */ 
-    #codingp, #animationp{
-        position: absolute;
-        font-size: 2.9vw;
-        transform:translate(-50%);
-        width: 85%;
-        line-height: 2;
-        left: 50%;
-        text-align: center;
-        top: 20%;
-        color: white;
-        font-weight: 100;
-        font-family: Ubuntu;
-        opacity: 1;
-    }
-    
-    #codinglines, #animationlines{
-        position: absolute;
-        background: rgba(212, 212, 212, 0);
-        width: 85%; 
-        height: 10%;
-        border-top: solid rgba(211, 211, 211) 1px;
-        border-bottom: solid rgba(211, 211, 211) 1px;
-        transform:translate(-50%);
-        top: 20%;
-        left: 50%;
-        opacity: 1;
-    }
-
-    .swiper-container {
-        top: 38%;
-        width: 90%;
-        height: 55%;
-    }
-
-
-    .galleryh1{
-        position: absolute;
-        transform: translate(-50%);
-        width: 90%;
-        height: auto;
-        left: 50%;
-        top: 0%;
-        text-align: center;
-        color: white;
-        font-family: Ubuntu;
-        font-size: 6vw;
-        opacity: 1;
-    }
-
-    .galleryp{
-        position: absolute;
-        transform: translate(-50%);
-        height: 30%;
-        width: 80%;
-        left: 50%;
-        top: 12%;
-        text-align: center;
-        font-family: Ubuntu;
-        font-size: 2.5vw;
-        line-height: 1.5;
-        color: white;
-        opacity: 1;
+        width: auto;
+        padding: 10px 15px;
+        font-size: 2.7vw;
     }
 
     .galleryimage{
-        position: absolute;
-        box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.541);
-        width: 75%;
-        height: 38.2%;
-        transform: translate(-50%, -50%);
-        left: 50%;
-        top: 53%;
-        opacity: 1;
+        height: 41.3%;
     }
 
     .gallerybtn{
-        position: absolute;
-        transform: translate(-50%, -50%);
-        top: 80%;
-        height: auto;
-        width: auto;
-        background: rgba(0, 0, 0, 0);
-        border: white solid 2px;
-        color: white;
-        border-radius: 5%;
-        text-align: center;
-        font-size: 2.5vw;
-        font-weight: 550;
-        font-family: Ubuntu;
-        padding: 5px 10px;
-        text-decoration: none;
+        padding: 10px 15px;
     }
-
-    /*  ---------- CODING GALLERY: Weather App ----------- */
-
-    #weatherappimg {
-        background-image: url(../images/Weatherapp.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    
-    #weatherappbtn1{
-        left: 44%;
-        opacity: 1;
-    }
-    
-    #weatherappbtn2{
-        left: 56%;
-        opacity: 1;
-    }
-    
-    /*  ---------- CODING GALLERY: Portfolio ----------- */
-    #portfolioimg {
-        background-image: url(../images/portfolio.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    #portfoliobtn{
-        left: 50%;
-    }
-
-    /*  ---------- CODING GALLERY: Resume ----------- */
-    #resumeimg {
-        background-image: url(../images/resume.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    #resumebtn1{
-        left: 44%;
-    }
-    
-    #resumebtn2{
-        left: 56%;
-    }
-
-    /* --------- ANIMATION SECTION --------- */ 
-
-    /*  ---------- ANIMATION GALLERY: DOUGHNUTS ----------- */
-    #doughnutsimg {
-        background-image: url(../images/Doughnuts.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    #doughnutsbtn{
-        left: 50%;
-        opacity: 1;
-    }
-
-    /*  ---------- ANIMATION GALLERY: BOWLING ----------- */
-    #bowlingimg {
-        background-image: url(../images/Bowling.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    #bowlingbtn{
-        left: 50%;
-        opacity: 1;
-    }
-
-    /*  ---------- ANIMATION GALLERY: CONCRETE ----------- */
-    #concreteimg {
-        background-image: url(../images/Concrete.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    #concretebtn{
-        left: 50%;
-        opacity: 1;
-    }
-
-    /*  ---------- ANIMATION GALLERY: FLAG ----------- */
-    #flagimg {
-        background-image: url(../images/Flag.gif);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    #flagbtn{
-        left: 50%;
-        opacity: 1;
-    }
-
-    /* --------- CONTACT SECTION --------- */ 
-
-
-
-
-
 }
