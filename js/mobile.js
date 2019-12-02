@@ -43,8 +43,8 @@ jQuery(function ($) { "use strict";
     $("#contact").css("transform","translateX(-500px)");
     $("#contact").css("-webkit-transform","translateX(-500px)")
   },function(){
-      $("#contact").css("transform","translateX(0px)");
-      $("#contact").css("-webkit-transform","translateX(0px)")
+    $("#contact").css("transform","translateX(0px)");
+    $("#contact").css("-webkit-transform","translateX(0px)")
   });
 
   
