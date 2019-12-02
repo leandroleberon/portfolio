@@ -44,6 +44,7 @@ body:after{
 #abouth1, #educationh1, #codingh1, #animationh1{
     position: absolute;
     transform:translate(-50%);
+    -webkit-transform:translate(-50%);
     font-size: 8vw;
     left: 50%;
     top: 6%;
@@ -83,7 +84,7 @@ body:after{
     background: rgb(51, 51, 51);
     border-bottom: solid black 1px;
     color: white;
-    font-family: Ubuntu;
+    font-family: 'Ubuntu';
     font-size: 1.8vh;
     z-index: 3;
     overflow: hidden;
@@ -92,6 +93,7 @@ body:after{
 #menuicon{
     position: absolute;
     transform: translate(0%, -50%);
+    -webkit-transform:translate(0%,-50%);
     top: 50%;
     left: 2%;
     width: 50px;
@@ -149,9 +151,10 @@ body:after{
 .line-1{
     position: relative;
     transform: translate(-50%);
+    -webkit-transform:translate(-50%);
     top: 32%;  
     left: 50%;
-    width: 24em;
+    width: 26em;
     border-right: 2px solid transparent;
     font-size: 35px;
     color: white;
@@ -162,9 +165,10 @@ body:after{
 .home #button {
     position: absolute;
     transform: translate(-50%);
-    top: 53%;
+    -webkit-transform:translate(-50%);
+    top: 52%;
     left: 50%;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: ''Ubuntu'';
     color: white;
     font-size: 3vw;
     border: solid white 2px;
@@ -230,6 +234,7 @@ to{border-right-color: white;}
 #aboutimg{
     position: absolute;
     transform: translate(-50%);
+    -webkit-transform:translate(-50%);
     width: 27vw;
     height: 27vw;
     border-radius: 50%;
@@ -247,6 +252,7 @@ to{border-right-color: white;}
     position: absolute;
     font-size: 3vw;
     transform: translate(-50%);
+    -webkit-transform:translate(-50%);
     width: 70%;
     line-height: 1.5;
     text-align: center;
@@ -254,7 +260,7 @@ to{border-right-color: white;}
     left: 50%;
     color: white;
     font-weight: 100;
-    font-family: Ubuntu;
+    font-family: 'Ubuntu';
     opacity: 1;
     padding-top: 2%;
     padding-bottom: 2%;
@@ -276,7 +282,7 @@ to{border-right-color: white;}
     text-align: center;
     color: white;
     font-weight: 100;
-    font-family: Ubuntu;
+    font-family: 'Ubuntu';
     opacity: 1;
 }
 
@@ -351,7 +357,7 @@ to{border-right-color: white;}
 #istdate, #fsudate, #udemydate {
     position: absolute;
     color: rgb(240, 240, 240);
-    font-family: Ubuntu;
+    font-family: 'Ubuntu';
     font-size: 3vw;
     font-weight: 700;
     text-align: center;
@@ -378,7 +384,7 @@ to{border-right-color: white;}
     height: auto;
     top: 70%;
     left: 3%;
-    font-family: Ubuntu;
+    font-family: 'Ubuntu';
     font-size: 4vw;
     opacity: 1;
 }
@@ -389,9 +395,10 @@ to{border-right-color: white;}
     width: 90%;
     height: auto;
     transform: translate(-50%);
+    -webkit-transform:translate(-50%);
     top: 5%;
     left: 50%;
-    font-family: Ubuntu;
+    font-family: 'Ubuntu';
     font-size: 2.3vw;
     font-weight: 100;
     line-height: 1.7;
@@ -402,13 +409,14 @@ to{border-right-color: white;}
     position: absolute;
     background: rgb(202, 202, 202);
     color: rgb(63, 63, 63);
-    font-family: Ubuntu;
+    font-family: 'Ubuntu';
     font-size: 18px;
     font-weight: bold;
     text-align: center;
     padding-top:8px;
     border-radius: 5%;
     transform: translate(-50%);
+    -webkit-transform:translate(-50%);
     bottom:10%;
     left: 50%;
     width: 80px;
@@ -461,11 +469,13 @@ to{border-right-color: white;}
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    -webkit-transform-style:preserve-3d;
     border: rgba(53, 53, 53, 0.603) solid 7px;
 }
 
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
 }
 
 .flip-card-front, .flip-card-back {
@@ -484,6 +494,7 @@ to{border-right-color: white;}
     background-color: rgb(59, 59, 59);
     color: white;
     transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
 }
 
 
@@ -492,6 +503,7 @@ to{border-right-color: white;}
     position: absolute;
     font-size: 2.9vw;
     transform:translate(-50%);
+    -webkit-transform:translate(-50%);
     width: 85%;
     line-height: 2;
     left: 50%;
@@ -499,7 +511,7 @@ to{border-right-color: white;}
     top: 20%;
     color: white;
     font-weight: 100;
-    font-family: Ubuntu;
+    font-family: 'Ubuntu';
     opacity: 1;
 }
 
@@ -511,6 +523,7 @@ to{border-right-color: white;}
     border-top: solid rgba(211, 211, 211) 1px;
     border-bottom: solid rgba(211, 211, 211) 1px;
     transform:translate(-50%);
+    -webkit-transform:translate(-50%);
     top: 20%;
     left: 50%;
     opacity: 1;
@@ -526,13 +539,14 @@ to{border-right-color: white;}
 .galleryh1{
     position: absolute;
     transform: translate(-50%);
+    -webkit-transform:translate(-50%);
     width: 90%;
     height: auto;
     left: 50%;
     top: 0%;
     text-align: center;
     color: white;
-    font-family: Ubuntu;
+    font-family: 'Ubuntu';
     font-size: 6vw;
     opacity: 1;
 }
@@ -540,12 +554,13 @@ to{border-right-color: white;}
 .galleryp{
     position: absolute;
     transform: translate(-50%);
+    -webkit-transform:translate(-50%);
     height: 30%;
     width: 80%;
     left: 50%;
     top: 12%;
     text-align: center;
-    font-family: Ubuntu;
+    font-family: 'Ubuntu';
     font-size: 2.5vw;
     line-height: 1.5;
     color: white;
@@ -556,8 +571,9 @@ to{border-right-color: white;}
     position: absolute;
     box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.541);
     width: 75%;
-    height: 39%;
+    height: auto;
     transform: translate(-50%, -50%);
+    -webkit-transform:translate(-50%,-50%);
     left: 50%;
     top: 53%;
     opacity: 1;
@@ -566,6 +582,7 @@ to{border-right-color: white;}
 .gallerybtn{
     position: absolute;
     transform: translate(-50%, -50%);
+    -webkit-transform:translate(-50%,-50%);
     top: 80%;
     height: auto;
     width: auto;
@@ -576,19 +593,12 @@ to{border-right-color: white;}
     text-align: center;
     font-size: 2.5vw;
     font-weight: 550;
-    font-family: Ubuntu;
+    font-family: 'Ubuntu';
     padding: 5px 10px;
     text-decoration: none;
 }
 
 /*  ---------- CODING GALLERY: Weather App ----------- */
-
-#weatherappimg {
-    background-image: url(../images/Weatherapp.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
 #weatherappbtn1{
     left: 44%;
     opacity: 1;
@@ -600,23 +610,11 @@ to{border-right-color: white;}
 }
 
 /*  ---------- CODING GALLERY: Portfolio ----------- */
-#portfolioimg {
-    background-image: url(../images/portfolio.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
 #portfoliobtn{
     left: 50%;
 }
 
 /*  ---------- CODING GALLERY: Resume ----------- */
-#resumeimg {
-    background-image: url(../images/resume.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
 #resumebtn1{
     left: 44%;
 }
@@ -628,48 +626,24 @@ to{border-right-color: white;}
 /* --------- ANIMATION SECTION --------- */ 
 
 /*  ---------- ANIMATION GALLERY: DOUGHNUTS ----------- */
-#doughnutsimg {
-    background-image: url(../images/Doughnuts.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
 #doughnutsbtn{
     left: 50%;
     opacity: 1;
 }
 
-/*  ---------- ANIMATION GALLERY: BOWLING ----------- */
-#bowlingimg {
-    background-image: url(../images/Bowling.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
+/*  ---------- ANIMATION GALLERY: BOWLING ----------- */}
 #bowlingbtn{
     left: 50%;
     opacity: 1;
 }
 
 /*  ---------- ANIMATION GALLERY: CONCRETE ----------- */
-#concreteimg {
-    background-image: url(../images/Concrete.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
 #concretebtn{
     left: 50%;
     opacity: 1;
 }
 
 /*  ---------- ANIMATION GALLERY: FLAG ----------- */
-#flagimg {
-    background-image: url(../images/Flag.gif);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
 #flagbtn{
     left: 50%;
     opacity: 1;
