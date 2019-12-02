@@ -144,6 +144,7 @@ body:after{
     transition: .6s ease-in-out;
     -webkit-transition: .6s ease-in-out;
     overflow: hidden;
+    -webkit-overflow: hidden;
 }
 
 #menu h1{
