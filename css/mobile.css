@@ -341,8 +341,8 @@ to{border-right-color: white;}
     border-radius: 50%;
     top: 17%;
     left: 50%;
-    background-image: url(../images/headshot2.png);
-    background-size: contain;
+    background-image: url(../images/headshot2.jpg);
+    background-size: cover;
     background-position: center;
     border: rgb(59, 59, 59) solid 1px;
     opacity: 1;
