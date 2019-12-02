@@ -84,7 +84,7 @@ body:after{
     background: rgb(51, 51, 51);
     border-bottom: solid black 1px;
     color: white;
-    font-family: 'Ubuntu';
+    font-family:'Ubuntu';
     font-size: 1.8vh;
     z-index: 3;
     overflow: hidden;
@@ -140,15 +140,16 @@ body:after{
     left: -500px;
     z-index: 3;
     background-color: rgb(48, 48, 48);
-    visibility: hidden;
+    visibility: visible;
     transition: .6s ease-in-out;
     -webkit-transition: .6s ease-in-out;
+    overflow: hidden;
 }
 
 #menu h1{
     position: relative;
     color: white;
-    font-family: 'Ubuntu';
+    font-family:'Ubuntu';
     font-size: 6.5vw;
     text-align: center;
     height: auto;
@@ -174,7 +175,7 @@ body:after{
 
 #menu li{
     padding-bottom: 70px;
-    font-family: 'Ubuntu';
+    font-family:'Ubuntu';
     font-weight: lighter;
     font-size: 4.5vw;
 }
@@ -188,6 +189,33 @@ body:after{
     color: white;
     height: 500px;
     text-decoration: none;
+}
+
+#contact{
+    position: absolute;
+    top: 37%;
+    right: -500px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(24, 24, 24);
+    width: 100%;
+    height: auto;
+    transition: .5s ease-in-out;
+    -webkit-transition:.5s ease-in-out;
+}
+
+#contact ul{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#contact li{
+    transform: translate(0%, 60%);
+    font-size: 4vw;
+    font-family:'Ubuntu';
+    color: rgb(255, 255, 255);
 }
 
 #smbox{
@@ -240,7 +268,7 @@ body:after{
     -webkit-transform:translate(-50%);
     top: 52%;
     left: 50%;
-    font-family: 'Ubuntu';
+    font-family:'Ubuntu';
     color: white;
     font-size: 3vw;
     border: solid white 2px;
@@ -332,7 +360,7 @@ to{border-right-color: white;}
     left: 50%;
     color: white;
     font-weight: 100;
-    font-family: 'Ubuntu';
+    font-family:'Ubuntu';
     opacity: 1;
     padding-top: 2%;
     padding-bottom: 2%;
@@ -354,7 +382,7 @@ to{border-right-color: white;}
     text-align: center;
     color: white;
     font-weight: 100;
-    font-family: 'Ubuntu';
+    font-family:'Ubuntu';
     opacity: 1;
 }
 
@@ -429,7 +457,7 @@ to{border-right-color: white;}
 #istdate, #fsudate, #udemydate {
     position: absolute;
     color: rgb(240, 240, 240);
-    font-family: 'Ubuntu';
+    font-family:'Ubuntu';
     font-size: 3vw;
     font-weight: 700;
     text-align: center;
@@ -456,7 +484,7 @@ to{border-right-color: white;}
     height: auto;
     top: 70%;
     left: 3%;
-    font-family: 'Ubuntu';
+    font-family:'Ubuntu';
     font-size: 4vw;
     opacity: 1;
 }
@@ -470,7 +498,7 @@ to{border-right-color: white;}
     -webkit-transform:translate(-50%);
     top: 5%;
     left: 50%;
-    font-family: 'Ubuntu';
+    font-family:'Ubuntu';
     font-size: 2.3vw;
     font-weight: 100;
     line-height: 1.7;
@@ -481,7 +509,7 @@ to{border-right-color: white;}
     position: absolute;
     background: rgb(202, 202, 202);
     color: rgb(63, 63, 63);
-    font-family: 'Ubuntu';
+    font-family:'Ubuntu';
     font-size: 18px;
     font-weight: bold;
     text-align: center;
@@ -585,7 +613,7 @@ to{border-right-color: white;}
     top: 20%;
     color: white;
     font-weight: 100;
-    font-family: 'Ubuntu';
+    font-family:'Ubuntu';
     opacity: 1;
 }
 
@@ -620,7 +648,7 @@ to{border-right-color: white;}
     top: 0%;
     text-align: center;
     color: white;
-    font-family: 'Ubuntu';
+    font-family:'Ubuntu';
     font-size: 6vw;
     opacity: 1;
 }
@@ -634,7 +662,7 @@ to{border-right-color: white;}
     left: 50%;
     top: 12%;
     text-align: center;
-    font-family: 'Ubuntu';
+    font-family:'Ubuntu';
     font-size: 2.5vw;
     line-height: 1.5;
     color: white;
@@ -667,7 +695,7 @@ to{border-right-color: white;}
     text-align: center;
     font-size: 2.5vw;
     font-weight: 550;
-    font-family: 'Ubuntu';
+    font-family:'Ubuntu';
     padding: 5px 10px;
     text-decoration: none;
 }
