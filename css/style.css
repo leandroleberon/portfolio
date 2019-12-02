@@ -39,8 +39,6 @@ body {
 
 
 
-
-
 /*  ---------- NAVIGATION BAR ----------- */
 .navbar {
     position: absolute;
@@ -325,8 +323,8 @@ body {
     border-radius: 50%;
     top: 20%;
     left: 22%;
-    background-image: url(../images/headshot2.png);
-    background-size: contain;
+    background-image: url(../images/headshot2.jpg);
+    background-size: cover;
     background-position: center;
     border: rgb(59, 59, 59) solid 1px;
     opacity: 0;
