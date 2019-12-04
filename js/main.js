@@ -714,8 +714,12 @@
         $(this).css("opacity","1")
     });
 
-
-
+    //Fancy Box
+    $(".galleryimage, #aboutimg").hover(function(){
+        $(".popup").fadeIn();
+        },function(){
+            $(".popup").fadeOut();
+    });
 
     // "Hide" Functions
     function hidehome(){
