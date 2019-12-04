@@ -714,6 +714,17 @@ body {
     opacity: 0.6;
 }
 
+.popup{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    display: none;
+}
+
 
 /*  ---------- CODING GALLERY ----------- */
 .galleryframe {
@@ -759,6 +770,7 @@ body {
     box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.541);
     width: 51.8%;
     height: 80%;
+    z-index: 2;
 }
 
 .gallerybtn{
@@ -1101,6 +1113,7 @@ body {
     left: 18.5%;
     opacity: 0;
 }
+
 
 
 
