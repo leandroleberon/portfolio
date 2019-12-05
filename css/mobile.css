@@ -50,7 +50,7 @@ body:after{
     top: 6%;
     color: white;
     font-weight: 200;
-    font-family: 'Righteous', cursive;
+    font-family:'Righteous';
     opacity: 1;
 }
 
@@ -284,22 +284,22 @@ body:after{
     font-size: 10vw;
     color: white;
     font-weight: 100;
-    font-family: 'Righteous', cursive;
+    font-family:'Righteous';
     opacity: 0;
 }
 
-.line-1{
+.home p{
     position: relative;
     transform: translate(-50%);
     -webkit-transform:translate(-50%);
     top: 32%;  
     left: 50%;
-    width: 34%;
+    width: auto;
     border-right: 2px solid transparent;
+    font-family:'Ubuntu';
     font-size: 3.3vw;
     color: white;
-    white-space: nowrap;
-    overflow: hidden;
+    display: none;
 }
 
 #explorebtn{
@@ -310,7 +310,6 @@ body:after{
     border: solid white 2px;
     padding: 10px;
     border-radius: 0%;
-    
     display: none;
 }
 
@@ -335,23 +334,6 @@ body:after{
     from {top:0; opacity: 0;}
     to {top:35%; opacity: 1;}
 }
-
-.typewriter{
-animation: typewriter 2s steps(24) 1s 1 normal both,
-            blinkTextCursor 2.3s steps(1) normal;
-    animation-delay: 2.7s;
-}
-
-@keyframes typewriter{
-from{width: 0;}
-to{width: 34%;}
-}
-
-@keyframes blinkTextCursor{
-from{border-right-color: rgb(255, 255, 255);}
-to{border-right-color: white;}
-}
-
 
 
 
