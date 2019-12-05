@@ -84,7 +84,7 @@
     idleTime: 3,
 
     // Disable right-click and use simple image protection for images
-    protect: false,
+    protect: true,
 
     // Shortcut to make content "modal" - disable keyboard navigtion, hide buttons, etc
     modal: false,
@@ -94,7 +94,7 @@
       //   true  - wait for image to load and then display;
       //   false - display thumbnail and load the full-sized image over top,
       //           requires predefined image dimensions (`data-width` and `data-height` attributes)
-      preload: false
+      preload: true
     },
 
     ajax: {
@@ -353,7 +353,7 @@
       preventCaptionOverlap: false,
       idleTime: false,
       clickContent: function (current, event) {
-        return current.type === "image" ? "toggleControls" : false;
+        return current.type === "image" ? "toggleControls" : "close";
       },
       clickSlide: function (current, event) {
         return current.type === "image" ? "toggleControls" : "close";
@@ -570,7 +570,7 @@
       // Hide scrollbars
       // ===============
 
-      $("body").addClass("fancybox-active");
+      $("body").addClass("fancybox-.active");     //LEANDRO, THIS IS THE SETTING THAT MAKES THE PAGE SCROLL TO THE TOP. ORIGINA: "$("body").addClass("fancybox-active");"
 
       if (
         !$.fancybox.getInstance() &&
@@ -2909,7 +2909,7 @@
       if (instance) {
         instance.activate();
       } else {
-        $("body").removeClass("fancybox-active compensate-for-scrollbar");
+        $("body").removeClass("fancybox-.active compensate-for-scrollbar");  //LEANDRO, THIS IS THE SECOND PART. ORIGINAL: "$("body").removeClass("fancybox-active compensate-for-scrollbar");"
 
         $("#fancybox-style-noscroll").remove();
       }
