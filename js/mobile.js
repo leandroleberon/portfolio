@@ -26,8 +26,8 @@ jQuery(function ($) { "use strict";
   });
 
   //Home
-
-  $("#explorebtn").delay(5500).fadeIn(700);
+  $(".home p").delay(2700).fadeIn(700);
+  $("#explorebtn").delay(3700).fadeIn(700);
   $("#explorebtn").hover(function(){
     $("#explorebtn a").css("color","rgb(29, 29, 29)");
     $(this).css("background-color","white");
