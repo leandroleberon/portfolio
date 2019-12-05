@@ -25,6 +25,18 @@ jQuery(function ($) { "use strict";
 
   });
 
+  //Home
+
+  $("#explorebtn").delay(5500).fadeIn(700);
+  $("#explorebtn").hover(function(){
+    $("#explorebtn a").css("color","rgb(29, 29, 29)");
+    $(this).css("background-color","white");
+    $(this).css("transition",".3s");
+  },function(){
+    $("#explorebtn a").css("color","white");
+    $(this).css("background-color","");
+  });
+
   //Menu
   $("#menuicon").hover(function(){
     $("#menu").css("transform","translateX(500px)")
@@ -39,7 +51,7 @@ jQuery(function ($) { "use strict";
   });
 
   //Contact 
-  $("#contactbtn").hover(function(){
+  $("#contactbtn, #contact, #email, #phone").hover(function(){
     $("#contact").css("transform","translateX(-500px)");
     $("#contact").css("-webkit-transform","translateX(-500px)")
   },function(){
@@ -47,9 +59,28 @@ jQuery(function ($) { "use strict";
     $("#contact").css("-webkit-transform","translateX(0px)")
   });
 
+  $("#email").hover(function(){
+    $(this).css("color","grey");
+    $("#alticon").css("color","grey");
+    $("#copied").fadeIn().delay(500).fadeOut();
+  },function(){
+    $(this).css("color","white");
+    $("#alticon").css("color","white");
+  });
+
+  $("#phone").hover(function(){
+    $("#phone a").css("color","grey");
+    $("#phoneicon").css("color","grey");
+  },function(){
+    $("#phone a").css("color","white");
+    $("#phoneicon").css("color","white");
+  });
+
   
   //Copy to Clipboard
   new ClipboardJS('.btn');
+  
+
 });
 
 
