@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
+    <title>Leandro's Portfolio</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Leandro Leberon's Portfolio">  
+    <meta name="author" content="Leandro Leberon">
     <meta name="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=0.5">
 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <meta name="description" content="Leandro Leberon's Portfolio">
-    
-    <meta name="author" content="Leandro Leberon">
-    
-    <title>Leandro's Portfolio</title>
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/llblack.png">
     
     <!-- Main CSS File -->
     <link rel="stylesheet" href="css/mobile.css">
 
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="js/swiper-5.2.0/package/css/swiper.css">
+
+    <!-- Fancy Box -->
+    <link rel="stylesheet" href="js/fancybox/dist/jquery.fancybox.css">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
@@ -45,11 +48,9 @@
             <li><i class="far fa-envelope"></i><a id="contactbtn">Contact</a></li>
         </ul>
         <div id="contact">
-            <ul>
-                <li class="btn" title="Copy to Clipboard." data-clipboard-text="leandroleveron@gmail.com">leandroleveron@gmail.com</li>
-                <li><a href="tel:8503457072">(850)345-7072</a></li>
-                <li></li>
-            </ul>
+            <p id="email" class="btn" title="Copy to Clipboard." data-clipboard-text="leandroleveron@gmail.com"><i class="fas fa-at" id="alticon"></i>leandroleveron@gmail.com</p>
+            <p id="phone"><a href="tel:8503457072"><i class="fas fa-phone" id="phoneicon"></i>(850) 345-7072</a></p>
+            <div id="copied">Copied!</div>
         </div>
         <div id=smbox>
             <a id="lkin" href="https://www.linkedin.com/in/leandroleberon/" target="_blank"><img src="https://i.ibb.co/qMmJWN2/linkedin-logo.png"></a>
@@ -64,14 +65,14 @@
         <div class="home">
             <h1 class="nameappear">Leandro Leberon</h1>
             <p class="line-1 typewriter">Welcome to my Portfolio.</p>
-            <a href="#about" id="button" class="buttonappear">Explore</a>
+            <div id="explorebtn"><a href="#about">Explore</a></div>
         </div>
     </div> 
 
     <!-- About Section (Mobile) -->
     <div id="about" class="frame">
         <div class="about hidden invisible">
-            <div id="aboutimg"></div>
+            <div id="aboutimg"><a data-fancybox href="images/headshot2.jpg"></a></div>
             <h1 id="abouth1">About Me</h1>
             <div id="plane1"></div>
             <div id="plane2"></div>
@@ -150,7 +151,7 @@
                     <div id="weatherapp" class="swiper-slide">
                         <h1 id="weatherapph1" class="galleryh1">Weather App</h1>
                         <p id="weatherappp" class="galleryp">A simple software I created with Python's Tkinter. The program gets a City as a user input and outputs the current weather conditions in the specified city.</p>
-                        <img src="images/Weatherapp.png" id="weatherappimg" class="galleryimage">
+                        <img src="images/Weatherapp.png" id="weatherappimg" class="galleryimage" data-fancybox href="images/Weatherapp.png">
                         <a id="weatherappbtn1" class="gallerybtn" href="https://github.com/leandroleberon/weather-app" target="_blank">code</a>
                         <a id="weatherappbtn2" class="gallerybtn" href="https://github.com/leandroleberon/weather-app/raw/master/dist/WeatherApp.exe" target="_blank">.exe</a>
                     </div>
@@ -158,14 +159,14 @@
                     <div id="portfolio" class="swiper-slide">
                         <h1 id="portfolioh1" class="galleryh1">Online Portfolio</h1>
                         <p id="portfoliop" class="galleryp">This very website! I developed my online portfolio from scratch using HTML5, CSS, and JQuery. This was a project for my IT Perspectives course at FSU.</p>
-                        <img src="images/portfolio.png" id="portfolioimg" class="galleryimage">
+                        <img src="images/portfolio.png" id="portfolioimg" class="galleryimage" data-fancybox href="images/portfolio.png">
                         <a id="portfoliobtn" class="gallerybtn" href="https://github.com/leandroleberon/Portfolio" target="_blank">code</a>
                     </div>
         
                     <div id="resume" class="swiper-slide">
                         <h1 id="resumeh1" class="galleryh1">Online Resume</h1>
                         <p id="resumep" class="galleryp">This was my first project for the IT Perspectives course at FSU and also the first website I ever created. I developed my online resume using HTML5, CSS, Bootstrap and JavaSript.</p>
-                        <img src="images/resume.png" id="resumeimg" class="galleryimage">
+                        <img src="images/resume.png" id="resumeimg" class="galleryimage" data-fancybox href="images/resume.png">
                         <a id="resumebtn1" class="gallerybtn" href="https://github.com/leandroleberon/Resume" target="_blank">code</a>
                         <a id="resumebtn2" class="gallerybtn" href="https://leandroleberon.github.io/Resume/" target="_blank">visit</a>
                     </div>
@@ -196,28 +197,28 @@
                     <div id="doughnuts" class="swiper-slide">
                         <h1 id="doughnutsh1" class="galleryh1">Coffee and Doughnuts</h1>
                         <p id="doughnutsp" class="galleryp">This is a rendered scene of some coffee and doughnuts sitting in a table. I used Blender to create this scene.</p>
-                        <img src="images/Doughnuts.png" id="doughnutsimg" class="galleryimage">
+                        <img src="images/Doughnuts.png" id="doughnutsimg" class="galleryimage" data-fancybox href="images/Doughnuts.png">
                         <a id="doughnutsbtn" class="gallerybtn" href="https://github.com/leandroleberon/Portfolio/raw/master/animation/Doughnuts%20and%20Coffee.blend" target="_blank">.blend</a>
                     </div>
 
                     <div id="bowling" class="swiper-slide">
                         <h1 id="bowlingh1" class="galleryh1">Bowling Scene</h1>
                         <p id="bowlingp" class="galleryp">This is a rendered scene of a bowling ball hitting some pins and it is one of several projects I did as part of a Udemy course. I used Blender to create this scene.</p>
-                        <img src="images/Bowling.png" id="bowlingimg" class="galleryimage">
+                        <img src="images/Bowling.png" id="bowlingimg" class="galleryimage" data-fancybox href="images/Bowling.png">
                         <a id="bowlingbtn" class="gallerybtn" href="https://github.com/leandroleberon/Portfolio/raw/master/animation/Bowling%20Scene.blend" target="_blank">.blend</a>
                     </div>
 
                     <div id="concrete" class="swiper-slide">
                         <h1 id="concreteh1" class="galleryh1">Reflections</h1>
                         <p id="concretep" class="galleryp">This is a rendered scene of a shiny ball reflecting light on a concrete floor. I created this while experimenting with Blender reflection maps. </p>
-                        <img src="images/Concrete.png" id="concreteimg" class="galleryimage">
+                        <img src="images/Concrete.png" id="concreteimg" class="galleryimage" data-fancybox href="images/Concrete.png">
                         <a id="concretebtn" class="gallerybtn" href="https://github.com/leandroleberon/Portfolio/raw/master/animation/Concrete%20Plane%20and%20Shining%20Ball.blend" target="_blank">.blend</a>
                     </div>
 
                     <div id="flag" class="swiper-slide">
                         <h1 id="flagh1" class="galleryh1">Wavering Flag</h1>
                         <p id="flagp" class="galleryp">This is a rendered video of a wavering flag. I created this while experimenting with Blender's physics engine.</p>
-                        <img src="images/Flag.gif" id="flagimg" class="galleryimage">
+                        <img src="images/Flag.gif" id="flagimg" class="galleryimage" data-fancybox href="images/Flag.gif">
                         <a id="flagbtn" class="gallerybtn" href="https://github.com/leandroleberon/Portfolio/raw/master/animation/Brazil%20Flag.blend" target="_blank">.blend</a>
                     </div>
                     ...
@@ -246,23 +247,26 @@
     </script>
 
     <!-- Jquery and Jquery Mobile JS Files -->
-    <script src="js/jquery/dist/jquery.min.js"></script> 
-    <script src="js/jquerymobile/jquery.mobile-1.4.5.min.js"></script> 
+    <script type="text/javascript" src="js/jquery/dist/jquery.js"></script> 
+    <script type="text/javascript" src="js/jquerymobile/jquery.mobile-1.4.5.js"></script> 
 
     <!-- Main JS File -->
-    <script src="js/mobile.js"></script> 
+    <script type="text/javascript" src="js/mobile.js"></script> 
 
     <!-- Copy to Clipboard Plugin -->
-    <script src="js/clipboard.js-master/dist/clipboard.min.js"></script> 
+    <script type="text/javascript" src="js/clipboard.js-master/dist/clipboard.min.js"></script> 
 
     <!-- Font Awesome Plugin -->
-    <script src="https://kit.fontawesome.com/741946e2e6.js" crossorigin="anonymous"></script> 
+    <script type="text/javascript" src="https://kit.fontawesome.com/741946e2e6.js" crossorigin="anonymous"></script> 
 
     <!-- Smooth Scroll Plugin -->
-    <script src="js/smooth-scroll/dist/js/smooth-scroll.min.js"></script> 
+    <script type="text/javascript" src="js/smooth-scroll/dist/js/smooth-scroll.min.js"></script> 
 
     <!-- Swiper Gallery -->
-    <script src="js/swiper-5.2.0/package/js/swiper.js"></script>
+    <script type="text/javascript" src="js/swiper-5.2.0/package/js/swiper.js"></script>
+
+    <!-- Fancy Box -->
+    <script type="text/javascript" src="js/fancybox/dist/jquery.fancybox.js"></script>
     
 
   </body>
