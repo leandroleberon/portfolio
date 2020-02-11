@@ -427,42 +427,6 @@
     function showabout(){
         $(".about").removeClass("hidden").removeClass("invisible").addClass("active")
         if ($(".about").hasClass("flag") == false){
-            $("#abouth1").delay(1000).animate({
-                top: "-=10%",
-                opacity: 1
-            }, 1000);
-            $("#aboutp").delay(1200).animate({
-                top: "-=10%",
-                opacity: 1
-            }, 1000);
-            $("#aboutimg").delay(1200).animate({
-                top: "-=10%",
-                opacity: 1
-            }, 1000);
-            $("#hondurasp").delay(1400).animate({
-                top: "-=10%",
-                opacity: 1
-            }, 1000);
-            $("#hondurasimg").delay(1400).animate({
-                top: "-=10%",
-                opacity: 1
-            }, 1000);
-            $("#panamap").delay(1600).animate({
-                top: "-=10%",
-                opacity: 1
-            }, 1000);
-            $("#panamaimg").delay(1600).animate({
-                top: "-=10%",
-                opacity: 1
-            }, 1000);
-            $("#floridap").delay(1800).animate({
-                top: "-=10%",
-                opacity: 1
-            }, 1000);
-            $("#floridaimg").delay(1800).animate({
-                top: "-=10%",
-                opacity: 1
-            }, 1000);
             planeanimation1();
             planeanimation2();
             $(".about").addClass("flag")

@@ -210,7 +210,11 @@ body {
     left: 150px;
 }
 
-
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
 
 
 /*  ---------- HOME ----------- */
@@ -224,42 +228,40 @@ body {
 }
 
 .home h1{
-    position: relative;
-    top: 30%;
     font-size: 70px;
     color: white;
     font-weight: 100;
     font-family: 'Righteous', cursive;
-    opacity: 0;
+    opacity: 1;
     
 }
 
 .line-1{
     position: relative;
-    top: 25%;  
-    left: 40%;
+    transform: translate(-50%);
+    left: 50%;
     width: 24em;
     border-right: 2px solid transparent;
-    font-size: 30px;
+    font-size: 23px;
     color: white;
     white-space: nowrap;
     overflow: hidden;
 }
 
-.home #button {
-    position: absolute;
-    top: 60%;
-    left: 47%;
+#explorebtn {
+    position: relative;
+    transform: translate(-50%);
+    left:50%;
+    width: 100px;
     font-family: 'Ubuntu', sans-serif;
     color: white;
     font-size: 20px;
     border: solid white 2px;
     padding: 10px;
-    opacity: 0;
-    border-radius: 0%;
+    opacity: 1;
 }
 
-.home #button:hover{
+#explorebtn:hover{
     cursor: pointer;
     background-color: white;
     color: rgb(29, 29, 29);
@@ -289,7 +291,7 @@ body {
 
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 10.5em;}
+  to{width: 11em;}
 }
 
 @keyframes blinkTextCursor{
@@ -318,54 +320,92 @@ body {
     width:100%;
     height:100%;
     background-color: rgba(0, 0, 0, 0);
-    display: none;
-}
-
-#aboutimg{
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    top: 20%;
-    left: 22%;
-    background-image: url(../images/headshot2.jpg);
-    background-size: cover;
-    background-position: center;
-    border: rgb(59, 59, 59) solid 1px;
-    opacity: 0;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.514); 
+    display: visible;
+    border: solid blue;
 }
 
 #abouth1{
-    position: absolute;
-    transform:translate(-50%);
+    position: relative;
     font-size: 50px;
-    left: 50%;
-    top: 5%;
+    top: 10%;
     color: white;
     font-weight: 200;
     font-family: 'Righteous', cursive;
-    opacity: 0;
+    display: visible;
+    text-align: center;
+}
+
+#aboutimg{
+    position: relative;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    border: rgb(59, 59, 59) solid 1px;
+    display: visible;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.514); 
 }
 
 #aboutp{
-    position: absolute;
     font-size: 22px;
-    width: 38%;
+    width: 50%;
+    max-width: 600px;
     padding-left: 10px;
-    line-height: 1.5;
-    text-align: center;
-    top: 24%;
-    left: 37%;
-    color: white;
-    font-weight: 100;
-    font-family: Ubuntu;
-    opacity: 0;
-    line-height: 2;
+    margin-top: 3%;
+    margin-bottom: 3%;
     padding-top: 2%;
     padding-bottom: 2%;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    font-family: "Ubuntu", sans-serif;
+    line-height: 2;
     border-top: solid rgb(209, 209, 209) 1px;
     border-bottom: solid rgb(209, 209, 209)1px;
+    display: visible;
+}
+
+#hondurasp, #panamap, #floridap{
+    font-size: 17px;
+    line-height: 1.5;
+    color: white;
+    font-weight: 100;
+    font-family: "Ubuntu", sans-serif;
+    line-height: 2;
+    padding-top: 10%;
+    display: visible;
+}
+
+#hondurasimg{
+    position: relative;
+    transform: translate(-50%);
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    background-image: url(../images/honduras.png);
+    background-size: contain;
+    display: visible;
+}
+
+#panamaimg{
+    position: relative;
+    transform: translate(-50%);
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    background-image: url(../images/panama.png);
+    background-size: contain;
+    display: visible;
+}
+
+#floridaimg{
+    position: relative;
+    transform: translate(-50%);
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background-image: url(../images/florida.png);
+    background-size: contain;
+    display: visible;
 }
 
 #plane1{
@@ -377,7 +417,7 @@ body {
     background-repeat: no-repeat;
     bottom: 17%;
     left: 20%;
-    opacity: 0;
+    display: visible;
 }
 
 #plane2{
@@ -389,87 +429,8 @@ body {
     background-repeat: no-repeat;
     bottom: 15%;
     right: 43%;
-    opacity: 0;
+    display: visible;
     transform: rotate(-8deg);
-}
-
-#hondurasp{
-    position: absolute;
-    font-size: 17px;
-    width: 400px;
-    line-height: 1.5;
-    text-align: center;
-    top: 59%;
-    left: 6%;
-    color: white;
-    font-weight: 100;
-    font-family: Ubuntu;
-    opacity: 0;
-    line-height: 2;
-}
-
-#hondurasimg{
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    top: 75%;
-    left: 9.5%;
-    background-image: url(../images/honduras.png);
-    background-size: contain;
-    opacity: 0;
-}
-
-#panamap{
-    position: absolute;
-    font-size: 17px;
-    width: 400px;
-    height: 350px;
-    line-height: 1.5;
-    text-align: center;
-    top: 59%;
-    left: 37%;
-    color: white;
-    font-weight: 100;
-    font-family: Ubuntu;
-    opacity: 0;
-    line-height: 2;
-}
-
-#panamaimg{
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    top: 75%;
-    left: 40.5%;
-    background-image: url(../images/panama.png);
-    background-size: contain;
-    opacity:0;
-}
-
-#floridap{
-    position: absolute;
-    font-size: 17px;
-    width: 400px;
-    line-height: 1.5;
-    text-align: center;
-    top: 59%;
-    right: 6%;
-    color: white;
-    font-weight: 100;
-    font-family: Ubuntu;
-    opacity: 0;
-    line-height: 2;
-}
-
-#floridaimg{
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    top: 83%;
-    right: 12%;
-    background-image: url(../images/florida.png);
-    background-size: contain;
-    opacity: 0;
 }
 
 

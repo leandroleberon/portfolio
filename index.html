@@ -34,6 +34,8 @@
 
   <body>
 
+    <div class="frame"></div>
+
     <!--  Navigation Bar  -->
     <div class="navbar">
       <ul>
@@ -59,26 +61,100 @@
     </div>
     
     <!--  Home Section  -->
-    <div class="home">
-      <h1 class="nameappear">Leandro Leberon</h1>
-      <p class="line-1 typewriter">Welcome to my Portfolio.</p>
-      <div id="button" class="buttonappear">Explore</div>
+    <div class="container home">
+
+      <div class="row" style="border: solid green; height: 35%;">
+        <div class="col-lg-12">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 text-center" style="border: solid red;">
+          <h1>Leandro Leberon</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 text-center" style="border: solid red;">
+          <p class="line-1 typewriter">Welcome to my Portfolio.</p>
+        </div>
+      </div>
+
+      <div class="row" style="padding-top: 3%;">
+        <div class="col-lg-12 text-center" style="border: solid red;">
+          <div id="explorebtn">Explore</div>
+        </div>
+      </div>
+
     </div>
 
-    <!--  About Section  -->
-    <div class="about hidden invisible">
-      <div id="aboutimg"><a data-fancybox href="images/headshot2.jpg"><img class="popup" src="images/magnifywhite.png"></a></div>
-      <h1 id="abouth1">About Me</h1>
+    <!-- =========  About Section ==========  -->
+    <div class="container about hidden invisible">
+
+      <div class="row" style="border: solid green; height: 10%;">
+        <div class="col-lg-12">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12" style="border: solid red;">
+          <h1 id="abouth1">About Me</h1>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-5 text-right" style="border: solid red;">
+          <div>
+            <img src="./images/headshot2.jpg" id="aboutimg"><a data-fancybox href="images/headshot2.jpg"><img class="popup" src="images/magnifywhite.png"></a></img>
+          </div>
+        </div>
+
+        <div class="col-lg-7 text-left" style="border: solid red;">
+          <p id="aboutp">I'm 22 years old and I'm a senior at Florida State University majoring in Information and Communications Technology.</p>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-1"></div>
+        <div class="col-lg-3 text-center" style="border: solid red;">
+          <p id="hondurasp">I was born at the very center of Central America, Honduras, where I attended high school and lived my childhood. </p>
+        </div>
+        
+        <div class="col-lg-4 text-center" style="padding-left: 5%; padding-right: 5%; border: solid red;">
+          <p id="panamap">After graduating from high school, I found about FSU's 2+2 Program, which involved completing two years of college in Panama.</p>
+        </div>
+        
+        <div class="col-lg-3 text-center" style="border: solid red;">
+          <p id="floridap">After completing two years of college in Panama, I transfered to FSU's main campus and I'm now finishing my major. </p>
+        </div>
+        <div class="col-lg-1"></div>
+    
+      </div>
+      
+      <div class="row">
+
+        <div class="col-lg-1"></div>
+        <div class="col-lg-3" style="border: solid red;">
+          <div id="hondurasimg"></div>
+        </div>
+        
+        <div class="col-lg-4" style="border: solid red;">
+          <div id="panamaimg"></div>
+        </div>
+        
+        <div class="col-lg-3" style="padding-top: 3%; border: solid red;">
+          <div id="floridaimg"></div>
+        </div>
+        <div class="col-lg-1"></div>
+        
+      </div>
+      
+
       <div id="plane1"></div>
       <div id="plane2"></div>
-      <p id="aboutp">I'm 22 years old and I'm a senior at Florida State University majoring in Information and Communications Technology.</p>
-      <p id="hondurasp">I was born at the very center of Central America, Honduras, where I attended high school and lived my childhood. </p>
-      <div id="hondurasimg"></div>
-      <p id="panamap">After graduating from high school, I found about FSU's 2+2 Program, which involved completing two years of college in Panama.</p>
-      <div id="panamaimg"></div>
-      <p id="floridap">After completing two years of college in Panama, I transfered to FSU's main campus and I'm now finishing my major. </p>
-      <div id="floridaimg"></div>
     </div>
+
 
     <!--  Education Section  -->
     <div class="education hidden invisible">
@@ -248,7 +324,7 @@
     <div id="bird" class="hidden-md"></div>
     <div class="logo hidden-sm hidden-xs"></div>
 
-    <div class="frame"></div>
+    
         
     <div id="nextsection" class="nextprevsection">Next Section</div>
     <div id="prevsection" class="nextprevsection">Previous Section</div>
