@@ -9,13 +9,15 @@
     <meta name="author" content="Leandro Leberon">
 
     <!-- Fav Icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/llblack.png">
+    <link rel="shortcut icon" type="image/x-icon" href="images/llwhite/.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!-- Fancy Box CSS -->
     <link rel="stylesheet" href="js/fancybox/dist/jquery.fancybox.css">
     <!-- AOS CSS -->
-    <link href="./node_modules/aos/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <!-- My CSS File-->
     <link rel="stylesheet" href="css/style.css">
 
@@ -39,12 +41,12 @@
     <!--  Navigation Bar  -->
     <div class="navbar">
       <ul>
-          <li><a id="navhome" class="" href="#">Home</a></li>
-          <li><a id="navabout" class="" href="#">About</a></li>
-          <li><a id="naveducation" class="" href="#">Education</a></li>
-          <li><a id="navcoding" class="" href="#">Coding</a></li>
-          <li><a id="navanimation" class="" href="#">Animation</a></li>
-          <li><a id="navcontact" class="" href="#">Contact</a></li>
+          <li><a id="navhome" data-scroll href="#home">Home</a></li>
+          <li><a id="navabout" data-scroll href="#about">About</a></li>
+          <li><a id="naveducation" data-scroll href="#education">Education</a></li>
+          <li><a id="navcoding" data-scroll href="#coding">Coding</a></li>
+          <li><a id="navanimation" data-scroll href="#animation">Animation</a></li>
+          <li><a id="navcontact" data-scroll href="#contact">Contact</a></li>
           <div class="underlined"></div>
       </ul>
     </div>
@@ -59,29 +61,32 @@
         <a id="twitter" class="smicon" href="https://twitter.com/leoleveron" target="_blank"></a>
         <a id="instagram" class="smicon" href="https://www.instagram.com/leo.leveron/" target="_blank"></a>
     </div>
+
+    <div class="logo hidden-sm hidden-xs"></div>
     
+
     <!--  Home Section  -->
-    <div class="home">
+    <div id="home" class="section">
 
-      <div class="row" style="border: solid green; height: 35%;">
-        <div class="col-lg-12">
+      <div class="row" style="height: 35%;">
+        <div class="col-xl-12">
+        </div>
+      </div>
+
+      <div class="row" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="900">
+        <div class="col-xl-12 text-center">
+          <h1 style="font-size: 3.2vw">Leandro Leberon</h1>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-lg-12 text-center" style="border: solid red;">
-          <h1>Leandro Leberon</h1>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-12 text-center" style="border: solid red;">
+        <div class="col-xl-12 text-center">
           <p class="line-1 typewriter">Welcome to my Portfolio.</p>
         </div>
       </div>
 
-      <div class="row" style="padding-top: 3%;">
-        <div class="col-lg-12 text-center" style="border: solid red;">
+      <div class="row" style="padding-top: 3%;" data-aos="fade-in" data-aos-duration="3000" data-aos-delay="3000">
+        <div class="col-xl-12 text-center">
           <div id="explorebtn">Explore</div>
         </div>
       </div>
@@ -89,48 +94,48 @@
     </div>
 
     <!-- =========  About Section ==========  -->
-    <div class="about hidden invisible">
+    <div id="about" class="section">
 
-      <div class="row" style="border: solid green; height: 10%;">
-        <div class="col-lg-12">
+      <div class="row" style="height: 12%;">
+        <div class="col-xl-12">
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-lg-12">
-          <h1 id="abouth1">About Me</h1>
+      <div class="row" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
+        <div class="col-xl-12">
+          <h1>About Me</h1>
         </div>
       </div>
       
-      <div class="row mt-3" style="border: solid red;">
-        <div class="col-lg-5 text-right">
+      <div class="row mt-5">
+        <div class="col-xl-5 text-right">
           <div>
             <div id="aboutimg">
-            <a data-fancybox href="images/headshot2.jpg"><img class="popup" src="images/magnifywhite.png"></a>
+              <a data-fancybox href="images/me.jpg"><img class="popup" src="images/magnifywhite.png"></a>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-7 text-left">
+        <div class="col-xl-7 text-left">
           <p id="aboutp">I'm 22 years old and I'm a senior at Florida State University majoring in Information and Communications Technology.</p>
         </div>
       </div>
 
       <div class="row mt-5">
 
-        <div class="col-lg-1"></div>
-        <div class="col-lg-3 text-center" style="padding-left: 2%; padding-right: 2%;">
+        <div class="col-xl-1"></div>
+        <div class="col-xl-3 text-center" style="padding-left: 3%; padding-right: 3%;">
           <p id="hondurasp">I was born at the very center of Central America, Honduras, where I attended high school and lived my childhood. </p>
         </div>
         
-        <div class="col-lg-4 text-center" style="padding-left: 7%; padding-right: 7%;">
+        <div class="col-xl-4 text-center" style="padding-left: 7%; padding-right: 7%;">
           <p id="panamap">After graduating from high school, I found about FSU's 2+2 Program, which involved completing two years of college in Panama.</p>
         </div>
         
-        <div class="col-lg-3 text-center" style="padding-left: 3%; padding-right: 3%;">
+        <div class="col-xl-3 text-center" style="padding-left: 3%; padding-right: 3%;">
           <p id="floridap">After completing two years of college in Panama, I transfered to FSU's main campus and I'm now finishing my major. </p>
         </div>
-        <div class="col-lg-1"></div>
+        <div class="col-xl-1"></div>
     
       </div>
       
@@ -156,134 +161,167 @@
       <div id="plane1"></div>
       <div id="plane2"></div>
     </div>
-
+  </div>
 
     <!--  Education Section  -->
-    <div class="education hidden invisible">
-      <h1 id="educationh1">Education</h1>
+    <div id="education" class="section">
 
-      <div id="istbox">
-        <div id="istdate">2015</div>
-        <div id="istimg"></div>
-        <h1 id="isth1">International School</h1>
-        <p id="istp">I completed Middle School and High School at International School Tegucigalpa. I graduated from IST on Summer 2015. </p>
-        <a id="istbutton" href="http://internationalschool.hn/about-us/" target="_blank">More</a>
-      </div>
-      
-      <div id="fsubox">
-        <div id="fsudate">2020</div>
-        <div id="fsuimg"></div>
-        <h1 id="fsuh1">Florida State University</h1>
-        <p id="fsup">I am currently pursuing a major in Information and Communications Technology at Florida State University. I'm expecting to graduate Summer 2020.</p>
-        <a id="fsubutton" href="https://ischool.cci.fsu.edu/programs/undergrad-programs/information-communication-and-technology/" target="_blank">More</a>
+      <div class="row" style="height: 12%;">
+        <div class="col-xl-12">
+        </div>
       </div>
 
-      <div id="udemybox">
-        <div id="udemydate">Ongoing</div>
-        <div id="udemyimg"></div>
-        <h1 id="udemyh1">Udemy</h1>
-        <p id="udemyp">I completed a 3D Animation course and a Drawing course in 2018 and I'm currently enrolled in a Web Development course.
-        </p>
-        <a id="udemybutton" href="https://www.udemy.com/user/leandro-leberon/" target="_blank">More</a>
+      <div class="row">
+        <div class="col-xl-12">
+          <h1>Education</h1>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 7%;">
+
+        <div id="istbox" class="d-inline">
+          <div id="istdate">2015</div>
+          <div id="istimg"></div>
+          <h1 id="isth1">International School</h1>
+          <p id="istp">I completed Middle School and High School at International School Tegucigalpa. I graduated from IST on Summer 2015. </p>
+          <a id="istbutton" href="http://internationalschool.hn/about-us/" target="_blank">More</a>
+        </div>
+        
+        <div id="fsubox" class="d-inline">
+          <div id="fsudate">2020</div>
+          <div id="fsuimg"></div>
+          <h1 id="fsuh1">Florida State University</h1>
+          <p id="fsup">I am currently pursuing a major in Information and Communications Technology at Florida State University. I'm expecting to graduate Summer 2020.</p>
+          <a id="fsubutton" href="https://ischool.cci.fsu.edu/programs/undergrad-programs/information-communication-and-technology/" target="_blank">More</a>
+        </div>
+
+        <div id="udemybox" class="d-inline">
+          <div id="udemydate">Ongoing</div>
+          <div id="udemyimg"></div>
+          <h1 id="udemyh1">Udemy</h1>
+          <p id="udemyp">I completed a 3D Animation course and a Drawing course in 2018 and I'm currently enrolled in a Web Development course.
+          </p>
+          <a id="udemybutton" href="https://www.udemy.com/user/leandro-leberon/" target="_blank">More</a>
+        </div>
+
       </div>
     </div>
 
     <!--  Coding Section  -->
-    <div class="coding hidden invisible">
-      <h1 id="codingh1">Coding Gallery</h1>
-      <p id="codingp">Programming is a great part of my career. I enjoy learning new languages, developing websites and creating small software.</p>
-      <div id="codinglines"></div>
+    <div id="coding" class="section">
 
-      <div class="cdots">
-        <div id="cdot1"></div>
-        <div id="cdot2"></div>
-        <div id="cdot3"></div>
+      <div class="row" style="height: 12%;">
+        <div class="col-xl-12">
+        </div>
       </div>
 
-      <div id="codingframe" class="galleryframe">
-
-        <div id="codingprev" class="previous"></div>
-        <div id="codingnext" class="next"></div>
-
-        <div id="imgborder"></div>
-
-        <div id="weatherapp" class="*">
-          <h1 id="weatherapph1">Weather App</h1>
-          <p id="weatherappp">A simple software I created with Python's Tkinter. The program gets a City as a user input and outputs the current weather conditions in the specified city.</p>
-          <div id="weatherappimg" class="galleryimage"><a data-fancybox href="images/Weatherapp.png"><img class="popup" src="images/magnify.png"></a></div>
-          <a id="weatherappbtn1" class="gallerybtn" href="https://github.com/leandroleberon/weather-app" target="_blank">code</a>
-          <a id="weatherappbtn2" class="gallerybtn" href="https://github.com/leandroleberon/weather-app/raw/master/dist/WeatherApp.exe" target="_blank">.exe</a>
+      <div class="row">
+        <div class="col-xl-12">
+          <h1>Coding Gallery</h1>
         </div>
-
-        <div id="portfolio" class="hidden invisible">
-          <h1 id="portfolioh1">Online Portfolio</h1>
-          <p id="portfoliop">This very website! I developed my online portfolio from scratch using HTML5, CSS, and JQuery. This was a project for my IT Perspectives course at FSU.</p>
-          <div id="portfolioimg" class="galleryimage"><a data-fancybox href="images/portfolio.png"><img class="popup" src="images/magnifywhite.png"></a></div>
-          <a id="portfoliobtn" class="gallerybtn" href="https://github.com/leandroleberon/Portfolio" target="_blank">code</a>
-        </div>
-
-        <div id="resume" class="hidden invisible">
-          <h1 id="resumeh1">Online Resume</h1>
-          <p id="resumep">This was my first project for the IT Perspectives course at FSU and also the first website I ever created. I developed my online resume using HTML5, CSS, Bootstrap and JavaSript.</p>
-          <div id="resumeimg" class="galleryimage"><a data-fancybox href="images/resume.png"><img class="popup" src="images/magnifywhite.png"></a></div>
-          <a id="resumebtn1" class="gallerybtn" href="https://github.com/leandroleberon/Resume" target="_blank">code</a>
-          <a id="resumebtn2" class="gallerybtn" href="https://leandroleberon.github.io/Resume/" target="_blank">visit</a>
-        </div>
-
       </div>
+
+      <div class="row" style="margin-top: 2%; margin-bottom: 2%;">
+        <div class="col-xl-12">
+          <p id="codingp">Programming is a great part of my career. I enjoy learning new languages, developing websites and creating small software.</p>
+        </div>
+      </div>
+      
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+            <h1 class="slideh1-left">Weather App</h1>
+            <p class="slidep-left">A simple software I created with Python's Tkinter. The program gets a City as a user input and outputs the current weather conditions in the specified city.</p>
+            <div id="weatherappimg" class="slideimg-right"><a data-fancybox href="images/Weatherapp.png"><img class="popup" src="images/magnify.png"></a></div>
+            <a class="slidebtn-left" href="https://github.com/leandroleberon/weather-app" target="_blank">code</a>
+            <a class="slidebtn-left" href="https://github.com/leandroleberon/weather-app/raw/master/dist/WeatherApp.exe" target="_blank">.exe</a>
+        </div>
+
+        <div class="swiper-slide">
+            <h1 class="slideh1-left">Online Portfolio</h1>
+            <p class="slidep-left">This very website! I developed my online portfolio from scratch using HTML5, CSS, and JQuery. This was a project for my IT Perspectives course at FSU.</p>
+            <div id="portfolioimg" class="slideimg-right"><a data-fancybox href="images/portfolio.png"><img class="popup" src="images/magnifywhite.png"></a></div>
+            <a class="slidebtn-single" href="https://github.com/leandroleberon/portfolio" target="_blank">code</a>
+        </div>
+
+        <div class="swiper-slide">
+            <h1 class="slideh1-left">Online Resume</h1>
+            <p class="slidep-left">This was my first project for the IT Perspectives course at FSU and also the first website I ever created. I developed my online resume using HTML5, CSS, Bootstrap and JavaSript.</p>
+            <div id="resumeimg" class="slideimg-right"><a data-fancybox href="images/resume.png"><img class="popup" src="images/magnifywhite.png"></a></div>
+            <a class="slidebtn-left" href="https://github.com/leandroleberon/resume" target="_blank">code</a>
+            <a class="slidebtn-left" href="https://leandroleberon.github.io/resume/" target="_blank">visit</a>
+        </div>
+        
+        </div>
+      </div>
+      
+      <div class="swiper-button-prev" data-aos="fade-up"></div>
+      <div class="swiper-button-next" data-aos="fade-up"></div>
+      
     </div>
 
     <!--  Animation Section  -->
-    <div class="animation hidden invisible">
-      <h1 id="animationh1">Animation Gallery</h1>
-      <p id="animationp">I do 3D modeling as a hobby in my free time. I enjoy being creative once in a while and bring my ideas to life.</p>
-      <div id="animationlines"></div>
+    <div id="animation" class="section">
 
-      <div class="adots">
-        <div id="adot1"></div>
-        <div id="adot2"></div>
-        <div id="adot3"></div>
-        <div id="adot4"></div>
+      <div class="row" style="height: 12%;">
+        <div class="col-xl-12">
+        </div>
       </div>
 
-      <div id="animationframe" class="galleryframe">
-
-        <div id="animationprev" class="previous"></div>
-        <div id="animationnext" class="next"></div>
-
-        <div id="doughnuts" class="*">
-          <h1 id="doughnutsh1">Coffee and Doughnuts</h1>
-          <p id="doughnutsp">This is a rendered scene of some coffee and doughnuts sitting in a table. I used Blender to create this scene.</p>
-          <div id="doughnutsimg" class="galleryimage"><a data-fancybox href="images/Doughnuts.png"><img class="popup" src="images/magnify.png"></a></div>
-          <a id="doughnutsbtn" class="gallerybtn" href="https://github.com/leandroleberon/Portfolio/raw/master/animation/Doughnuts%20and%20Coffee.blend" target="_blank">.blend</a>
+      <div class="row">
+        <div class="col-xl-12">
+          <h1 id="animationh1">Animation Gallery</h1>
         </div>
-
-        <div id="bowling" class="hidden invisible">
-          <h1 id="bowlingh1">Bowling Scene</h1>
-          <p id="bowlingp">This is a rendered scene of a bowling ball hitting some pins and it is one of several projects I did as part of a Udemy course. I used Blender to create this scene.</p>
-          <div id="bowlingimg" class="galleryimage"><a data-fancybox href="images/Bowling.png"><img class="popup" src="images/magnifywhite.png"></a></div>
-          <a id="bowlingbtn" class="gallerybtn" href="https://github.com/leandroleberon/Portfolio/raw/master/animation/Bowling%20Scene.blend" target="_blank">.blend</a>
-        </div>
-
-        <div id="concrete" class="hidden invisible">
-          <h1 id="concreteh1">Reflections</h1>
-          <p id="concretep">This is a rendered scene of a shiny ball reflecting light on a concrete floor. I created this while experimenting with Blender reflection maps. </p>
-          <div id="concreteimg" class="galleryimage"><a data-fancybox href="images/Concrete.png"><img class="popup" src="images/magnify.png"></a></div>
-          <a id="concretebtn" class="gallerybtn" href="https://github.com/leandroleberon/Portfolio/raw/master/animation/Concrete%20Plane%20and%20Shining%20Ball.blend" target="_blank">.blend</a>
-        </div>
-
-        <div id="flag" class="hidden invisible">
-          <h1 id="flagh1">Wavering Flag</h1>
-          <p id="flagp">This is a rendered video of a wavering flag. I created this while experimenting with Blender's physics engine.</p>
-          <div id="flagimg" class="galleryimage"><a data-fancybox href="images/Flag.gif"><img class="popup" src="images/magnifywhite.png"></a></div>
-          <a id="flagbtn" class="gallerybtn" href="https://github.com/leandroleberon/Portfolio/raw/master/animation/Brazil%20Flag.blend" target="_blank">.blend</a>
-        </div>
-
       </div>
+
+      <div class="row" style="margin-top: 2%; margin-bottom: 2%;">
+        <div class="col-xl-12">
+          <p id="animationp">I do 3D modeling as a hobby in my free time. I enjoy being creative once in a while and bring my ideas to life.</p>
+        </div>
+      </div>
+
+      <div class="swiper-container" data-aos="fade-up">
+        <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <h1 class="slideh1-left">Coffee and Doughnuts</h1>
+          <p class="slidep-left">This is a rendered scene of some coffee and doughnuts sitting in a table. I used Blender to create this scene.</p>
+          <div id="doughnutsimg" class="slideimg-right"><a data-fancybox href="images/Doughnuts.png"><img class="popup" src="images/magnify.png"></a></div>
+          <a class="slidebtn-single" href="https://github.com/leandroleberon/Portfolio/raw/master/animation/Doughnuts%20and%20Coffee.blend" target="_blank">.blend</a>
+        </div>
+
+        <div class="swiper-slide">
+          <h1 class="slideh1-left">Bowling Scene</h1>
+          <p class="slidep-left">This is a rendered scene of a bowling ball hitting some pins and it is one of several projects I did as part of a Udemy course. I used Blender to create this scene.</p>
+          <div id="bowlingimg" class="slideimg-right"><a data-fancybox href="images/Bowling.png"><img class="popup" src="images/magnifywhite.png"></a></div>
+          <a class="slidebtn-single" href="https://github.com/leandroleberon/Portfolio/raw/master/animation/Bowling%20Scene.blend" target="_blank">.blend</a>
+        </div>
+
+        <div class="swiper-slide">
+          <h1 class="slideh1-left">Reflections</h1>
+          <p class="slidep-left">This is a rendered scene of a shiny ball reflecting light on a concrete floor. I created this while experimenting with Blender reflection maps. </p>
+          <div id="concreteimg" class="slideimg-right"><a data-fancybox href="images/Concrete.png"><img class="popup" src="images/magnify.png"></a></div>
+          <a class="slidebtn-single"  href="https://github.com/leandroleberon/Portfolio/raw/master/animation/Concrete%20Plane%20and%20Shining%20Ball.blend" target="_blank">.blend</a>
+        </div>
+
+        <div class="swiper-slide">
+          <h1 class="slideh1-left">Wavering Flag</h1>
+          <p class="slidep-left">This is a rendered video of a wavering flag. I created this while experimenting with Blender's physics engine.</p>
+          <div id="flagimg" class="slideimg-right"><a data-fancybox href="images/Flag.gif"><img class="popup" src="images/magnifywhite.png"></a></div>
+          <a class="slidebtn-single"  href="https://github.com/leandroleberon/Portfolio/raw/master/animation/Brazil%20Flag.blend" target="_blank">.blend</a>
+        </div>
+
+        </div>
+        
+      </div>
+      <div class="swiper-button-prev" data-aos="fade-up"></div>
+      <div class="swiper-button-next" data-aos="fade-up"></div>
     </div>
 
     <!--  Contact Section  -->
-    <div class="contact hidden invisible">
+    <div id="contact" class="section">
       <h1 id="contacth1">Get In Touch</h1>
 
       <form id="contactform" action="https://formspree.io/leandroleveron@gmail.com" method="POST" target="_blank">
@@ -324,12 +362,7 @@
     </div>
 
     <div id="bird" class="hidden-md"></div>
-    <div class="logo hidden-sm hidden-xs"></div>
-
     
-        
-    <div id="nextsection" class="nextprevsection">Next Section</div>
-    <div id="prevsection" class="nextprevsection">Previous Section</div>
 
     <!-- Detect Phone or PC Script -->
     <script type="text/javascript">
@@ -346,6 +379,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <!-- Copy to Clipboard JS -->
     <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <!-- Smooth Scroll-->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
     <!-- Fancy Box JS -->
     <script src="js/fancybox/dist/jquery.fancybox.js"></script>
     <!-- Font Awesome -->

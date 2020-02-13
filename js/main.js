@@ -46,7 +46,66 @@
             top: "+=25%"
         }, 6000);
     });
+
+    //Smooth Scrolling
+    var scroll = new SmoothScroll('a[href*="#"]');
     
+    //AOS Config
+    AOS.init({
+        once: true,
+        duration: 700,
+    })
+    
+    //Swiper Settings
+    var mySwiper = new Swiper ('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        speed: 700,
+        effect: 'slide',
+        autoplay: false,
+        slidesPerView: 1,
+        spaceBetween: 55,
+        autoheight: true,
+
+        // If we need pagination
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        type: 'bullets',
+        },
+
+        // Navigation arrows
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+
+        },
+
+        //Breakpoints
+        breakpoints: {
+            300: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            },
+            768: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+            },
+            1024: {
+            slidesPerView: 1,
+            spaceBetween: 50,
+            },
+            1400: {
+                slidesPerView: 1,
+                spaceBetween: 55,
+            },
+        }
+    });
 
     //Bird animations
     $("#bird").click(function(){
@@ -347,60 +406,6 @@
     });
 
 
-
-
-
-    //Coding and Animation Gallery Previous and Next
-    $("#codingprev").click(function(){
-        codingprevious();
-    });
-
-    $("#codingnext").click(function(){
-        codingnext();
-    });
-
-    $("#animationprev").click(function(){
-        animationprevious();
-    });
-
-    $("#animationnext").click(function(){
-        animationnext();
-    });
-    
-
-    //Next and Previous Hover Functions
-    $(".next").hover(function(){
-        $(this).css("transition", ".2s ease-in-out")
-        $(this).css("opacity","0.6");
-        $(this).css("transform","translateX(3px)")
-    },function(){
-        $(this).css("opacity","1");
-        $(this).css("transform","translateX(-3px)")
-    });
-
-    $(".previous").hover(function(){
-        $(this).css("transition", ".2s ease-in-out")
-        $(this).css("opacity","0.6");
-        $(this).css("transform","translateX(-3px)")
-    },function(){
-        $(this).css("opacity","1");
-        $(this).css("transform","translateX(3px)")
-    });
-
-    //Gallery button hover functions
-    $(".gallerybtn").hover(function(){
-        $(this).css("transition", ".2s ease-in-out")
-        $(this).css("background","white")
-        $(this).css("color","rgb(46, 46, 46)")
-        $(this).css("cursor","pointer")
-    },function(){
-        $(this).css("background","rgba(0,0,0,0)")
-        $(this).css("color","white")
-    });
-
-
-
-
     //Contact section Send button hover function
     $("#contactsubmit input").hover(function(){
         $(this).css("transition", ".2s ease-in-out")
@@ -437,22 +442,6 @@
     function showeducation(){
         $(".education").removeClass("hidden").removeClass("invisible").addClass("active")
         if ($(".education").hasClass("flag") == false){
-            $("#educationh1").delay(1000).animate({
-                top: "-=10%",
-                opacity: 1
-            }, 1000);
-            $("#istbox").delay(1700).animate({
-                left: "+=5%",
-                opacity: 1
-            }, 1000);
-            $("#fsubox").delay(1900).animate({
-                left: "+=36.5%",
-                opacity: 1
-            }, 1000);
-            $("#udemybox").delay(2100).animate({
-                left: "+=68%",
-                opacity: 1
-            }, 1000);
             $(".education").addClass("flag")
         }
     }
@@ -460,50 +449,7 @@
     function showcoding(){
         $(".coding").removeClass("hidden").removeClass("invisible").addClass("active");
         if ($(".coding").hasClass("flag") == false){
-            $("#codingh1").delay(1000).animate({
-                top: "-=10%",
-                opacity: 1
-            }, 1000);
-            $("#codingp").delay(1100).animate({
-                top: "-=10%",
-                opacity: 1
-            }, 1000);
-            $("#codinglines").delay(1100).animate({
-                top: "-=10%",
-                opacity: 1
-            }, 1000);
-            $("#weatherapph1").delay(1300).animate({
-                top: "-=10%",
-                opacity: 1
-            }, 1000);
-            $("#weatherappp").delay(1400).animate({
-                top: "-=10%",
-                opacity: 1
-            }, 1000);
-            $("#weatherappimg").delay(1900).animate({
-                top: "-=50px",
-                opacity: 1
-            }, 1000);
-            $("#weatherappbtn1").delay(1600).animate({
-                bottom: "+=10%",
-                opacity: 1
-            }, 1000);
-            $("#weatherappbtn2").delay(1700).animate({
-                bottom: "+=10%",
-                opacity: 1
-            }, 1000);
-            $("#codingprev").delay(3000).animate({
-                left: "+=20%",
-                opacity: 1
-            }, 1000);
-            $("#codingnext").delay(3000).animate({
-                right: "+=20%",
-                opacity: 1
-            }, 1000);
-            $(".cdots").delay(2100).animate({
-                bottom: "+=10%",
-                opacity: 1
-            }, 1000);
+            
             $(".coding").addClass("flag")
         } else {
             $("#weatherapp").removeClass("hideright").removeClass("hideleft").removeClass("invisible").removeClass("display").addClass("*");
@@ -519,46 +465,6 @@
         $(".animation").removeClass("hidden").removeClass("invisible").addClass("active")
         $("")
         if ($(".animation").hasClass("flag") == false){
-            $("#animationh1").delay(1000).animate({
-                top: "-=10%",
-                opacity: 1
-            }, 1000);
-            $("#animationp").delay(1100).animate({
-                top: "-=10%",
-                opacity: 1
-            }, 1000);
-            $("#animationlines").delay(1100).animate({
-                top: "-=10%",
-                opacity: 1
-            }, 1000);
-            $("#doughnutsh1").delay(1300).animate({
-                top: "-=10%",
-                opacity: 1
-            }, 1000);
-            $("#doughnutsp").delay(1400).animate({
-                top: "-=10%",
-                opacity: 1
-            }, 1000);
-            $("#doughnutsimg").delay(1900).animate({
-                top: "-=50px",
-                opacity: 1
-            }, 1000);
-            $("#doughnutsbtn").delay(1600).animate({
-                bottom: "+=10%",
-                opacity: 1
-            }, 1000);
-            $("#animationprev").delay(3000).animate({
-                left: "+=20%",
-                opacity: 1
-            }, 1000);
-            $("#animationnext").delay(3000).animate({
-                right: "+=20%",
-                opacity: 1
-            }, 1000);
-            $(".adots").delay(2100).animate({
-                bottom: "+=10%",
-                opacity: 1
-            }, 1000);
             $(".animation").addClass("flag")
         } else{
             $("#doughnuts").removeClass("hideright").removeClass("hideleft").removeClass("invisible").removeClass("display").addClass("*");
@@ -679,7 +585,7 @@
     });
 
     //Fancy Box
-    $(".galleryimage, #aboutimg").hover(function(){
+    $(".slideimg-right, #aboutimg").hover(function(){
         $(".popup").fadeIn();
         },function(){
             $(".popup").fadeOut();

@@ -1,30 +1,61 @@
-/*  ---------- BODY ----------- */
+/*  ---------- Globals ----------- */
 body {
     background-image: url(../images/mountains.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     width: 100%;
     height: 100%;
 }
 
+.section{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.5vw;
+    color: white;
+    font-weight: 200;
+    font-family: 'Righteous', cursive;
+}
+
+p{
+    text-align: center;
+    font-size: 1vw;
+    color: white;
+    font-weight: 400;
+}
+
+/* --------- SCROLL BAR --------- */
+::-webkit-scrollbar {
+    width: 10px;                                  
+    height: 10px;
+    background-color: rgb(32, 32, 32);
+}
+/* Add a thumb */                               
+::-webkit-scrollbar-thumb {
+    background: rgb(78, 78, 78);
+}
 
 
 /*  ---------- FRAME ----------- */
 .frame {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.400);
-    border: solid red;
     top: 0;
     left: 0;
 }
 
 #bird{
     z-index: 100;
-    position: absolute;
+    position: fixed;
     top: 65%;
     left: 20%;
     background-image: url(../images/bird.gif);
@@ -39,12 +70,9 @@ body {
     visibility: hidden;
 }
 
-
-
-/*  ---------- NAVIGATION BAR ----------- */
 .navbar {
     z-index: 100;
-    position: absolute;
+    position: fixed;
     width: auto;
     height: auto;
     background-color: rgba(255, 0, 0, 0);
@@ -88,46 +116,35 @@ body {
     opacity: 0;
 }
 
-
-
-
-/*  ---------- LOGO ----------- */
-
 .logo {
-    position: absolute;
-    width: 60px;
-    height: 60px;
+    z-index: 100;
+    position: fixed;
+    width: 6%;
+    height: 6%;
     background-image: url(../images/llwhite.png);
-    background-size: cover;
-    bottom:30px;
-    left: 30px;
-    text-align: center;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom:3%;
+    left: 1%;
 }
 
-
-
-
-/*  ---------- LEFT BOX ----------- */
-
 .left-box{
-    position: absolute;
+    z-index: 100;
+    position: fixed;
     width: 80px;
-    height: 850px;
+    height: 85%;
     background-color: rgba(0, 128, 0, 0);
     top: 0;
     left:0;
     border-right: rgb(180, 180, 180) solid 1px;
 }
 
-
-
-
-/*  ---------- RIGHT BOX ----------- */
-
 .right-box{
-    position: absolute;
+    z-index: 100;
+    position: fixed;
     width: 80px;
-    height: 850px;
+    height: 85%;
     background-color: rgba(0, 0, 0, 0);
     bottom: 0;
     right:0;
@@ -174,31 +191,6 @@ body {
     height: 40px;
 }
 
-
-/*  ---------- NEXT AND PREVIOUS SECTION ----------- */
-
-#nextsection{
-    position: absolute;
-    color: white;
-    font-family: Ubuntu;
-    font-size: 15px;
-    bottom: 2%;
-    right: 6%;
-    opacity: 0;
-    visibility: hidden;
-}
-
-#prevsection{
-    position: absolute;
-    color: white;
-    font-family: Ubuntu;
-    font-size: 15px;
-    bottom: 2%;
-    left: 6%;
-    opacity: 0;
-    visibility: hidden;
-}
-
 /*  ---------- INNER FRAME ----------- */
 
 .innerframe{
@@ -225,15 +217,6 @@ body {
     height: 100%;
     text-align: center;
     display: visible;
-}
-
-.home h1{
-    font-size: 70px;
-    color: white;
-    font-weight: 100;
-    font-family: 'Righteous', cursive;
-    opacity: 1;
-    
 }
 
 .line-1{
@@ -324,16 +307,6 @@ body {
     border: solid blue;
 }
 
-#abouth1{
-    position: relative;
-    font-size: 50px;
-    top: 10%;
-    color: white;
-    font-weight: 200;
-    font-family: 'Righteous', cursive;
-    display: visible;
-    text-align: center;
-}
 
 #aboutimg{
     position: relative;
@@ -444,41 +417,66 @@ body {
     width:100%;
     height:100%;
     background-color: rgba(255, 0, 0, 0);
-    display: none;
+    display: visible;
 }
 
 #educationh1{
-    position: absolute;
-    font-size: 50px;
-    transform:translate(-50%);
-    left: 50%;
-    top: 5%;
+    text-align: center;
+    font-size: 2.5vw;
     color: white;
     font-weight: 100;
     font-family: 'Righteous', cursive;
-    opacity: 0;
+    opacity: 1;
 }
 
-#istbox, #fsubox, #udemybox {
-    position: absolute;
-    height: 400px;
-    width: 450px;
-    top: 30%;
+#istbox{
+    position: relative;
+    margin-left: 11%;
+    height: 20vw;
+    width: 23vw;
     border: rgba(53, 53, 53, 0.603) solid 6px;
     background-color: rgba(53, 53, 53, 0.603);
     border-bottom-left-radius: 1%;
     border-bottom-right-radius: 1%;
     overflow: hidden;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.637);
-    opacity: 0;
+    opacity: 1;
+}
+
+#fsubox{
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 20vw;
+    width: 23vw;
+    border: rgba(53, 53, 53, 0.603) solid 6px;
+    background-color: rgba(53, 53, 53, 0.603);
+    border-bottom-left-radius: 1%;
+    border-bottom-right-radius: 1%;
+    overflow: hidden;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.637);
+    opacity: 1;
+}
+
+#udemybox {
+    position: relative;
+    height: 20vw;
+    width: 23vw;
+    border: rgba(53, 53, 53, 0.603) solid 6px;
+    background-color: rgba(53, 53, 53, 0.603);
+    border-bottom-left-radius: 1%;
+    border-bottom-right-radius: 1%;
+    overflow: hidden;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.637);
+    opacity: 1;
 }
 
 #istdate, #fsudate, #udemydate {
     position: absolute;
     color: rgb(240, 240, 240);
     font-family: Ubuntu;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 1vw;
+    font-weight: 500;
     text-align: center;
     top:2%;
     right:2%;
@@ -487,7 +485,7 @@ body {
 
 #istimg, #fsuimg, #udemyimg{
     position: absolute;
-    height: 200px;
+    height: 46%;
     width: 100%;
     top: 0;
     left: 0;
@@ -502,7 +500,7 @@ body {
     top: 34%;
     left: 3%;
     font-family: Ubuntu;
-    font-size: 30px;
+    font-size: 1.5vw;
 }
 
 #istp, #fsup, #udemyp {
@@ -513,7 +511,7 @@ body {
     top: 50%;
     left: 3%;
     font-family: Ubuntu;
-    font-size: 17px;
+    font-size: .9vw;
     font-weight: 100;
     line-height: 1.7;
 }
@@ -524,15 +522,15 @@ body {
     background-color: rgb(202, 202, 202);
     color: rgb(63, 63, 63);
     font-family: Ubuntu;
-    font-size: 18px;
+    font-size: 1vw;
     font-weight: bold;
     text-align: center;
-    padding-top:8px;
     border-radius: 5%;
+    padding: 1%;
     bottom:3%;
     left: 5%;
-    width: 80px;
-    height: 30px;
+    width: 15%;
+    height: 10%;
     cursor: pointer;
     text-decoration: none;
     
@@ -598,91 +596,25 @@ body {
     width:100%;
     height:100%;
     background-color: rgba(255, 0, 0, 0);
-    display: none;
-}
-
-#codingh1{
-    position: absolute;
-    transform:translate(-50%);
-    font-size: 50px;
-    left: 50%;
-    top: 5%;
-    color: white;
-    font-weight: 200;
-    font-family: 'Righteous', cursive;
-    opacity: 0;
+    display: visible;
 }
 
 #codingp{
-    position: absolute;
-    font-size: 20px;
-    transform:translate(-50%);
-    width: 700px;
-    line-height: 1.5;
+    position: relative;
+    transform: translate(-50%);
     left: 50%;
     text-align: center;
-    top: 25%;
+    font-size: 1vw;
+    line-height: 1.5;
     color: white;
     font-weight: 100;
-    font-family: Ubuntu;
-    opacity: 0;
-}
-
-#codinglines{
-    position: absolute;
-    background-color: rgba(212, 212, 212, 0);
-    width: 700px; 
-    height: 100px;
-    border-top: solid rgba(211, 211, 211) 1px;
-    border-bottom: solid rgba(211, 211, 211) 1px;
-    transform:translate(-50%);
-    top: 25%;
-    left: 50%;
-    opacity: 0;
-}
-
-.cdots{
-    position: absolute;
-    bottom: -20%;
-    left: 41%;
-    width: 150px;
-    height: 50px;
-    background-color: rgba(255, 255, 255, 0);
-    opacity: 0
-}
-
-#cdot1{
-    position: absolute;
-    background-color: white;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    top:40%;
-    left: 28%;
-    transform: scale(1.5);
+    font-family: "Ubuntu", sans-serif;
     opacity: 1;
-}
-
-#cdot2{
-    position: absolute;
-    background-color: white;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    top:40%;
-    left: 48%;
-    opacity: 0.6;
-}
-
-#cdot3{
-    position: absolute;
-    background-color: white;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    top:40%;
-    left: 68%;
-    opacity: 0.6;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-top: solid white 1px;
+    border-bottom: solid white 1px;
+    width: 35%;
 }
 
 .popup{
@@ -690,244 +622,129 @@ body {
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    width: 40px;
-    height: 40px;
+    width: 2vw;
+    height: 2vw;
     z-index: 2;
-    display: none;
+    display: visible;
 }
 
 
-/*  ---------- CODING GALLERY ----------- */
-.galleryframe {
+/*  ---------- Galleries ----------- */
+.swiper-container {
+    width: 92%;
+    height: 50%;
+}
+
+.swiper-button-prev{
+    margin-top: 6%;
+    margin-left: 7%;
+    color: white;
+    outline: none;
+}
+
+.swiper-button-next{
+    margin-top: 6%;
+    margin-right: 7%;
+    color: white;
+    outline: none;
+}
+
+.swiper-pagination-bullet{
+    background-color: white;
+}
+
+.slideh1-left{
+    position: relative;
+    margin-top: 11vh;
+    transform: translate(-50%);
+    font-size: 2vw;
+    width: 20%;
+    left: 24%;
+}
+
+.slidep-left{
+    position: relative;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    transform: translate(-50%);
+    font-size: 1vw;
+    width: 30%;
+    left: 24%;
+}
+
+.slideimg-right{
     position: absolute;
-    width: 100%;
-    height: 70%;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0);
-    font-family: Ubuntu;
-    
+    transform: translate(0%, -50%);
+    right: 0;
+    top: 50%;
+    width: 50%;
+    height: 90%;
+    margin-right: 7%;
 }
 
-.previous{
-    position: absolute;
-    background-image: url(../images/previous.png);
-    background-size: cover;
-    height: 40px;
-    width: 40px;
-    top: 53%;
-    left: -20%;
-    opacity: 0;
-}
-
-.next{
-    position: absolute;
-    background-image: url(../images/next.png);
-    background-size: cover;
-    height: 40px;
-    width: 40px;
-    top: 53%;
-    right: -20%;
-    opacity: 0;
-}
-
-.previous:hover, .next:hover{
-    cursor: pointer;
-    opacity: 0.6;
-    transition: opacity .3s;
-}
-
-.galleryimage{
-    position: absolute;
-    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.541);
-    width: 51.8%;
-    height: 80%;
-    z-index: 2;
-}
-
-.gallerybtn{
-    position: absolute;
-    height: 5.5%;
+.slidebtn-left{
+    position: relative;
+    transform: translate(-50%);
+    left: 18.5%;
+    margin-right: 3%;
     background-color: rgba(0, 0, 0, 0);
     border: white solid 2px;
     color: white;
     border-radius: 5%;
     text-align: center;
-    font-size: 20px;
+    font-size: 1vw;
     font-weight: 550;
-    font-family: Ubuntu;
-    padding-top: 3px;
+    font-family: "Ubuntu", sans-serif;
+    padding: 0.3%;
     text-decoration: none;
 }
 
-#imgborder{
-    position: absolute;
-    width: 1px;
-    height: 20%;
-    background-color: rgb(163, 163, 163);
-    top: 48%;
-    left: 45%;
-    opacity: 0;
+.slidebtn-single{
+    position: relative;
+    transform: translate(-50%);
+    left: 22%;
+    margin-right: 3%;
+    background-color: rgba(0, 0, 0, 0);
+    border: white solid 2px;
+    color: white;
+    border-radius: 5%;
+    text-align: center;
+    font-size: 1vw;
+    font-weight: 550;
+    font-family: "Ubuntu", sans-serif;
+    padding: 0.3%;
+    text-decoration: none;
 }
-
 
 /*  ---------- CODING GALLERY: Weather App ----------- */
-#weatherapp {
-    position: absolute;
-    width: 90%;
-    height: 100%;
-    bottom: 0;
-    left: 4.5%;
-    background-color: rgba(255, 0, 0, 0);
-}
 
-#weatherappimg {
+#weatherappimg{
     background-image: url(../images/Weatherapp.png);
     background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
-    right: 2%;
-    top: 140px;
-    opacity: 0;
-}
-
-#weatherapph1{
-    position: absolute;
-    width: 40%;
-    height: 10%;
-    left: 2%;
-    top: 35%;
-    text-align: center;
-    color: white;
-    opacity: 0;
-}
-
-#weatherappp {
-    position: absolute;
-    height: 30%;
-    width: 40%;
-    left: 2%;
-    top: 47%;
-    text-align: center;
-    font-family: Ubuntu;
-    line-height: 1.5;
-    color: white;
-    opacity: 0;
-}
-
-#weatherappbtn1{
-    width: 4.5%;
-    bottom: 25%;
-    left: 15.5%;
-    opacity: 0;
-}
-
-#weatherappbtn2{
-    width: 4.5%;
-    bottom: 25%;
-    left: 23%;
-    opacity: 0;
 }
 
 
 /*  ---------- CODING GALLERY: Portfolio ----------- */
-#portfolio {
-    position: absolute;
-    width: 90%;
-    height: 100%;
-    bottom: 0;
-    left: 4.5%;
-    background-color: rgba(255, 0, 0, 0);
-}
 
 #portfolioimg {
     background-image: url(../images/portfolio.png);
     background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
-    left: 2%;
-    top: 85px;  
 }
-
-#portfolioh1{
-    position: absolute;
-    width: 40%;
-    height: 10%;
-    left: 57%;
-    top: 25%;
-    text-align: center;
-    color: white;
-}
-
-#portfoliop {
-    position: absolute;
-    height: 30%;
-    width: 40%;
-    left: 57%;
-    top: 37%;
-    text-align: center;
-    color: white;
-    font-family: Ubuntu;
-    line-height: 1.5;
-}
-
-#portfoliobtn{
-    width: 4.5%;
-    bottom: 35%;
-    right: 20.6%;
-}
-
-
-
 
 /*  ---------- CODING GALLERY: Online Resume ----------- */
-#resume {
-    position: absolute;
-    width: 90%;
-    height: 100%;
-    bottom: 0;
-    left: 4.5%;
-    background-color: rgba(255, 0, 0, 0);
-}
 
 #resumeimg {
     background-image: url(../images/resume.png);
     background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
-    right: 2%;
-    top: 85px;  
 }
 
-#resumeh1{
-    position: absolute;
-    width: 40%;
-    height: 10%;
-    left: 2%;
-    top: 25%;
-    text-align: center;
-    color: white;
-}
-
-#resumep {
-    position: absolute;
-    height: 30%;
-    width: 40%;
-    left: 2%;
-    top: 37%;
-    text-align: center;
-    color: white;
-    font-family: Ubuntu;
-    line-height: 1.5;
-}
-
-#resumebtn1{
-    width: 4.5%;
-    bottom: 30%;
-    left: 15.5%;
-}
-
-#resumebtn2{
-    width: 4.5%;
-    bottom: 30%;
-    left: 23%;
-}
 
 
 /*  ---------- ANIMATION ----------- */
@@ -936,299 +753,59 @@ body {
     width:100%;
     height:100%;
     background-color: rgba(255, 0, 0, 0);
-    display: none;
-}
-
-#animationh1{
-    position: absolute;
-    transform:translate(-50%);
-    font-size: 50px;
-    left: 50%;
-    top: 5%;
-    color: white;
-    font-weight: 200;
-    font-family: 'Righteous', cursive;
-    opacity: 0;
+    display: visible;
 }
 
 #animationp{
-    position: absolute;
-    font-size: 20px;
-    transform:translate(-50%);
-    width: 700px;
-    line-height: 1.5;
-    text-align: center;
+    position: relative;
+    transform: translate(-50%);
     left: 50%;
-    top: 25%;
+    text-align: center;
+    font-size: 1vw;
+    line-height: 1.5;
     color: white;
     font-weight: 100;
-    opacity: 0;
-    font-family: Ubuntu;
-}
-
-#animationlines{
-    position: absolute;
-    background-color: rgba(212, 212, 212, 0);
-    width: 700px; 
-    height: 100px;
-    border-top: solid rgba(211, 211, 211) 1px;
-    border-bottom: solid rgba(211, 211, 211) 1px;
-    transform:translate(-50%);
-    top: 25%;
-    left: 50%;
-    opacity: 0;
-}
-
-.adots{
-    position: absolute;
-    bottom: -20%;
-    left: 41%;
-    width: 150px;
-    height: 50px;
-    background-color: rgba(255, 255, 255, 0);
-    opacity: 0
-}
-
-#adot1{
-    position: absolute;
-    background-color: white;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    top:40%;
-    left: 18%;
-    transform: scale(1.5);
+    font-family: "Ubuntu", sans-serif;
     opacity: 1;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-top: solid white 1px;
+    border-bottom: solid white 1px;
+    width: 35%;
 }
-
-#adot2{
-    position: absolute;
-    background-color: white;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    top:40%;
-    left: 38%;
-    opacity: 0.6;
-}
-
-#adot3{
-    position: absolute;
-    background-color: white;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    top:40%;
-    left: 58%;
-    opacity: 0.6;
-}
-
-#adot4{
-    position: absolute;
-    background-color: white;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    top:40%;
-    left: 78%;
-    opacity: 0.6;
-}
-
-
 
 /*  ---------- ANIMATION GALLERY: Doughnuts ----------- */
-#doughnuts {
-    position: absolute;
-    width: 90%;
-    height: 100%;
-    bottom: 0;
-    left: 4.5%;
-    background-color: rgba(255, 0, 0, 0);
-}
 
 #doughnutsimg {
     background-image: url(../images/Doughnuts.png);
     background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
-    right: 2%;
-    top: 140px;
-    opacity: 0;
 }
-
-#doughnutsh1{
-    position: absolute;
-    width: 40%;
-    height: 10%;
-    left: 2%;
-    top: 35%;
-    text-align: center;
-    color: white;
-    opacity: 0;
-}
-
-#doughnutsp {
-    position: absolute;
-    height: 30%;
-    width: 40%;
-    left: 2%;
-    top: 47%;
-    text-align: center;
-    font-family: Ubuntu;
-    line-height: 1.5;
-    color: white;
-    opacity: 0;
-}
-
-#doughnutsbtn{
-    width: 5%;
-    bottom: 25%;
-    left: 18.5%;
-    opacity: 0;
-}
-
-
-
 
 /*  ---------- ANIMATION GALLERY: Bowling ----------- */
-#bowling {
-    position: absolute;
-    width: 90%;
-    height: 100%;
-    bottom: 0;
-    left: 4.5%;
-    background-color: rgba(255, 0, 0, 0);
-}
-
 #bowlingimg {
     background-image: url(../images/Bowling.png);
     background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
-    left: 2%;
-    top: 85px;  
 }
-
-#bowlingh1{
-    position: absolute;
-    width: 40%;
-    height: 10%;
-    left: 57%;
-    top: 25%;
-    text-align: center;
-    color: white;
-}
-
-#bowlingp {
-    position: absolute;
-    height: 30%;
-    width: 40%;
-    left: 57%;
-    top: 37%;
-    text-align: center;
-    color: white;
-    font-family: Ubuntu;
-    line-height: 1.5;
-}
-
-#bowlingbtn{
-    width: 5%;
-    bottom: 30%;
-    right: 20.3%;
-}
-
-
 
 /*  ---------- ANIMATION GALLERY: Concrete ----------- */
-#concrete {
-    position: absolute;
-    width: 90%;
-    height: 100%;
-    bottom: 0;
-    left: 4.5%;
-    background-color: rgba(255, 0, 0, 0);
-}
-
 #concreteimg {
     background-image: url(../images/Concrete.png);
     background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
-    right: 2%;
-    top: 85px;  
-}
-
-#concreteh1{
-    position: absolute;
-    width: 40%;
-    height: 10%;
-    left: 1.2%;
-    top: 25%;
-    text-align: center;
-    color: white;
-}
-
-#concretep {
-    position: absolute;
-    height: 30%;
-    width: 40%;
-    left: 2%;
-    top: 37%;
-    text-align: center;
-    color: white;
-    font-family: Ubuntu;
-    line-height: 1.5;
-}
-
-#concretebtn{
-    width: 5%;
-    bottom: 35%;
-    left: 18.5%;
 }
 
 /*  ---------- ANIMATION GALLERY: Flag ----------- */
-#flag {
-    position: absolute;
-    width: 90%;
-    height: 100%;
-    bottom: 0;
-    left: 4.5%;
-    background-color: rgba(255, 0, 0, 0);
-}
-
 #flagimg {
     background-image: url(../images/Flag.gif);
     background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
-    left: 2%;
-    top: 85px;  
 }
-
-#flagh1{
-    position: absolute;
-    width: 40%;
-    height: 10%;
-    left: 57%;
-    top: 25%;
-    text-align: center;
-    color: white;
-}
-
-#flagp {
-    position: absolute;
-    height: 30%;
-    width: 40%;
-    left: 57%;
-    top: 37%;
-    text-align: center;
-    color: white;
-    font-family: Ubuntu;
-    line-height: 1.5;
-}
-
-#flagbtn{
-    width: 5%;
-    bottom: 35%;
-    right: 20.3%;
-}
-
 
 
 /*  ---------- CONTACT ----------- */
@@ -1413,7 +990,7 @@ top: 90%;
 }
 
 .hidden {
-    opacity: 0;
+    display: none;
     transition: .5s ease-in-out;
 }
 
