@@ -22,12 +22,10 @@ jQuery(function ($) { "use strict";
         var prev = 0;
         var $window = $(window);
         var nav = $('#navbar');
-        var smallnav = $('#small-navbar');
 
         $window.on('scroll', function(){
         var scrollTop = $window.scrollTop();
         nav.toggleClass('hidden', scrollTop > prev);
-        smallnav.toggleClass('hidden', scrollTop > prev);
         prev = scrollTop;
         })
 
