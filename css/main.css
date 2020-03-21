@@ -7,12 +7,17 @@ body{
     background-color: rgb(29, 29, 29);
 }
 
-/* --------- Sections Bar --------- */
+.container{
+    max-width: 70%;
+    border: solid blue;
+}
+
+/* --------- Sections --------- */
 #home{
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: #191A1D;
+    background-color: rgb(255, 255, 255);
     background-image: url(../img/home.png);
     background-size: contain;
     background-position: bottom;
@@ -23,28 +28,28 @@ body{
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: white;
+    background-color: #191A1D;
 }
 
 #portfolio{
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: #0F2435;
+    background-color: #191A1D;
 }
 
 #gallery{
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: #0F2435;
+    background-color: #191A1D;
 }
 
 #contact{
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: #0F2435;
+    background-color: #191A1D;
 }
 
 
@@ -58,7 +63,7 @@ body{
 }
 
 .navbar-col a{
-    color: white;
+    color: #191A1D;
     margin: 30px 0px;
     padding: 15px 15px;
     font-size: 25px;
@@ -66,9 +71,21 @@ body{
     font-weight: 500;
 }
 
-.navbar-col a{
-    color: white;
+.navbar-col a:hover{
+    color: #191A1D;
     text-decoration: none;
+}
+
+/* --------- Header Style --------- */
+.header-row{
+   
+}
+
+.header-col h1{
+    color: white;
+    font-size: 40px;
+    font-family: "Ubuntu";
+    font-weight: 500;
 }
 
 
@@ -76,18 +93,18 @@ body{
 #greeting{
     position: relative;
     transform: translateY(-50%);
-    top: 35%;
+    top: 45%;
 }
 
 #greeting h1{
-    color: white;
-    font-size: 60px;
+    color: #191A1D;
+    font-size: 70px;
     font-family: "Baloo 2", cursive;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 #greeting p{
-    color: white;
+    color: #191A1D;
     font-size: 25px;
     font-family: "Ubuntu";
     font-weight: 500;
@@ -96,16 +113,85 @@ body{
 #anchor{
     position: absolute;
     transform: translateX(-50%);
-    left: 50%;
-    bottom: 200px;
+    left: 50.1%;
+    bottom: 7%;
 }
 
 #anchor img{
-    width: 80px;
+    width: 50px;
     transition: transform .2s ease;
     cursor: pointer;
 }
 
 #anchor img:hover{
     transform: translateY(10px);
+}
+
+
+/* --------- About Section --------- */
+.about-row{
+
+}
+
+.about-col{
+    background-color: white;
+    max-width: 60%;
+    padding: 20px 40px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#leandro{
+    position: absolute;
+    transform: translateY(-50%);
+    width: 150px;
+    height: 190px;
+    border-radius: 10px;
+    left: 5%;
+    top: 50%;
+    background-image: url(../img/leandro.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-col p{
+    position: relative;
+    color: #191A1D;
+    font-size: 20px;
+    font-family: "Ubuntu";
+    font-weight: 400;
+    margin-left: 28%;
+    padding-top: 10px;
+}
+
+.tools-row{
+    margin-top: 100px;
+}
+
+.tools-col{
+    margin: auto;
+    border: solid white 2px;
+    max-width: 350px;
+    height: 520px;
+    border-radius: 20px;
+    background-image: url(../img/toolbox.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+.tools-col img{
+    position: relative;
+    width: 70px;
+    top: 0%;
+}
+
+.tools-col h1{
+    position: relative;
+    color: white;
+    font-size: 23px;
+    font-family: "Ubuntu";
+    font-weight: 400;
+    top: 23%;
 }
