@@ -33,14 +33,20 @@ jQuery(function ($) { "use strict";
         $(window).scroll(function(){
             var navbar = $("#navbar");
             var sidebar = $("#sidebar");
+            var whitelogo = $("#whitelogo");
+            var blacklogo = $("#blacklogo");
 
             if($(window).scrollTop() > 650) {
                 navbar.fadeOut("fast")
                 sidebar.fadeIn("slow")
+                whitelogo.fadeIn("slow")
+                blacklogo.fadeOut("fast")
             }
             else {
                 navbar.fadeIn("slow")
                 sidebar.fadeOut("fast")
+                whitelogo.fadeOut("fast")
+                blacklogo.fadeIn("slow")
             }
         
         })
@@ -60,5 +66,18 @@ jQuery(function ($) { "use strict";
             $(this).addClass("active");
         });
         
+        // Gallery Hover Effects
+        var item = $(".grid-item");
+        var image = $(".grid-item img");
+        var overlay = $(".grid-item .overlay");
+
+        item.hover(function(){
+            $(this).css("transform","scale(1.05)")
+            $(this).find(overlay).css("opacity","0.4")
+        },function(){
+            $(this).css("transform","scale(1)")
+            $(this).find(overlay).css("opacity","0")
+        })
+
     });
 });
