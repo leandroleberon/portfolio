@@ -21,13 +21,44 @@ jQuery(function ($) { "use strict";
         //Hide Navigation Bar on scroll
         var prev = 0;
         var $window = $(window);
-        var nav = $('#navbar');
+        var nav = $(".navbar-row");
 
         $window.on('scroll', function(){
         var scrollTop = $window.scrollTop();
-        nav.toggleClass('hidden', scrollTop > prev);
+        nav.toggleClass('hiddens', scrollTop > prev);
         prev = scrollTop;
-        })
+        });
 
+        // Change Navigation Bar font Color
+        $(window).scroll(function(){
+            var navbar = $("#navbar");
+            var sidebar = $("#sidebar");
+
+            if($(window).scrollTop() > 650) {
+                navbar.fadeOut("fast")
+                sidebar.fadeIn("slow")
+            }
+            else {
+                navbar.fadeIn("slow")
+                sidebar.fadeOut("fast")
+            }
+        
+        })
+        
+        // Isotope
+        var $grid = $(".grid").isotope({
+            // options
+            itemSelector: '.grid-item',
+            layoutMode: 'fitRows'
+        });
+
+        // Isotope Filter
+        $(".filter-btn").click(function(){
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({ filter: filterValue });
+            $(".filter-btn").removeClass("active");
+            $(this).addClass("active");
+        });
+        
     });
 });
