@@ -93,19 +93,39 @@ body{
     display: none;
 }
 
-#sidebar a{
-    color: white;
+.nav{
     float: left;
-    padding-top: 40px;
-    font-size: 25px;
+    margin-top: 30px;
+    width: auto;
+    height: 50px;
+}
+
+.nav a{
+    color: white;
     font-family: "Ubuntu";
     font-weight: 500;
     transition: color .2s ease;
+    font-size: 25px;
 }
 
-#sidebar a:hover{
+.nav a:hover{
     color: rgb(128, 128, 128);
     text-decoration: none;
+}
+
+.closed{
+    width: 0%;
+}
+
+.open{
+    width: 100%;
+}
+
+.underline{
+    border-radius: 5px;
+    height: 4px;
+    background: white;
+    transition: width .3s ease;
 }
 
 /* --------- Header Style --------- */
@@ -499,50 +519,3 @@ body{
 }
 
 
-/* Underline From Center */
-.underline {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    overflow: hidden;
-  }
-
-  .underline:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: 51%;
-    right: 51%;
-    bottom: 0;
-    background-color: rgb(255, 255, 255);
-    height: 4px;
-    -webkit-transition-property: left, right;
-    transition-property: left, right;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-  }
-
-  .underline:hover:before, .underline:focus:before, .underline:active:before {
-    left: 0%;
-    right: 0%;
-  }
-
-  .closed{
-    width: 50%;
-  }
-
-  #about-underline{
-    position: absolute;
-    top: 40%;
-    width: 0;
-    height: 4px;
-    background-color: white;
-    transition: width .3s ease;
-  }
-
- 

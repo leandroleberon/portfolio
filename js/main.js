@@ -66,44 +66,55 @@ jQuery(function ($) { "use strict";
             $(this).addClass("active");
         });
         
+        // Sidebar Hover Effect
+        $(".nav").hover(function(){
+            if ($(this).find(".underline").hasClass("*") == false){
+                $(this).find(".underline").css("width","30%")
+            }
+        }, function(){
+            if ($(this).find(".underline").hasClass("*") == false){
+                $(this).find(".underline").css("width","0%")
+            }
+        })
+
+
         // Sidebar Underline Effect
         $(window).scroll(function(){
             var about_pos = $('#about').offset().top -100;
             var portfolio_pos = $('#portfolio').offset().top -100;
             var gallery_pos = $('#gallery').offset().top -100;
-            var contact_pos = $('#contact').offset().top -600;
-            var bottom = $(window).innerHeight();
-            var about_link = $(".about-nav");
-            var portfolio_link = $(".portfolio-nav");
-            var gallery_link = $(".gallery-nav");
-            var contact_link = $(".contact-nav");
+            var contact_pos = $('#contact').offset().top -500;
+            var about_line = $(".about-nav .underline");
+            var portfolio_line = $(".portfolio-nav .underline");
+            var gallery_line = $(".gallery-nav .underline");
+            var contact_line = $(".contact-nav .underline");
 
             if($(window).scrollTop() >= about_pos && $(window).scrollTop() < portfolio_pos) {
-                $("#about-underline").addClass("closed")
+                about_line.css("width","100%").addClass("*")
             }
             else {
-                $("#about-underline").removeClass("closed")
+                about_line.css("width","0%").removeClass("*")
             }
 
             if($(window).scrollTop() >= portfolio_pos && $(window).scrollTop() < gallery_pos) {
-                portfolio_link.addClass("underline")
+                portfolio_line.css("width","100%").addClass("*")
             }
             else {
-                portfolio_link.removeClass("underline")
+                portfolio_line.css("width","0%").removeClass("*")
             }
 
             if($(window).scrollTop() >= gallery_pos && $(window).scrollTop() < contact_pos) {
-                gallery_link.addClass("underline")
+                gallery_line.css("width","100%").addClass("*")
             }
             else {
-                gallery_link.removeClass("underline")
+                gallery_line.css("width","0%").removeClass("*")
             }
 
             if($(window).scrollTop() >= contact_pos) {
-                contact_link.addClass("underline")
+                contact_line.css("width","100%").addClass("*")
             }
             else {
-                contact_link.removeClass("underline")
+                contact_line.css("width","0%").removeClass("*")
             }
         })
 
