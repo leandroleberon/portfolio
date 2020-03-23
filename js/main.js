@@ -83,11 +83,14 @@ jQuery(function ($) { "use strict";
             var about_pos = $('#about').offset().top -100;
             var portfolio_pos = $('#portfolio').offset().top -100;
             var gallery_pos = $('#gallery').offset().top -100;
-            var contact_pos = $('#contact').offset().top -500;
+            var contact_pos = $('#contact').offset().top -400;
             var about_line = $(".about-nav .underline");
             var portfolio_line = $(".portfolio-nav .underline");
             var gallery_line = $(".gallery-nav .underline");
             var contact_line = $(".contact-nav .underline");
+            var portfolio_text = $(".portfolio-nav a");
+            var gallery_text = $(".gallery-nav a");
+            var contact_text = $(".contact-nav a");
 
             if($(window).scrollTop() >= about_pos && $(window).scrollTop() < portfolio_pos) {
                 about_line.css("width","100%").addClass("*")
@@ -111,10 +114,20 @@ jQuery(function ($) { "use strict";
             }
 
             if($(window).scrollTop() >= contact_pos) {
-                contact_line.css("width","100%").addClass("*")
+                contact_line.css("width","100%").css("background-color","#191A1D").addClass("*")
+                portfolio_line.css("background-color","#191A1D")
+                gallery_line.css("background-color","#191A1D")
+                portfolio_text.removeClass("text-white").addClass("text-black")
+                gallery_text.removeClass("text-white").addClass("text-black")
+                contact_text.removeClass("text-white").addClass("text-black")
             }
             else {
-                contact_line.css("width","0%").removeClass("*")
+                contact_line.css("width","0%").css("background-color","white").removeClass("*")
+                portfolio_line.css("background-color","white")
+                gallery_line.css("background-color","white")
+                portfolio_text.removeClass("text-black").addClass("text-white")
+                gallery_text.removeClass("text-black").addClass("text-white")
+                contact_text.removeClass("text-black").addClass("text-white")
             }
         })
 
