@@ -66,6 +66,47 @@ jQuery(function ($) { "use strict";
             $(this).addClass("active");
         });
         
+        // Sidebar Underline Effect
+        $(window).scroll(function(){
+            var about_pos = $('#about').offset().top -100;
+            var portfolio_pos = $('#portfolio').offset().top -100;
+            var gallery_pos = $('#gallery').offset().top -100;
+            var contact_pos = $('#contact').offset().top -600;
+            var bottom = $(window).innerHeight();
+            var about_link = $(".about-nav");
+            var portfolio_link = $(".portfolio-nav");
+            var gallery_link = $(".gallery-nav");
+            var contact_link = $(".contact-nav");
+
+            if($(window).scrollTop() >= about_pos && $(window).scrollTop() < portfolio_pos) {
+                $("#about-underline").addClass("closed")
+            }
+            else {
+                $("#about-underline").removeClass("closed")
+            }
+
+            if($(window).scrollTop() >= portfolio_pos && $(window).scrollTop() < gallery_pos) {
+                portfolio_link.addClass("underline")
+            }
+            else {
+                portfolio_link.removeClass("underline")
+            }
+
+            if($(window).scrollTop() >= gallery_pos && $(window).scrollTop() < contact_pos) {
+                gallery_link.addClass("underline")
+            }
+            else {
+                gallery_link.removeClass("underline")
+            }
+
+            if($(window).scrollTop() >= contact_pos) {
+                contact_link.addClass("underline")
+            }
+            else {
+                contact_link.removeClass("underline")
+            }
+        })
+
         // Gallery Hover Effects
         var item = $(".grid-item");
         var image = $(".grid-item img");
