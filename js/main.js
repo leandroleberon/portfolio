@@ -124,10 +124,10 @@ jQuery(function ($) { "use strict";
         var overlay = $(".grid-item .overlay");
 
         item.hover(function(){
-            $(this).css("transform","scale(1.05)")
+            $(this).find(image).css("transform","scale(1.1)")
             $(this).find(overlay).css("opacity","0.4")
         },function(){
-            $(this).css("transform","scale(1)")
+            $(this).find(image).css("transform","scale(1)")
             $(this).find(overlay).css("opacity","0")
         })
 

@@ -166,18 +166,14 @@ body{
     position: fixed;
     z-index: 100;
     left: 20px;
+    top: 20px;
 }
 
 #blacklogo img, #whitelogo img{
     width: 50px;
 }
 
-#blacklogo{
-    top: 20px;
-}
-
 #whitelogo{
-    bottom: 20px;
     display: none;
 }
 
@@ -230,8 +226,8 @@ body{
     position: relative;
     color: #191A1D;
     font-size: 18px;
-    font-family: "Ubuntu";
-    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
     margin-left: 25%;
     padding-top: 10px;
 }
@@ -313,7 +309,7 @@ body{
     top: 200px;
     left: 28%;
     width: 2px;
-    height: 1550px;
+    height: 2250px;
     background-color: rgb(78, 78, 78);
 }
 
@@ -330,39 +326,38 @@ body{
     float:right;
 }
 
-.date1{
+.date{
     position: absolute;
     width: 150px;
+    right: -12px;
+}
+
+.d1{
     top: 125px;
-    right: -12px;
 }
 
-.date2{
-    position: absolute;
-    width: 150px;
+.d2{
     top: 470px;
-    right: -12px;
 }
 
-.date3{
-    position: absolute;
-    width: 150px;
+.d3{
     top: 820px;
-    right: -12px;
 }
 
-.date4{
-    position: absolute;
-    width: 150px;
+.d4{
     top: 1180px;
-    right: -12px;
 }
 
-.date5{
-    position: absolute;
-    width: 150px;
+.d5{
     top: 1530px;
-    right: -12px;
+}
+
+.d6{
+    top: 1880px;
+}
+
+.d7{
+    top: 2230px;
 }
 
 .project-col img{
@@ -496,7 +491,6 @@ body{
     height: 200px;
     border-radius: 20px;
     overflow: hidden;
-    transition: transform .2s ease-in-out;
     cursor: pointer;
 }
 
