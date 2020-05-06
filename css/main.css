@@ -516,7 +516,6 @@ body{
     height: 200px;
     border-radius: 10px;
     overflow: hidden;
-    cursor: pointer;
 }
 
 .grid-item img{
@@ -528,13 +527,45 @@ body{
 
 .overlay{
     position: absolute;
+    padding: 20px 20px;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #191A1D;
+    background-color: rgba(39, 39, 39, 0.9);
     opacity: 0;
     transition: opacity .2s ease;
+}
+
+.overlay h1{
+    position: relative;
+    font-family: "Ubuntu";
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+}
+
+.overlay p{
+    position: relative;
+    font-family: "Open Sans" ,sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(228, 228, 228);
+}
+
+.overlay i{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 47%;
+    bottom: 10%;
+    font-size: 25px;
+    color: white;
+    transition: color .2s ease;
+}
+
+.overlay i:hover{
+    color: #FF7878;
 }
 
 #gallerysun{
@@ -573,6 +604,8 @@ body{
     top: 10%;
     max-width: 150px;
 }
+
+
 
 /* --------- Transition 2 --------- */
 #footer img{

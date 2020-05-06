@@ -116,7 +116,7 @@ jQuery(function ($) { "use strict";
 
         item.hover(function(){
             $(this).find(image).css("transform","scale(1.1)")
-            $(this).find(overlay).css("opacity","0.4")
+            $(this).find(overlay).css("opacity","1")
         },function(){
             $(this).find(image).css("transform","scale(1)")
             $(this).find(overlay).css("opacity","0")
