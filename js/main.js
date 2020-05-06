@@ -65,25 +65,13 @@ jQuery(function ($) { "use strict";
             $(".filter-btn").removeClass("active");
             $(this).addClass("active");
         });
-        
-        // Sidebar Hover Effect
-        $(".nav").hover(function(){
-            if ($(this).find(".underline").hasClass("*") == false){
-                $(this).find(".underline").css("width","30%")
-            }
-        }, function(){
-            if ($(this).find(".underline").hasClass("*") == false){
-                $(this).find(".underline").css("width","0%")
-            }
-        })
-
 
         // Sidebar Underline Effect
         $(window).scroll(function(){
             var about_pos = $('#about').offset().top -100;
             var portfolio_pos = $('#portfolio').offset().top -100;
             var gallery_pos = $('#gallery').offset().top -100;
-            var contact_pos = $('#contact').offset().top -400;
+            var contact_pos = $('#contact').offset().top -900;
             var about_line = $(".about-nav .underline");
             var portfolio_line = $(".portfolio-nav .underline");
             var gallery_line = $(".gallery-nav .underline");
@@ -93,41 +81,31 @@ jQuery(function ($) { "use strict";
             var contact_text = $(".contact-nav a");
 
             if($(window).scrollTop() >= about_pos && $(window).scrollTop() < portfolio_pos) {
-                about_line.css("width","100%").addClass("*")
+                about_line.css("width","100%")
             }
             else {
-                about_line.css("width","0%").removeClass("*")
+                about_line.css("width","0%")
             }
 
             if($(window).scrollTop() >= portfolio_pos && $(window).scrollTop() < gallery_pos) {
-                portfolio_line.css("width","100%").addClass("*")
+                portfolio_line.css("width","100%")
             }
             else {
-                portfolio_line.css("width","0%").removeClass("*")
+                portfolio_line.css("width","0%")
             }
 
             if($(window).scrollTop() >= gallery_pos && $(window).scrollTop() < contact_pos) {
-                gallery_line.css("width","100%").addClass("*")
+                gallery_line.css("width","100%")
             }
             else {
-                gallery_line.css("width","0%").removeClass("*")
+                gallery_line.css("width","0%")
             }
 
             if($(window).scrollTop() >= contact_pos) {
-                contact_line.css("width","100%").css("background-color","#191A1D").addClass("*")
-                portfolio_line.css("background-color","#191A1D")
-                gallery_line.css("background-color","#191A1D")
-                portfolio_text.removeClass("text-white").addClass("text-black")
-                gallery_text.removeClass("text-white").addClass("text-black")
-                contact_text.removeClass("text-white").addClass("text-black")
+                contact_line.css("width","100%")
             }
             else {
-                contact_line.css("width","0%").css("background-color","white").removeClass("*")
-                portfolio_line.css("background-color","white")
-                gallery_line.css("background-color","white")
-                portfolio_text.removeClass("text-black").addClass("text-white")
-                gallery_text.removeClass("text-black").addClass("text-white")
-                contact_text.removeClass("text-black").addClass("text-white")
+                contact_line.css("width","0%")
             }
         })
 

@@ -4,7 +4,7 @@ body{
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
-    background-color: rgb(29, 29, 29);
+    background-color: #1A1A1A;
 }
 
 .container{
@@ -17,18 +17,20 @@ body{
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: rgb(255, 255, 255);
-    background-image: url(../img/bg/home.png);
-    background-size: contain;
-    background-position: bottom;
-    background-repeat: no-repeat;
+    background-color: white;
+}
+
+#transition{
+    position: relative;
+    width: 100%;
+    height: 250px;
 }
 
 #about{
     position: relative;
     width: 100%;
-    height: auto;
-    background-color: #191A1D;
+    height: 100vh;
+    background-color: #1A1A1A;
     padding-bottom: 100px;
 }
 
@@ -36,7 +38,7 @@ body{
     position: relative;
     width: 100%;
     height: auto;
-    background-color: #191A1D;
+    background-color: #1A1A1A;
     padding-bottom: 100px;
 }
 
@@ -44,20 +46,22 @@ body{
     position: relative;
     width: 100%;
     min-height: 100vh;
-    height: auto;
-    background-color: #191A1D;
+    height: 120vh;
+    background-color: #1A1A1A;
     padding-bottom: 100px;
+}
+
+#footer{
+    position: relative;
+    width: 100%;
+    height: 300px;
 }
 
 #contact{
     position: relative;
     width: 100%;
-    height: 60vh;
-    background-color: rgb(255, 255, 255);
-    background-image: url(../img/bg/contact.png);
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;
+    height: 20vh;
+    background: white;
 }
 
 
@@ -73,15 +77,16 @@ body{
 
 #navbar a{
     color: #191A1D;
-    padding: 0px 15px;
+    padding: 0px 20px;
     font-size: 25px;
     font-family: "Ubuntu";
-    font-weight: 500;
+    font-weight: 400;
     transition: color .2s ease;
+    letter-spacing: 3px;
 }
 
 #navbar a:hover{
-    color: rgb(128, 128, 128);
+    color: #FF7878;
     text-decoration: none;
 }
 
@@ -106,22 +111,16 @@ body{
 
 .nav a{
     font-family: "Ubuntu";
-    font-weight: 500;
+    font-weight: 400;
     font-size: 25px;
+    letter-spacing: 3px;
     transition: color .2s ease;
-}
-
-.text-white:hover{
-    opacity: 0.7;
-    text-decoration: none;
-}
-
-.text-white{
     color: white;
 }
 
-.text-black{
-    color: #191A1D;
+.nav a:hover{
+    color: #FF7878;
+    text-decoration: none;
 }
 
 .closed{
@@ -135,20 +134,17 @@ body{
 .underline{
     border-radius: 5px;
     height: 4px;
-    background: white;
+    background: #FF7878;
     transition: width .3s ease;
 }
 
 /* --------- Header Style --------- */
-.header-row{
-   
-}
-
 .header-col h1{
     color: white;
-    font-size: 40px;
+    font-size: 50px;
     font-family: "Ubuntu";
     font-weight: 500;
+    letter-spacing: 10px;
 }
 
 
@@ -156,21 +152,61 @@ body{
 #greeting{
     position: relative;
     transform: translateY(-50%);
-    top: 45%;
+    top: 40%;
 }
 
 #greeting h1{
     color: #191A1D;
     font-size: 70px;
-    font-family: "Baloo 2", cursive;
-    font-weight: 700;
+    font-family: "Ubuntu";
+    font-weight: 500;
+    letter-spacing: 10px;
 }
 
 #greeting p{
     color: #191A1D;
     font-size: 25px;
     font-family: "Ubuntu";
-    font-weight: 500;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+#homesun{
+    position: absolute;
+    transform: translate(-50%, 50%);
+    left: 50%;
+    bottom: 0;
+    width: 550px;
+    height: 550px;
+    background: #FF7878;
+    border-radius: 100%;
+}
+
+#home-mountain1{
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    min-width: 1000px;
+}
+
+#home-mountain2{
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+}
+
+#home-bird1{
+    position: absolute;
+    right: 10%;
+    top: 60%;
+    width: 20px;
+}
+
+#home-bird2{
+    position: absolute;
+    left: 10%;
+    top: 55%;
+    width: 30px;
 }
 
 #blacklogo, #whitelogo{
@@ -191,8 +227,8 @@ body{
 #arrow{
     position: absolute;
     transform: translateX(-50%);
-    left: 50.1%;
-    bottom: 7%;
+    left: 50%;
+    top: 58%;
 }
 
 #arrow img{
@@ -205,109 +241,81 @@ body{
     transform: translateY(10px);
 }
 
+/* --------- Transition 1 --------- */
+#transition img{
+    position: absolute;
+    right: 0;
+}
 
 /* --------- About Section --------- */
 .about-row{
 
 }
 
-.about-col{
-    background-color: white;
-    max-width: 40%;
-    padding: 10px 40px;
-    margin: auto;
-    border-radius: 10px;
-}
-
-#leandro{
+#about p{
     position: absolute;
-    transform: translateY(-50%);
-    width: 140px;
-    height: 170px;
-    border-radius: 10px;
-    left: 5%;
-    top: 50%;
-    background-image: url(../img/leandro.JPG);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.about-col p{
-    position: relative;
-    color: #191A1D;
-    font-size: 18px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
-    margin-left: 25%;
-    padding-top: 10px;
-}
-
-.tools-row{
-    max-width: 80%;
-    margin: auto;
-    margin-top: 100px;
-}
-
-.tools-col{
-    margin: auto;
-    border: solid white 2px;
-    max-width: 350px;
-    height: 520px;
-    border-radius: 20px;
-    background-image: url(../img/bg/toolbox.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom;
-}
-
-.tools-col img{
-    position: relative;
-    width: 70px;
-    top: 0%;
-}
-
-.tools-col h1{
-    position: relative;
+    top: 45%;
+    right: 10%;
+    text-align: center;
     color: white;
-    font-size: 23px;
     font-family: "Ubuntu";
-    font-weight: 400;
-    top: 23%;
+    font-weight: 400px;
+    letter-spacing: 3px;
+    font-size: 22px;
+    max-width: 680px;
+    line-height: 2;
 }
 
-.tools-col p{
-    position: relative;
-    color: #191A1D;
-    font-size: 18px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    top: 26%;
+#picture-frame{
+    position: absolute;
+    background: #252525;
+    height: 430px;
+    width: 880px;
+    top: 250px;
+    overflow: visible;
 }
 
-.tools-col h2{
-    position: relative;
-    color: #191A1D;
-    font-size: 19px;
+#picture{
+    position: absolute;
+    left: 40%;
+    top: 70px;
+}
+
+#branch{
+    position: absolute;
+    right: 0;
+    top: 150px;
+    max-width: 500px;
+}
+
+#about-iconbox{
+    position: absolute;
+    top: 75%;
+    right: 10%;
+    width: 680px;
+}
+
+.iconbox{
+    float: left;
+    margin: 0px 8.5%;
+}
+
+.about-icon{
+    margin-bottom: 15px;
+    max-width: 50px;
+}
+
+#about-iconbox h1{
+    color: white;
+    font-size: 20px;
     font-family: "Ubuntu";
-    font-weight: 600;
-    top: 26%;
-}
-
-.tools-col li{
-    position: relative;
-    color: #191A1D;
-    font-size: 18px;
-    font-family: "Open Sans", sans-serif;
+    letter-spacing: 3px;
     font-weight: 400;
-    top: 27%;
-    list-style-type: none;
 }
-
 
 /* --------- Portfolio Section --------- */
 .project-row{
-    max-width: 70%;
+    max-width: 100%;
     margin: auto;
     margin-top: 100px;
 }
@@ -315,10 +323,16 @@ body{
 .project-col{
 }
 
+#portfolio-container{
+    width: 1300px;
+    margin: auto;
+}
+
 .timeline{
-    position: absolute;
-    top: 200px;
-    left: 28%;
+    position: relative;
+    float: left;
+    top: 0px;
+    left: 200px;
     width: 2px;
     height: 2250px;
     background-color: rgb(78, 78, 78);
@@ -500,7 +514,7 @@ body{
     margin: 20px;
     width: 300px; 
     height: 200px;
-    border-radius: 20px;
+    border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
 }
@@ -523,19 +537,72 @@ body{
     transition: opacity .2s ease;
 }
 
+#gallerysun{
+    position: absolute;
+    transform: translate(-50%, -45%);
+    left: 50%;
+    top: 50%;
+    width: 550px;
+    height: 550px;
+    background: #FF7878;
+    border-radius: 100%;
+}
+
+#clouds1{
+    position: absolute;
+    right: 25%;
+    top: 60%;
+}
+
+#clouds2{
+    position: absolute;
+    left: 25%;
+    top: 35%;
+}
+
+#koi1{
+    position: absolute;
+    left: 15%;
+    top: 86%;
+    max-width: 150px;
+}
+
+#koi2{
+    position: absolute;
+    right: 15%;
+    top: 10%;
+    max-width: 150px;
+}
+
+/* --------- Transition 2 --------- */
+#footer img{
+    position: absolute;
+    right: 0;
+}
 
 /* --------- Contact Section ---------- */
-.contact-row{
-    padding-top: 180px;
+#contact a{
+    margin: 0 30px;
 }
 
-.contact-col{
-
+#contact i{
+    font-size: 25px;
+    color: black;
+    transition: color .2s ease;
 }
 
-.contact-col h1{
-    color: #191A1D;
-    font-size: 40px;
+#contact i:hover{
+    color: #FF7878;
+}
+
+#contact p{
+    color: black;
     font-family: "Ubuntu";
-    font-weight: 500;
+}
+
+#contact h1{
+    color: black;
+    font-family: "Ubuntu";
+    font-size: 20px;
+    letter-spacing: 3px;
 }

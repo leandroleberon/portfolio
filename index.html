@@ -20,8 +20,6 @@
         <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap" rel="stylesheet">
         <!-- Font: Open Sans -->
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-        <!-- Font: Baloo -->
-        <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&display=swap" rel="stylesheet">
         <!-- Page CSS -->
         <link rel="stylesheet" href="css/main.css">
 
@@ -40,27 +38,27 @@
         <div id="sidebar">
             
             <div class="home-nav nav">
-                <a class="text-white" data-scroll href="#home">Home</a>
+                <a data-scroll href="#home">Home</a>
                 <div class="underline"></div>
             </div>
 
             <div class="about-nav nav">
-                <a class="text-white" data-scroll href="#about">About</a>
+                <a data-scroll href="#about">About</a>
                 <div class="underline"></div>
             </div>
 
             <div class="portfolio-nav nav">
-                <a class="text-white" data-scroll href="#portfolio">Portfolio</a>
+                <a data-scroll href="#portfolio">Portfolio</a>
                 <div class="underline"></div>
             </div>
             
             <div class="gallery-nav nav">
-                <a class="text-white" data-scroll href="#gallery">Gallery</a>
+                <a data-scroll href="#gallery">Gallery</a>
                 <div class="underline"></div>
             </div>
             
             <div class="contact-nav nav">
-                <a class="text-white" data-scroll href="#contact">Contact</a>
+                <a data-scroll href="#contact">Contact</a>
                 <div class="underline"></div>
             </div>
 
@@ -71,8 +69,15 @@
 
                 <div id="greeting" class="text-center">
                     <h1>Leandro Leberon</h1>
-                    <p>Welcome to my website.</p>
+                    <p>Web Designer and Developer</p>
                 </div>
+
+                <div id="homesun"></div>
+
+                <img id="home-mountain1" src="./img/bg/mountain.png">
+                <img id="home-mountain2" src="./img/bg/mountain2.png">
+                <img id="home-bird1" src="./img/bg/homebird.png">
+                <img id="home-bird2" src="./img/bg/homebird2.png">
 
                 <div id="arrow">
                     <a data-scroll href="#about"><img src="./img/icons/down-arrow.png"></a>
@@ -88,6 +93,13 @@
 
         </div>
 
+
+        <!---------- Transition 1 ------------>
+        <div id="transition" class="section">
+            <img src="./img/bg/transition.png">
+        </div>
+
+
         <!---------- About ------------>
         <div id="about" class="section">
 
@@ -97,49 +109,32 @@
                     </div>
                 </div>
 
-                <div class="about-row row mt-5">
-                    <div class="about-col col-12 text-center">
-                        <div id="leandro"></div>
-                        <p>I’m a senior IT student with a passion for web development and graphic design.</p>
-                    </div>
+                <div id="picture-frame">
+                    <img id="picture" src="./img/actor.png">
                 </div>
+                
+                <p>I’m a  senior IT student at Florida State Univresity with a passion for web development and graphic design. I like to design and develop things on my own and can work efficiently in groups.</p>
 
-                <div class="tools-row row">
-                    <div class="tools-col col-4 text-center">
+
+                <img id="branch" src="./img/bg/branch.png">
+
+                <div id="about-iconbox">
+                    <div class="iconbox text-center">
+                        <img class="about-icon" src="./img/icons/designer.png">
                         <h1>Designer</h1>
-                        <img src="./img/icons/designer.png">
-                        <p>I enjoy being creative and creating stuff.</p>
-                        <h2>Desing Tools:</h2>
-                        <li>Photohsop</li>
-                        <li>Illustrator</li>
-                        <li>Figma</li>
-                        <li>Pen & Paper</li>
                     </div>
 
-                    <div class="tools-col col-4 text-center">
-                        <h1>Front-end Developer</h1>
-                        <img src="./img/icons/frontend.png">
-                        <p>I enjoy being creative and creating stuff.</p>
-                        <h2>Dev Tools:</h2>
-                        <li>VS Code</li>
-                        <li>Bootstrap 4</li>
-                        <li>Github</li>
-                        <li>CodePen</li>
+                    <div class="iconbox text-center">
+                        <img class="about-icon" src="./img/icons/frontend.png">
+                        <h1>Front-end</h1>
                     </div>
 
-                    <div class="tools-col col-4 text-center">
-                        <h1>Back-end Developer</h1>
-                        <img src="./img/icons/backend.png">
-                        <p>I enjoy being creative and creating stuff.</p>
-                        <h2>Dev Tools:</h2>
-                        <li>Django</li>
-                        <li>React</li>
-                        <li>AWS</li>
-                        <li>Apache</li>
-                        <li>MySQL</li>
+                    <div class="iconbox text-center">
+                        <img class="about-icon" src="./img/icons/backend.png">
+                        <h1>Back-end</h1>
                     </div>
                 </div>
-            
+
         </div>
 
         <!---------- Portfolio ------------>
@@ -147,143 +142,145 @@
 
             <div class="header-row row pt-5">
                 <div class="header-col col-12 text-center">
-                    <h1>My Projects</h1>
+                    <h1>My Work</h1>
                 </div>
             </div>
-
-            <div class="timeline">
-                <div class="date d1">
-                    <h1>2020</h1>
-                    <img src="./img/icons/diamond.png">
-                </div>
-                <div class="date d2">
-                    <h1>2020</h1>
-                    <img src="./img/icons/diamond.png">
-                </div>
-                <div class="date d3">
-                    <h1>2020</h1>
-                    <img src="./img/icons/diamond.png">
-                </div>
-                <div class="date d4">
-                    <h1>2019</h1>
-                    <img src="./img/icons/diamond.png">
-                </div>
-                <div class="date d5">
-                    <h1>2019</h1>
-                    <img src="./img/icons/diamond.png">
-                </div>
-                <div class="date d6">
-                    <h1>2019</h1>
-                    <img src="./img/icons/diamond.png">
-                </div>
-                <div class="date d7">
-                    <h1>2019</h1>
-                    <img src="./img/icons/diamond.png">
-                </div>
-            </div>
-
-            <div class="project-row row">
-                <div class="project-col col-12">
-                    <div class="project-desc">
-                        <h1>DSS Lab</h1>
-                        <p>I designed and developed the website for the DSS Lab. I created this website during an internship.</p>
-                        <h2>Used: HTML5, Bootstrap 4, CSS, JavaScript.</h2>
-                        <div class="project-btns">
-                            <a class="btn1" href="#" target="_blank">Code</a>
-                            <a class="btn2" href="https://dss-lab.github.io/" target="_blank">Visit</a>
-                        </div>
+            
+            <div id="portfolio-container">
+                <div class="timeline">
+                    <div class="date d1">
+                        <h1>2020</h1>
+                        <img src="./img/icons/diamond.png">
                     </div>
-                    <img src="./img/portfolio/dss.png">
-                </div>
-            </div>
-
-            <div class="project-row row">
-                <div class="project-col col-12">
-                    <div class="project-desc">
-                        <h1>Cybersecurity Wiki</h1>
-                        <p>I designed and developed the website for the DSS Lab. I created this website during an internship.</p>
-                        <h2>Used: HTML5, Bootstrap 4, CSS, JavaScript.</h2>
-                        <div class="project-btns">
-                            <a class="btn1" href="#" target="_blank">Code</a>
-                            <a class="btn2" href="https://cybersecurity-wiki.herokuapp.com/" target="_blank">Visit</a>
-                        </div>
+                    <div class="date d2">
+                        <h1>2020</h1>
+                        <img src="./img/icons/diamond.png">
                     </div>
-                    <img src="./img/portfolio/wiki.png">
-                </div>
-            </div>
-
-            <div class="project-row row">
-                <div class="project-col col-12">
-                    <div class="project-desc">
-                        <h1>Astro Planner</h1>
-                        <p>I designed and developed the website for the DSS Lab. I created this website during an internship.</p>
-                        <h2>Used: HTML5, Bootstrap 4, CSS, JavaScript.</h2>
-                        <div class="project-btns">
-                            <a class="btn1" href="#" target="_blank">Code</a>
-                            <a class="btn2" href="#" target="_blank">Visit</a>
-                        </div>
+                    <div class="date d3">
+                        <h1>2020</h1>
+                        <img src="./img/icons/diamond.png">
                     </div>
-                    <img src="./img/portfolio/astroplanner.png">
-                </div>
-            </div>
-
-            <div class="project-row row">
-                <div class="project-col col-12">
-                    <div class="project-desc">
-                        <h1>Weather App</h1>
-                        <p>I designed and developed the website for the DSS Lab. I created this website during an internship.</p>
-                        <h2>Used: HTML5, Bootstrap 4, CSS, JavaScript.</h2>
-                        <div class="project-btns">
-                            <a class="btn1" href="#" target="_blank">Code</a>
-                            <a class="btn2" href="#" target="_blank">Visit</a>
-                        </div>
+                    <div class="date d4">
+                        <h1>2019</h1>
+                        <img src="./img/icons/diamond.png">
                     </div>
-                    <img src="./img/portfolio/weatherapp.png">
-                </div>
-            </div>
-
-            <div class="project-row row">
-                <div class="project-col col-12">
-                    <div class="project-desc">
-                        <h1>Homework Uploader</h1>
-                        <p>I designed and developed the website for the DSS Lab. I created this website during an internship.</p>
-                        <h2>Used: HTML5, Bootstrap 4, CSS, JavaScript.</h2>
-                        <div class="project-btns">
-                            <a class="btn1" href="#" target="_blank">Code</a>
-                            <a class="btn2" href="#" target="_blank">Try</a>
-                        </div>
+                    <div class="date d5">
+                        <h1>2019</h1>
+                        <img src="./img/icons/diamond.png">
                     </div>
-                    <img src="./img/portfolio/hwuploader.png">
-                </div>
-            </div>
-
-            <div class="project-row row">
-                <div class="project-col col-12">
-                    <div class="project-desc">
-                        <h1>Portfolio</h1>
-                        <p>I designed and developed the website for the DSS Lab. I created this website during an internship.</p>
-                        <h2>Used: HTML5, Bootstrap 4, CSS, JavaScript.</h2>
-                        <div class="project-btns">
-                            <a class="btn1" href="#" target="_blank">Code</a>
-                            <a class="btn2" href="#" target="_blank">Visit</a>
-                        </div>
+                    <div class="date d6">
+                        <h1>2019</h1>
+                        <img src="./img/icons/diamond.png">
                     </div>
-                    <img src="./img/portfolio/portfolio.png">
-                </div>
-            </div>
-
-            <div class="project-row row">
-                <div class="project-col col-12">
-                    <div class="project-desc">
-                        <h1>Resume</h1>
-                        <p>I designed and developed the website for the DSS Lab. I created this website during an internship.</p>
-                        <h2>Used: HTML5, Bootstrap 3, CSS, JavaScript.</h2>
-                        <div class="project-btns">
-                            <a class="btn1" href="#" target="_blank">Code</a>
-                            <a class="btn2" href="https://leandroleberon.github.io/resume/" target="_blank">Visit</a>
-                        </div>
+                    <div class="date d7">
+                        <h1>2019</h1>
+                        <img src="./img/icons/diamond.png">
                     </div>
-                    <img src="./img/portfolio/resume.png">
+                </div>
+
+                <div class="project-row row">
+                    <div class="project-col col-12">
+                        <div class="project-desc">
+                            <h1>DSS Lab</h1>
+                            <p>During my first internship I designed and developed the website for the Decision and Secure Systems Laboratory.</p>
+                            <h2>Used: HTML5, Bootstrap 4, CSS, JavaScript.</h2>
+                            <div class="project-btns">
+                                <a class="btn1" href="#" target="_blank">Code</a>
+                                <a class="btn2" href="https://dss-lab.github.io/" target="_blank">Visit</a>
+                            </div>
+                        </div>
+                        <img src="./img/portfolio/dss.png">
+                    </div>
+                </div>
+
+                <div class="project-row row">
+                    <div class="project-col col-12">
+                        <div class="project-desc">
+                            <h1>Cybersecurity Wiki</h1>
+                            <p>I designed and developed a blog-like website meant to provide information on cybersecurity and its practices for a class.</p>
+                            <h2>Used: Django, Bootstrap 4, CSS, JavaScript.</h2>
+                            <div class="project-btns">
+                                <a class="btn1" href="#" target="_blank">Code</a>
+                                <a class="btn2" href="https://cybersecurity-wiki.herokuapp.com/" target="_blank">Visit</a>
+                            </div>
+                        </div>
+                        <img src="./img/portfolio/wiki.png">
+                    </div>
+                </div>
+
+                <div class="project-row row">
+                    <div class="project-col col-12">
+                        <div class="project-desc">
+                            <h1>Astro Planner</h1>
+                            <p>For my senior project, I designed a modern and minimalist planner app for students.</p>
+                            <h2>Used: Figma, Photoshop</h2>
+                            <div class="project-btns">
+                                <a class="btn1" href="#" target="_blank">Code</a>
+                                <a class="btn2" href="#" target="_blank">Visit</a>
+                            </div>
+                        </div>
+                        <img src="./img/portfolio/astroplanner.png">
+                    </div>
+                </div>
+
+                <div class="project-row row">
+                    <div class="project-col col-12">
+                        <div class="project-desc">
+                            <h1>Weather App</h1>
+                            <p>I designed and developed a weather app with three different themes. It uses Open Weather's API.</p>
+                            <h2>Used: Electron, HTML5, CSS, JavaScript.</h2>
+                            <div class="project-btns">
+                                <a class="btn1" href="#" target="_blank">Code</a>
+                                <a class="btn2" href="#" target="_blank">Visit</a>
+                            </div>
+                        </div>
+                        <img src="./img/portfolio/weatherapp.png">
+                    </div>
+                </div>
+
+                <div class="project-row row">
+                    <div class="project-col col-12">
+                        <div class="project-desc">
+                            <h1>Homework Uploader</h1>
+                            <p>I developed a program that automatically uploads a homework to Canvas for a class project.</p>
+                            <h2>Used: Python, Tkinter, Selenium</h2>
+                            <div class="project-btns">
+                                <a class="btn1" href="#" target="_blank">Code</a>
+                                <a class="btn2" href="#" target="_blank">Try</a>
+                            </div>
+                        </div>
+                        <img src="./img/portfolio/hwuploader.png">
+                    </div>
+                </div>
+
+                <div class="project-row row">
+                    <div class="project-col col-12">
+                        <div class="project-desc">
+                            <h1>Portfolio</h1>
+                            <p>I designed and developed my porfolio inspired by japanese culture.</p>
+                            <h2>Used: HTML5, Bootstrap 4, CSS, JavaScript.</h2>
+                            <div class="project-btns">
+                                <a class="btn1" href="#" target="_blank">Code</a>
+                                <a class="btn2" href="#" target="_blank">Visit</a>
+                            </div>
+                        </div>
+                        <img src="./img/portfolio/portfolio.png">
+                    </div>
+                </div>
+
+                <div class="project-row row">
+                    <div class="project-col col-12">
+                        <div class="project-desc">
+                            <h1>Resume</h1>
+                            <p>I designed and developed a professional interactive resume for a class project.</p>
+                            <h2>Used: HTML5, Bootstrap 3, CSS, JavaScript.</h2>
+                            <div class="project-btns">
+                                <a class="btn1" href="#" target="_blank">Code</a>
+                                <a class="btn2" href="https://leandroleberon.github.io/resume/" target="_blank">Visit</a>
+                            </div>
+                        </div>
+                        <img src="./img/portfolio/resume.png">
+                    </div>
                 </div>
             </div>
 
@@ -298,6 +295,12 @@
                 </div>
             </div>
             
+            <div id="gallerysun"></div>
+            <img id="clouds1" src="./img/bg/clouds.png">
+            <img id="clouds2" src="./img/bg/clouds2.png">
+            <img id="koi1" src="./img/bg/koi1.png">
+            <img id="koi2" src="./img/bg/koi2.png">
+
             <div class="gallery-row row">
                 <div class="gallery-col col-12">
                     <div class="gallery-btns text-center">
@@ -343,15 +346,37 @@
 
         </div>
 
+
+        <!---------- Transition 2 ------------>
+        <div id="footer" class="section">
+            <img src="./img/bg/transition2.png">
+        </div>
+
+
         <!---------- Contact ------------>
         <div id="contact" class="section">
-            
-            <div class="contact-row row">
-                <div class="contact-col col-12 text-center">
-                    <h1>Get in Touch</h1>
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>Let's create something</h1>
                 </div>
             </div>
 
+            <div class="row pt-5">
+                <div class="col-12 text-center">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                    <a href="#"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+
+            <div class="row pt-5">
+                <div class="col-12 text-center">
+                    <p>© Leandro Leberon 2020. All rights reserved.</p>
+                </div>
+            </div>
+            
         </div>
 
 
