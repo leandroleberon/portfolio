@@ -68,6 +68,7 @@ body{
     height: 300px;
     max-height: 300px;
     background: #1A1A1A;
+    overflow: hidden;
 }
 
 #contact{
@@ -343,7 +344,10 @@ body{
     margin-top: 100px;
 }
 
-.project-col{
+#dragon{
+    position: absolute;
+    left: 5%;
+    opacity: 0.1;
 }
 
 #portfolio-container{

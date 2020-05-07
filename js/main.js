@@ -10,6 +10,65 @@ jQuery(function ($) { "use strict";
             afterClose: $.fancybox.defaults.hash = false
         });
         
+        // Simple Parallax JS
+        var bird1 = document.getElementById('home-bird1');
+        var bird2 = document.getElementById('home-bird2');
+        var dragon = document.getElementById('dragon');
+        var clouds1 = document.getElementById('clouds1');
+        var clouds2 = document.getElementById('clouds2');
+        var mountain1 = document.getElementById('transition2-1');
+        var mountain2 = document.getElementById('transition2-2');
+        new simpleParallax(bird1, {
+            scale: 5,
+            overflow: true,
+            delay: 0.4,
+            transition: 'ease-out',
+            orientation: 'right'
+        });
+        new simpleParallax(bird2, {
+            scale: 5,
+            overflow: true,
+            delay: 0.4,
+            transition: 'ease-out',
+            orientation: 'left'
+        });
+        new simpleParallax(dragon, {
+            scale: 1.1,
+            overflow: true,
+            delay: 0.4,
+            transition: 'ease-out',
+            orientation: 'down'
+        });
+        new simpleParallax(clouds1, {
+            scale: 1.5,
+            overflow: true,
+            delay: 0.4,
+            transition: 'ease-out',
+            orientation: 'right'
+        });
+        new simpleParallax(clouds2, {
+            scale: 1.5,
+            overflow: true,
+            delay: 0.4,
+            transition: 'ease-out',
+            orientation: 'left'
+        });
+        new simpleParallax(mountain1, {
+            scale: 1.5,
+            overflow: true,
+            delay: 0.4,
+            transition: 'ease-out',
+            orientation: 'right'
+        });
+        new simpleParallax(mountain2, {
+            scale: 1.5,
+            overflow: true,
+            delay: 0.4,
+            transition: 'ease-out',
+            orientation: 'left'
+        });
+
+
         // Prevent Right Click
         $("img").mousedown(function(e){
             e.preventDefault()
