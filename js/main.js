@@ -1,12 +1,12 @@
 jQuery(function ($) { "use strict";
     $( document ).ready(function() {
-    
-        // People Modals
-        $(".modalbtn").click(function(event) {
-            $(this).modal({
-            fadeDuration: 250
-            });
-            return false;
+        
+        //Fancy Box
+        $('[data-fancybox]').fancybox({
+            defaultType: "image",
+            animationDuration: 400,
+            animationEffect: "zoom",
+            protect: true,
         });
         
         // AOS Config
@@ -107,6 +107,19 @@ jQuery(function ($) { "use strict";
             else {
                 contact_line.css("width","0%")
             }
+        })
+
+        // Portfolio Hover Effects
+        var portfolioitem = $(".project-img");
+        var portfolioicon = $(".project-img i");
+        var portfolioimg = $(".project-img img");
+
+        portfolioitem.hover(function(){
+            $(this).find(portfolioicon).css("opacity","1")
+            $(this).find(portfolioimg).css("opacity","0.3")
+        },function(){
+            $(this).find(portfolioicon).css("opacity","0")
+            $(this).find(portfolioimg).css("opacity","1")
         })
 
         // Gallery Hover Effects

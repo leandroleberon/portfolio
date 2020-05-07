@@ -24,8 +24,6 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <!-- AOS CSS -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <!-- Jquery Modal CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
         <!-- Fancy Box CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
         <!-- Font: Ubuntu -->
@@ -76,6 +74,14 @@
 
         </div>
 
+        <div id="blacklogo">
+            <a href="https://leandroleberon.github.io/portfolio/"><img src="./img/icons/llblack.png"></a>
+        </div>
+
+        <div id="whitelogo">
+            <a href="https://leandroleberon.github.io/portfolio/"><img src="./img/icons/llwhite.png"></a>
+        </div>
+
         <!---------- Home ------------>
         <div id="home" class="section">
 
@@ -86,8 +92,8 @@
 
                 <div id="homesun"></div>
 
-                <img id="home-mountain1" src="./img/bg/mountain.png">
-                <img id="home-mountain2" src="./img/bg/mountain2.png">
+                <img id="home-mountain1" src="./img/bg/home1.png">
+                <img id="home-mountain2" src="./img/bg/home2.png">
                 <img id="home-bird1" src="./img/bg/homebird.png">
                 <img id="home-bird2" src="./img/bg/homebird2.png">
 
@@ -95,20 +101,13 @@
                     <a data-scroll href="#about"><img src="./img/icons/down-arrow.png"></a>
                 </div>
 
-                <div id="blacklogo">
-                    <a href="https://leandroleberon.github.io/portfolio/"><img src="./img/icons/llblack.png"></a>
-                </div>
-
-                <div id="whitelogo">
-                    <a href="https://leandroleberon.github.io/portfolio/"><img src="./img/icons/llwhite.png"></a>
-                </div>
-
         </div>
 
 
         <!---------- Transition 1 ------------>
         <div id="transition" class="section">
-            <img src="./img/bg/transition.png">
+            <img id="transition1-1" src="./img/bg/transition1.1.png">
+            <img id="transition1-2" src="./img/bg/transition1.2.png">
         </div>
 
 
@@ -138,12 +137,12 @@
 
                     <div class="iconbox text-center">
                         <img class="about-icon" src="./img/icons/frontend.png">
-                        <h1>Front-end</h1>
+                        <h1>Front-end</br>Developer</h1>
                     </div>
 
                     <div class="iconbox text-center">
                         <img class="about-icon" src="./img/icons/backend.png">
-                        <h1>Back-end</h1>
+                        <h1>Back-end</br>Developer</h1>
                     </div>
                 </div>
 
@@ -201,7 +200,10 @@
                                 <a class="btn2" href="https://dss-lab.github.io/" target="_blank">Visit</a>
                             </div>
                         </div>
-                        <img src="./img/portfolio/dss.png">
+                        <div class="project-img">
+                            <img src="./img/portfolio/dss.png">
+                            <a data-fancybox="gallery" href="./img/portfolio/dss.png"><i class="fas fa-expand"></i></a>
+                        </div>
                     </div>
                 </div>
 
@@ -216,7 +218,10 @@
                                 <a class="btn2" href="https://cybersecurity-wiki.herokuapp.com/" target="_blank">Visit</a>
                             </div>
                         </div>
-                        <img src="./img/portfolio/wiki.png">
+                        <div class="project-img">
+                            <img src="./img/portfolio/wiki.png">
+                            <a data-fancybox="gallery" href="./img/portfolio/wiki.png"><i class="fas fa-expand"></i></a>
+                        </div>
                     </div>
                 </div>
 
@@ -231,7 +236,10 @@
                                 <a class="btn2" href="#" target="_blank">Visit</a>
                             </div>
                         </div>
-                        <img src="./img/portfolio/astroplanner.png">
+                        <div class="project-img">
+                            <img src="./img/portfolio/astroplanner.png">
+                            <a data-fancybox="gallery" href="./img/portfolio/astroplanner.png"><i class="fas fa-expand"></i></a>
+                        </div>
                     </div>
                 </div>
 
@@ -246,7 +254,10 @@
                                 <a class="btn2" href="#" target="_blank">Visit</a>
                             </div>
                         </div>
-                        <img src="./img/portfolio/weatherapp.png">
+                        <div class="project-img">
+                            <img src="./img/portfolio/weatherapp.png">
+                            <a data-fancybox="gallery" href="./img/portfolio/weatherapp.png"><i class="fas fa-expand"></i></a>
+                        </div>
                     </div>
                 </div>
 
@@ -261,7 +272,10 @@
                                 <a class="btn2" href="#" target="_blank">Try</a>
                             </div>
                         </div>
-                        <img src="./img/portfolio/hwuploader.png">
+                        <div class="project-img">
+                            <img src="./img/portfolio/hwuploader.png">
+                            <a data-fancybox="gallery" href="./img/portfolio/hwuploader.png"><i class="fas fa-expand"></i></a>
+                        </div>
                     </div>
                 </div>
 
@@ -270,13 +284,16 @@
                         <div class="project-desc">
                             <h1>Portfolio</h1>
                             <p>I designed and developed my porfolio inspired by japanese culture.</p>
-                            <h2>Used: HTML5, Bootstrap 4, CSS, JavaScript.</h2>
+                            <h2>Used: HTML5, CSS, JavaScript.</h2>
                             <div class="project-btns">
                                 <a class="btn1" href="#" target="_blank">Code</a>
                                 <a class="btn2" href="#" target="_blank">Visit</a>
                             </div>
                         </div>
-                        <img src="./img/portfolio/portfolio.png">
+                        <div class="project-img">
+                            <img src="./img/portfolio/portfolio.png">
+                            <a data-fancybox="gallery" href="./img/portfolio/portfolio.png"><i class="fas fa-expand"></i></a>
+                        </div>
                     </div>
                 </div>
 
@@ -291,7 +308,10 @@
                                 <a class="btn2" href="https://leandroleberon.github.io/resume/" target="_blank">Visit</a>
                             </div>
                         </div>
-                        <img src="./img/portfolio/resume.png">
+                        <div class="project-img">
+                            <img src="./img/portfolio/resume.png">
+                            <a data-fancybox="gallery" href="./img/portfolio/resume.png"><i class="fas fa-expand"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -338,7 +358,7 @@
                     <img src="./img/gallery/flag.gif">
                     <div class="overlay text-center">
                         <h1>Waving Flag</h1>
-                        <p>A 3D model of a cup of coffee with some doughnuts. Made with Blender.</p>
+                        <p>A 3D model of a waving flag. Made with Blender.</p>
                         <a data-fancybox="gallery" href="./img/gallery/flag.gif"><i class="fas fa-expand"></i></a>
                     </div>
                 </div>
@@ -346,7 +366,7 @@
                     <img src="./img/gallery/concrete.png">
                     <div class="overlay text-center">
                         <h1>Concrete Reflection</h1>
-                        <p>A 3D model of a cup of coffee with some doughnuts. Made with Blender.</p>
+                        <p>A 3D model of light ball being reflected on a concrete surface. Made with Blender.</p>
                         <a data-fancybox="gallery" href="./img/gallery/concrete.png"><i class="fas fa-expand"></i></a>
                     </div>
                 </div>
@@ -354,7 +374,7 @@
                     <img src="./img/gallery/bowling.png">
                     <div class="overlay text-center">
                         <h1>Bowling Scene</h1>
-                        <p>A 3D model of a cup of coffee with some doughnuts. Made with Blender.</p>
+                        <p>A 3D model of a bowling ball hitting some pins. Made with Blender.</p>
                         <a data-fancybox="gallery" href="./img/gallery/bowling.png"><i class="fas fa-expand"></i></a>
                     </div>
                 </div>
@@ -377,8 +397,8 @@
                 <div class="grid-item other">
                     <img src="./img/gallery/deepsea.png">
                     <div class="overlay text-center">
-                        <h1>Coffee and Doughnuts</h1>
-                        <p>A 3D model of a cup of coffee with some doughnuts. Made with Blender.</p>
+                        <h1>Deep Sea</h1>
+                        <p>Made with Photoshop</p>
                         <a data-fancybox="gallery" href="./img/gallery/deepsea.png"><i class="fas fa-expand"></i></a>
                     </div>
                 </div>
@@ -388,8 +408,9 @@
 
 
         <!---------- Transition 2 ------------>
-        <div id="footer" class="section">
-            <img src="./img/bg/transition2.png">
+        <div id="transition2" class="section">
+            <img id="transition2-1" src="./img/bg/transition2.1.png">
+            <img id="transition2-2" src="./img/bg/transition2.2.png">
         </div>
 
 
@@ -431,8 +452,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <!-- Smooth Scroll-->
         <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
-        <!-- Jquery Modal JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
         <!-- Fancy Box JS -->
         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
         <!-- AOS JS -->
