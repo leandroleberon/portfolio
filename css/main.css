@@ -185,11 +185,15 @@ body{
     letter-spacing: 5px;
 }
 
-#homesun{
+#homesun-frame{
     position: absolute;
     transform: translate(-50%, 50%);
     left: 50%;
     bottom: 0;
+}
+
+#homesun{
+    
     width: 550px;
     height: 550px;
     background: #FF7878;
@@ -475,17 +479,16 @@ body{
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     font-size: 18px;
-    color: #191A1D;
+    color: white;
     border: solid white 2px;
-    background-color: white;
     border-radius: 40px;
     padding: 5px 20px;
     transition: .2s ease;
 }
 
 .btn1:hover{
-    color: white;
-    background-color: #191A1D;
+    color: #191A1D;
+    background-color: white;
     text-decoration: none;
 }
 

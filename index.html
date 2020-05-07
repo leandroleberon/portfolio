@@ -37,7 +37,7 @@
     <body>
         
         <!---------- Navigation Bar ------------>
-        <div id="navbar">
+        <div id="navbar" data-aos="fade-down" data-aos-duration="1000">
             <a data-scroll href="#home">Home</a>
             <a data-scroll href="#about">About</a>
             <a data-scroll href="#portfolio">Portfolio</a>
@@ -74,7 +74,7 @@
 
         </div>
 
-        <div id="blacklogo">
+        <div id="blacklogo" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="500">
             <a href="https://leandroleberon.github.io/portfolio/"><img src="./img/icons/llblack.png"></a>
         </div>
 
@@ -86,19 +86,23 @@
         <div id="home" class="section">
 
                 <div id="greeting" class="text-center">
-                    <h1>Leandro Leberon</h1>
-                    <p>Web Designer and Developer</p>
+                    <h1 data-aos="fade-up">Leandro Leberon</h1>
+                    <p data-aos="fade-up" data-aos-delay="100">Web Designer and Developer</p>
                 </div>
 
-                <div id="homesun"></div>
-
-                <img id="home-mountain1" src="./img/bg/home1.png">
-                <img id="home-mountain2" src="./img/bg/home2.png">
-                <img id="home-bird1" src="./img/bg/homebird.png">
-                <img id="home-bird2" src="./img/bg/homebird2.png">
+                <div id="homesun-frame">
+                    <div id="homesun" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"></div>
+                </div>
+                
+                <img id="home-mountain1" src="./img/bg/home1.png" data-aos="fade-right" data-aos-duration="1000">
+                <img id="home-mountain2" src="./img/bg/home2.png" data-aos="fade-left" data-aos-duration="1000">
+                <img id="home-bird1" src="./img/bg/homebird.png" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300">
+                <img id="home-bird2" src="./img/bg/homebird2.png" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300">
 
                 <div id="arrow">
-                    <a data-scroll href="#about"><img src="./img/icons/down-arrow.png"></a>
+                    <div data-aos="fade-up" data-aos-delay="200">
+                        <a data-scroll href="#about"><img src="./img/icons/down-arrow.png"></a>
+                    </div>
                 </div>
 
         </div>
@@ -114,33 +118,33 @@
         <!---------- About ------------>
         <div id="about" class="section">
 
-                <div class="header-row row pt-5">
+                <div class="header-row row pt-5" data-aos="fade-up">
                     <div class="header-col col-12 text-center">
                         <h1>About Me</h1>
                     </div>
                 </div>
 
-                <div id="picture-frame">
+                <div id="picture-frame" data-aos="fade-right">
                     <img id="picture" src="./img/actor.png">
                 </div>
                 
-                <p>I’m a  senior IT student at Florida State Univresity with a passion for web development and graphic design. I like to design and develop things on my own and can work efficiently in groups.</p>
+                <p data-aos="fade-left">I’m a  senior IT student at Florida State Univresity with a passion for web development and graphic design. I like to design and develop things on my own and can work efficiently in groups.</p>
 
 
-                <img id="branch" src="./img/bg/branch.png">
+                <img id="branch" src="./img/bg/branch.png" data-aos="fade-left">
 
                 <div id="about-iconbox">
-                    <div class="iconbox text-center">
+                    <div class="iconbox text-center" data-aos="fade-up" data-aos-delay="100">
                         <img class="about-icon" src="./img/icons/designer.png">
                         <h1>Designer</h1>
                     </div>
 
-                    <div class="iconbox text-center">
+                    <div class="iconbox text-center" data-aos="fade-up" data-aos-delay="200">
                         <img class="about-icon" src="./img/icons/frontend.png">
                         <h1>Front-end</br>Developer</h1>
                     </div>
 
-                    <div class="iconbox text-center">
+                    <div class="iconbox text-center" data-aos="fade-up" data-aos-delay="300">
                         <img class="about-icon" src="./img/icons/backend.png">
                         <h1>Back-end</br>Developer</h1>
                     </div>
@@ -151,7 +155,7 @@
         <!---------- Portfolio ------------>
         <div id="portfolio" class="section">
 
-            <div class="header-row row pt-5">
+            <div class="header-row row pt-5" data-aos="fade-up">
                 <div class="header-col col-12 text-center">
                     <h1>My Work</h1>
                 </div>
@@ -159,31 +163,31 @@
             
             <div id="portfolio-container">
                 <div class="timeline">
-                    <div class="date d1">
+                    <div class="date d1" data-aos="fade-up">
                         <h1>2020</h1>
                         <img src="./img/icons/diamond.png">
                     </div>
-                    <div class="date d2">
+                    <div class="date d2" data-aos="fade-up">
                         <h1>2020</h1>
                         <img src="./img/icons/diamond.png">
                     </div>
-                    <div class="date d3">
+                    <div class="date d3" data-aos="fade-up">
                         <h1>2020</h1>
                         <img src="./img/icons/diamond.png">
                     </div>
-                    <div class="date d4">
+                    <div class="date d4" data-aos="fade-up">
                         <h1>2019</h1>
                         <img src="./img/icons/diamond.png">
                     </div>
-                    <div class="date d5">
+                    <div class="date d5" data-aos="fade-up">
                         <h1>2019</h1>
                         <img src="./img/icons/diamond.png">
                     </div>
-                    <div class="date d6">
+                    <div class="date d6" data-aos="fade-up">
                         <h1>2019</h1>
                         <img src="./img/icons/diamond.png">
                     </div>
-                    <div class="date d7">
+                    <div class="date d7" data-aos="fade-up">
                         <h1>2019</h1>
                         <img src="./img/icons/diamond.png">
                     </div>
@@ -191,16 +195,15 @@
 
                 <div class="project-row row">
                     <div class="project-col col-12">
-                        <div class="project-desc">
+                        <div class="project-desc" data-aos="fade-up">
                             <h1>DSS Lab</h1>
-                            <p>During my first internship I designed and developed the website for the Decision and Secure Systems Laboratory.</p>
+                            <p>During my first internship I designed and developed the website for the Decision and Secure Systems Laboratory<p>
                             <h2>Used: HTML5, Bootstrap 4, CSS, JavaScript.</h2>
                             <div class="project-btns">
-                                <a class="btn1" href="#" target="_blank">Code</a>
-                                <a class="btn2" href="https://dss-lab.github.io/" target="_blank">Visit</a>
+                                <a class="btn1" href="https://dss-lab.github.io/" target="_blank">Visit</a>
                             </div>
                         </div>
-                        <div class="project-img">
+                        <div class="project-img" data-aos="fade-up">
                             <img src="./img/portfolio/dss.png">
                             <a data-fancybox="gallery" href="./img/portfolio/dss.png"><i class="fas fa-expand"></i></a>
                         </div>
@@ -209,16 +212,16 @@
 
                 <div class="project-row row">
                     <div class="project-col col-12">
-                        <div class="project-desc">
+                        <div class="project-desc" data-aos="fade-up">
                             <h1>Cybersecurity Wiki</h1>
                             <p>I designed and developed a blog-like website meant to provide information on cybersecurity and its practices for a class.</p>
                             <h2>Used: Django, Bootstrap 4, CSS, JavaScript.</h2>
                             <div class="project-btns">
-                                <a class="btn1" href="#" target="_blank">Code</a>
+                                <a class="btn1" href="https://github.com/leandroleberon/cybersecurity-wiki" target="_blank">Code</a>
                                 <a class="btn2" href="https://cybersecurity-wiki.herokuapp.com/" target="_blank">Visit</a>
                             </div>
                         </div>
-                        <div class="project-img">
+                        <div class="project-img" data-aos="fade-up">
                             <img src="./img/portfolio/wiki.png">
                             <a data-fancybox="gallery" href="./img/portfolio/wiki.png"><i class="fas fa-expand"></i></a>
                         </div>
@@ -227,16 +230,17 @@
 
                 <div class="project-row row">
                     <div class="project-col col-12">
-                        <div class="project-desc">
+                        <div class="project-desc" data-aos="fade-up">
                             <h1>Astro Planner</h1>
                             <p>For my senior project, I designed a modern and minimalist planner app for students.</p>
                             <h2>Used: Figma, Photoshop</h2>
                             <div class="project-btns">
-                                <a class="btn1" href="#" target="_blank">Code</a>
-                                <a class="btn2" href="#" target="_blank">Visit</a>
+                                <a class="btn1" href="https://lleberon.me/astro-planner" target="_blank">Visit</a>
+                                <a class="btn2" href="https://www.figma.com/file/Rro9dMPuIOrYksvOlpFv7O/Astro-Planner-v2?node-id=0%3A1" target="_blank">Design</a>
+                                
                             </div>
                         </div>
-                        <div class="project-img">
+                        <div class="project-img" data-aos="fade-up">
                             <img src="./img/portfolio/astroplanner.png">
                             <a data-fancybox="gallery" href="./img/portfolio/astroplanner.png"><i class="fas fa-expand"></i></a>
                         </div>
@@ -245,16 +249,16 @@
 
                 <div class="project-row row">
                     <div class="project-col col-12">
-                        <div class="project-desc">
+                        <div class="project-desc" data-aos="fade-up">
                             <h1>Weather App</h1>
                             <p>I designed and developed a weather app with three different themes. It uses Open Weather's API.</p>
                             <h2>Used: Electron, HTML5, CSS, JavaScript.</h2>
                             <div class="project-btns">
-                                <a class="btn1" href="#" target="_blank">Code</a>
-                                <a class="btn2" href="#" target="_blank">Visit</a>
+                                <a class="btn1" href="https://github.com/leandroleberon/weather-app" target="_blank">Code</a>
+                                <a class="btn2" href="https://github.com/leandroleberon/weather-app/tree/master/releases" target="_blank">Download</a>
                             </div>
                         </div>
-                        <div class="project-img">
+                        <div class="project-img" data-aos="fade-up">
                             <img src="./img/portfolio/weatherapp.png">
                             <a data-fancybox="gallery" href="./img/portfolio/weatherapp.png"><i class="fas fa-expand"></i></a>
                         </div>
@@ -263,16 +267,16 @@
 
                 <div class="project-row row">
                     <div class="project-col col-12">
-                        <div class="project-desc">
+                        <div class="project-desc" data-aos="fade-up">
                             <h1>Homework Uploader</h1>
                             <p>I developed a program that automatically uploads a homework to Canvas for a class project.</p>
                             <h2>Used: Python, Tkinter, Selenium</h2>
                             <div class="project-btns">
                                 <a class="btn1" href="#" target="_blank">Code</a>
-                                <a class="btn2" href="#" target="_blank">Try</a>
+                                <a class="btn2" href="#" target="_blank">Download</a>
                             </div>
                         </div>
-                        <div class="project-img">
+                        <div class="project-img" data-aos="fade-up">
                             <img src="./img/portfolio/hwuploader.png">
                             <a data-fancybox="gallery" href="./img/portfolio/hwuploader.png"><i class="fas fa-expand"></i></a>
                         </div>
@@ -281,16 +285,15 @@
 
                 <div class="project-row row">
                     <div class="project-col col-12">
-                        <div class="project-desc">
+                        <div class="project-desc" data-aos="fade-up">
                             <h1>Portfolio</h1>
                             <p>I designed and developed my porfolio inspired by japanese culture.</p>
                             <h2>Used: HTML5, CSS, JavaScript.</h2>
                             <div class="project-btns">
-                                <a class="btn1" href="#" target="_blank">Code</a>
-                                <a class="btn2" href="#" target="_blank">Visit</a>
+                                <a class="btn1" href="https://github.com/leandroleberon/portfolio" target="_blank">Code</a>
                             </div>
                         </div>
-                        <div class="project-img">
+                        <div class="project-img" data-aos="fade-up">
                             <img src="./img/portfolio/portfolio.png">
                             <a data-fancybox="gallery" href="./img/portfolio/portfolio.png"><i class="fas fa-expand"></i></a>
                         </div>
@@ -299,16 +302,16 @@
 
                 <div class="project-row row">
                     <div class="project-col col-12">
-                        <div class="project-desc">
+                        <div class="project-desc" data-aos="fade-up">
                             <h1>Resume</h1>
                             <p>I designed and developed a professional interactive resume for a class project.</p>
                             <h2>Used: HTML5, Bootstrap 3, CSS, JavaScript.</h2>
                             <div class="project-btns">
-                                <a class="btn1" href="#" target="_blank">Code</a>
+                                <a class="btn1" href="https://github.com/leandroleberon/resume" target="_blank">Code</a>
                                 <a class="btn2" href="https://leandroleberon.github.io/resume/" target="_blank">Visit</a>
                             </div>
                         </div>
-                        <div class="project-img">
+                        <div class="project-img" data-aos="fade-up">
                             <img src="./img/portfolio/resume.png">
                             <a data-fancybox="gallery" href="./img/portfolio/resume.png"><i class="fas fa-expand"></i></a>
                         </div>
@@ -321,7 +324,7 @@
         <!---------- Gallery ------------>
         <div id="gallery" class="section">
             
-            <div class="header-row row pt-5">
+            <div class="header-row row pt-5" data-aos="fade-up">
                 <div class="header-col col-12 text-center">
                     <h1>My Designs</h1>
                 </div>
@@ -336,16 +339,16 @@
             <div class="gallery-row row">
                 <div class="gallery-col col-12">
                     <div class="gallery-btns text-center">
-                        <button class="filter-btn active" data-filter="*">All</button>
-                        <button class="filter-btn" data-filter=".web">Web</button>
-                        <button class="filter-btn" data-filter=".3d">3D</button>
-                        <button class="filter-btn" data-filter=".logos">Logos</button>
-                        <button class="filter-btn" data-filter=".other">Other</button>
+                        <button class="filter-btn active" data-filter="*" data-aos="fade-up">All</button>
+                        <button class="filter-btn" data-filter=".web" data-aos="fade-up" data-aos-delay="100">Web</button>
+                        <button class="filter-btn" data-filter=".3d" data-aos="fade-up" data-aos-delay="200">3D</button>
+                        <button class="filter-btn" data-filter=".logos" data-aos="fade-up" data-aos-delay="300">Logos</button>
+                        <button class="filter-btn" data-filter=".other" data-aos="fade-up" data-aos-delay="400">Other</button>
                     </div>
                 </div>
             </div>
 
-            <div class="grid mt-3">
+            <div class="grid mt-3" data-aos="fade-up" data-aos-delay="500">
                 <div class="grid-item 3d">
                     <img src="./img/gallery/doughnuts.png">
                     <div class="overlay text-center">
@@ -417,16 +420,16 @@
         <!---------- Contact ------------>
         <div id="contact" class="section">
 
-            <div class="row">
+            <div class="row" data-aos="fade-up">
                 <div class="col-12 text-center">
                     <h1>Let's create something</h1>
                 </div>
             </div>
 
-            <div class="row pt-5">
+            <div class="row pt-5" data-aos="fade-up" data-aos-delay="100">
                 <div class="col-12 text-center">
                     <a href="https://www.linkedin.com/in/leandroleberon/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://www.instagram.com/leo.leveron/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/leandroleberon" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="mailto:leandroleveron@gmail.com" target="_top"><i class="fas fa-envelope"></i></a>
                     <a href="tel:8503457072"><i class="fas fa-phone"></i></a>
                 </div>

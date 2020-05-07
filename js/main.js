@@ -7,6 +7,15 @@ jQuery(function ($) { "use strict";
             animationDuration: 400,
             animationEffect: "zoom",
             protect: true,
+            afterClose: $.fancybox.defaults.hash = false
+        });
+        
+        // Prevent Right Click
+        $("img").mousedown(function(e){
+            e.preventDefault()
+        });
+        $("img").on("contextmenu",function(e){
+            return false;
         });
         
         // AOS Config
