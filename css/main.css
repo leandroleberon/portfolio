@@ -56,10 +56,10 @@ body{
 #gallery{
     position: relative;
     width: 100%;
-    height: 120vh;
+    height: auto;
     background: #1A1A1A;
     padding-bottom: 100px;
-    max-height: 1250px;
+    min-height: 1200px;
 }
 
 #transition2{
@@ -700,36 +700,46 @@ body{
 @media screen and (max-width: 1600px) {  /* Extra Large */
     /* --- About --- */
     #about{
-        border: solid red;
     }
     #about p{
-        right: 5%;
+        right: 7%;
+        font-size: 20px;
+        width: 600px;
     }
     #about-iconbox{
-        right: 5%;
+        right: 7%;
+        width: 600px;
+    }
+    .iconbox{
+        margin: 0px 10%;
+    }
+    #picture-frame{
+        height: 350px;
+    }
+    #picture{
+        width: 300px;
+    }
+    #branch{
+        top: 12%;
     }
 }
 
 @media screen and (max-width: 1200px) {  /* Large */
     #about{
-        border: solid blue;
     }
 }
 
 @media screen and (max-width: 992px) {  /* Medium */
     #about{
-        border: solid yellow;
     }
 }
 
 @media screen and (max-width: 776px) {  /* Small */
     #about{
-        border: solid green;
     }
 }
 
 @media screen and (max-width: 576px) {  /* Extra Small */
     #about{
-        border: solid red;
     }
 }
