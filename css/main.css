@@ -292,8 +292,9 @@ body{
 #picture-frame{
     position: absolute;
     background: #252525;
-    height: 430px;
-    width: 45%;
+    height: 50%;
+    max-height: 430px;
+    width: 43%;
     max-width: 880px;
     top: 250px;
     overflow: visible;
@@ -301,8 +302,9 @@ body{
 
 #picture{
     position: absolute;
-    left: 40%;
-    top: 70px;
+    left: 43%;
+    top: 80px;
+    width: 350px;
 }
 
 #branch{
