@@ -302,9 +302,9 @@ body{
 
 #picture{
     position: absolute;
-    left: 43%;
-    top: 80px;
-    width: 350px;
+    right: 60%;
+    top: 300px;
+    width: 400px;
 }
 
 #branch{
@@ -433,7 +433,7 @@ body{
     position: absolute;
     margin: 0;
     padding: 0;
-    left: 41.5%;
+    left: 46%;
     top: 44%;
     font-size: 40px;
     color: white;
@@ -694,4 +694,42 @@ body{
     font-family: "Ubuntu";
     font-size: 20px;
     letter-spacing: 3px;
+}
+
+/* --------- Media Queries ---------- */
+@media screen and (max-width: 1600px) {  /* Extra Large */
+    /* --- About --- */
+    #about{
+        border: solid red;
+    }
+    #about p{
+        right: 5%;
+    }
+    #about-iconbox{
+        right: 5%;
+    }
+}
+
+@media screen and (max-width: 1200px) {  /* Large */
+    #about{
+        border: solid blue;
+    }
+}
+
+@media screen and (max-width: 992px) {  /* Medium */
+    #about{
+        border: solid yellow;
+    }
+}
+
+@media screen and (max-width: 776px) {  /* Small */
+    #about{
+        border: solid green;
+    }
+}
+
+@media screen and (max-width: 576px) {  /* Extra Small */
+    #about{
+        border: solid red;
+    }
 }
