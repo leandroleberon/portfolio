@@ -4,7 +4,7 @@ body{
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(255, 255, 255);
     max-width: 1920px;
     margin: 0 auto;
 }
@@ -12,6 +12,18 @@ body{
 .container{
     max-width: 70%;
     border: solid blue;
+}
+
+/* --------- Scroll Bar --------- */
+::-webkit-scrollbar {
+    width: 10px;                                  
+    height: 10px;
+    background-color: #1A1A1A;
+}
+/* Add a thumb */                               
+    ::-webkit-scrollbar-thumb {
+    background: rgb(201, 201, 201);
+    border-radius: 10px;
 }
 
 /* --------- Sections --------- */
@@ -363,7 +375,7 @@ body{
     top: 0px;
     left: 200px;
     width: 2px;
-    height: 2250px;
+    height: 2600px;
     background-color: rgb(78, 78, 78);
 }
 
@@ -381,39 +393,12 @@ body{
 }
 
 .date{
-    position: absolute;
+    position: relative;
     width: 120px;
-    right: -12px;
+    left: -106px;
+    height: 352px;
+    padding-top: 120px;
 }
-
-.d1{
-    top: 125px;
-}
-
-.d2{
-    top: 470px;
-}
-
-.d3{
-    top: 820px;
-}
-
-.d4{
-    top: 1180px;
-}
-
-.d5{
-    top: 1530px;
-}
-
-.d6{
-    top: 1880px;
-}
-
-.d7{
-    top: 2230px;
-}
-
 .project-img{
     float: right;
     width: 450px;
@@ -729,17 +714,12 @@ body{
     }
 }
 
-@media screen and (max-width: 992px) {  /* Medium */
+@media screen and (max-width: 1000px) {  /* Medium */
     #about{
     }
 }
 
-@media screen and (max-width: 776px) {  /* Small */
-    #about{
-    }
-}
-
-@media screen and (max-width: 576px) {  /* Extra Small */
+@media screen and (max-width: 800px) {  /* Small */
     #about{
     }
 }

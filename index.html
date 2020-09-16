@@ -1,472 +1,515 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164555788-1"></script>
-        <script>
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164555788-1"></script>
+    <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'UA-164555788-1');
-        </script>
+    </script>
 
-        <title>Leandro's Portfolio</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="description" content="Leandro Leberon's Portfolio">  
-        <meta name="author" content="Leandro Leberon">
-        <meta name="viewport" content="width=device-width, initial-scale=0.9, minimum-scale=0.9, shrink-to-fit=no">
+    <title>Leandro's Portfolio</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Leandro Leberon's Portfolio">
+    <meta name="author" content="Leandro Leberon">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, minimum-scale=0.9, shrink-to-fit=no">
 
-        <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="img/icons/llwhite.png">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-        <!-- AOS CSS -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <!-- Fancy Box CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-        <!-- Font: Ubuntu -->
-        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap" rel="stylesheet">
-        <!-- Font: Open Sans -->
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-        <!-- Page CSS -->
-        <link rel="stylesheet" href="css/main.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/icons/llwhite.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Fancy Box CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <!-- Font: Ubuntu -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap" rel="stylesheet">
+    <!-- Font: Open Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="css/main.css">
 
-    </head>
-    <body>
-        
-        <!---------- Navigation Bar ------------>
-        <div id="navbar" data-aos="fade-down" data-aos-duration="1000">
+</head>
+
+<body>
+
+    <!---------- Navigation Bar ------------>
+    <div id="navbar" data-aos="fade-down" data-aos-duration="1000">
+        <a data-scroll href="#home">Home</a>
+        <a data-scroll href="#about">About</a>
+        <a data-scroll href="#portfolio">Portfolio</a>
+        <a data-scroll href="#gallery">Gallery</a>
+        <a data-scroll href="#contact">Contact</a>
+    </div>
+
+    <div id="sidebar">
+
+        <div class="home-nav nav">
             <a data-scroll href="#home">Home</a>
+            <div class="underline"></div>
+        </div>
+
+        <div class="about-nav nav">
             <a data-scroll href="#about">About</a>
+            <div class="underline"></div>
+        </div>
+
+        <div class="portfolio-nav nav">
             <a data-scroll href="#portfolio">Portfolio</a>
+            <div class="underline"></div>
+        </div>
+
+        <div class="gallery-nav nav">
             <a data-scroll href="#gallery">Gallery</a>
+            <div class="underline"></div>
+        </div>
+
+        <div class="contact-nav nav">
             <a data-scroll href="#contact">Contact</a>
+            <div class="underline"></div>
         </div>
 
-        <div id="sidebar">
-            
-            <div class="home-nav nav">
-                <a data-scroll href="#home">Home</a>
-                <div class="underline"></div>
-            </div>
+    </div>
 
-            <div class="about-nav nav">
-                <a data-scroll href="#about">About</a>
-                <div class="underline"></div>
-            </div>
+    <div id="blacklogo" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="500">
+        <a href="https://leandroleberon.github.io/portfolio/"><img src="./img/icons/llblack.png"></a>
+    </div>
 
-            <div class="portfolio-nav nav">
-                <a data-scroll href="#portfolio">Portfolio</a>
-                <div class="underline"></div>
-            </div>
-            
-            <div class="gallery-nav nav">
-                <a data-scroll href="#gallery">Gallery</a>
-                <div class="underline"></div>
-            </div>
-            
-            <div class="contact-nav nav">
-                <a data-scroll href="#contact">Contact</a>
-                <div class="underline"></div>
-            </div>
+    <div id="whitelogo">
+        <a href="https://leandroleberon.github.io/portfolio/"><img src="./img/icons/llwhite.png"></a>
+    </div>
 
+    <!---------- Home ------------>
+    <div id="home" class="section">
+
+        <div id="greeting" class="text-center">
+            <h1 data-aos="fade-up">Leandro Leberon</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Designer and Web Developer</p>
         </div>
 
-        <div id="blacklogo" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="500">
-            <a href="https://leandroleberon.github.io/portfolio/"><img src="./img/icons/llblack.png"></a>
+        <div id="homesun-frame">
+            <div id="homesun" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"></div>
         </div>
 
-        <div id="whitelogo">
-            <a href="https://leandroleberon.github.io/portfolio/"><img src="./img/icons/llwhite.png"></a>
+        <img id="home-mountain1" src="./img/bg/home1.png" data-aos="fade-right" data-aos-duration="1000">
+        <img id="home-mountain2" src="./img/bg/home2.png" data-aos="fade-left" data-aos-duration="1000">
+        <img id="home-bird1" src="./img/bg/homebird.png" data-aos="fade-in" data-aos-duration="1000"
+            data-aos-delay="300">
+        <img id="home-bird2" src="./img/bg/homebird2.png" data-aos="fade-in" data-aos-duration="1000"
+            data-aos-delay="300">
+
+        <div id="arrow">
+            <div data-aos="fade-up" data-aos-delay="200">
+                <a data-scroll href="#about"><img src="./img/icons/down-arrow.png"></a>
+            </div>
         </div>
 
-        <!---------- Home ------------>
-        <div id="home" class="section">
+    </div>
 
-                <div id="greeting" class="text-center">
-                    <h1 data-aos="fade-up">Leandro Leberon</h1>
-                    <p data-aos="fade-up" data-aos-delay="100">Web Designer and Developer</p>
-                </div>
 
-                <div id="homesun-frame">
-                    <div id="homesun" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"></div>
-                </div>
-                
-                <img id="home-mountain1" src="./img/bg/home1.png" data-aos="fade-right" data-aos-duration="1000">
-                <img id="home-mountain2" src="./img/bg/home2.png" data-aos="fade-left" data-aos-duration="1000">
-                <img id="home-bird1" src="./img/bg/homebird.png" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300">
-                <img id="home-bird2" src="./img/bg/homebird2.png" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300">
+    <!---------- Transition 1 ------------>
+    <div id="transition" class="section">
+        <img id="transition1-1" src="./img/bg/transition1.1.png">
+        <img id="transition1-2" src="./img/bg/transition1.2.png">
+    </div>
 
-                <div id="arrow">
-                    <div data-aos="fade-up" data-aos-delay="200">
-                        <a data-scroll href="#about"><img src="./img/icons/down-arrow.png"></a>
-                    </div>
-                </div>
 
+    <!---------- About ------------>
+    <div id="about" class="section">
+
+        <div class="header-row row pt-5" data-aos="fade-up">
+            <div class="header-col col-12 text-center">
+                <h1>About Me</h1>
+            </div>
         </div>
 
+        <div id="picture-frame" data-aos="fade-right"></div>
+        <img id="picture" src="./img/leandro.JPG">
 
-        <!---------- Transition 1 ------------>
-        <div id="transition" class="section">
-            <img id="transition1-1" src="./img/bg/transition1.1.png">
-            <img id="transition1-2" src="./img/bg/transition1.2.png">
+        <p data-aos="fade-left">I’m a senior IT student at Florida State University with a passion for web development,
+            graphic design and 3D modeling. I'm creative, curious, and constantly looking to learn something new.</p>
+
+
+        <img id="branch" src="./img/bg/branch.png" data-aos="fade-left">
+
+        <div id="about-iconbox">
+            <div class="iconbox text-center" data-aos="fade-up" data-aos-delay="100">
+                <img class="about-icon" src="./img/icons/designer.png">
+                <h1>Designer</h1>
+            </div>
+
+            <div class="iconbox text-center" data-aos="fade-up" data-aos-delay="200">
+                <img class="about-icon" src="./img/icons/frontend.png">
+                <h1>Front-end</br>Developer</h1>
+            </div>
+
+            <div class="iconbox text-center" data-aos="fade-up" data-aos-delay="300">
+                <img class="about-icon" src="./img/icons/backend.png">
+                <h1>Back-end</br>Developer</h1>
+            </div>
         </div>
 
+    </div>
 
-        <!---------- About ------------>
-        <div id="about" class="section">
+    <!---------- Portfolio ------------>
+    <div id="portfolio" class="section">
 
-                <div class="header-row row pt-5" data-aos="fade-up">
-                    <div class="header-col col-12 text-center">
-                        <h1>About Me</h1>
-                    </div>
-                </div>
-
-                <div id="picture-frame" data-aos="fade-right"></div>
-                <img id="picture" src="./img/leandro.JPG">
-                
-                <p data-aos="fade-left">I’m a senior IT student at Florida State University with a passion for web development, graphic design and 3D modeling. I'm creative, curious, and constantly looking to learn something new.</p>
-
-
-                <img id="branch" src="./img/bg/branch.png" data-aos="fade-left">
-
-                <div id="about-iconbox">
-                    <div class="iconbox text-center" data-aos="fade-up" data-aos-delay="100">
-                        <img class="about-icon" src="./img/icons/designer.png">
-                        <h1>Designer</h1>
-                    </div>
-
-                    <div class="iconbox text-center" data-aos="fade-up" data-aos-delay="200">
-                        <img class="about-icon" src="./img/icons/frontend.png">
-                        <h1>Front-end</br>Developer</h1>
-                    </div>
-
-                    <div class="iconbox text-center" data-aos="fade-up" data-aos-delay="300">
-                        <img class="about-icon" src="./img/icons/backend.png">
-                        <h1>Back-end</br>Developer</h1>
-                    </div>
-                </div>
-
+        <div class="header-row row pt-5" data-aos="fade-up">
+            <div class="header-col col-12 text-center">
+                <h1>My Work</h1>
+            </div>
         </div>
 
-        <!---------- Portfolio ------------>
-        <div id="portfolio" class="section">
+        <img id="dragon" src="./img/bg/dragon.png"></img>
 
-            <div class="header-row row pt-5" data-aos="fade-up">
-                <div class="header-col col-12 text-center">
-                    <h1>My Work</h1>
+        <div id="portfolio-container">
+            <div class="timeline">
+                <div class="date" data-aos="fade-up">
+                    <h1>2020</h1>
+                    <img src="./img/icons/diamond.png">
+                </div>
+                <div class="date" data-aos="fade-up">
+                    <h1>2020</h1>
+                    <img src="./img/icons/diamond.png">
+                </div>
+                <div class="date" data-aos="fade-up">
+                    <h1>2020</h1>
+                    <img src="./img/icons/diamond.png">
+                </div>
+                <div class="date" data-aos="fade-up">
+                    <h1>2020</h1>
+                    <img src="./img/icons/diamond.png">
+                </div>
+                <div class="date" data-aos="fade-up">
+                    <h1>2020</h1>
+                    <img src="./img/icons/diamond.png">
+                </div>
+                <div class="date" data-aos="fade-up">
+                    <h1>2019</h1>
+                    <img src="./img/icons/diamond.png">
+                </div>
+                <div class="date" data-aos="fade-up">
+                    <h1>2019</h1>
+                    <img src="./img/icons/diamond.png">
+                </div>
+                <div class="date" data-aos="fade-up">
+                    <h1>2019</h1>
+                    <img src="./img/icons/diamond.png">
                 </div>
             </div>
 
-            <img id="dragon" src="./img/bg/dragon.png"></img>
-            
-            <div id="portfolio-container">
-                <div class="timeline">
-                    <div class="date d1" data-aos="fade-up">
-                        <h1>2020</h1>
-                        <img src="./img/icons/diamond.png">
-                    </div>
-                    <div class="date d2" data-aos="fade-up">
-                        <h1>2020</h1>
-                        <img src="./img/icons/diamond.png">
-                    </div>
-                    <div class="date d3" data-aos="fade-up">
-                        <h1>2020</h1>
-                        <img src="./img/icons/diamond.png">
-                    </div>
-                    <div class="date d4" data-aos="fade-up">
-                        <h1>2019</h1>
-                        <img src="./img/icons/diamond.png">
-                    </div>
-                    <div class="date d5" data-aos="fade-up">
-                        <h1>2019</h1>
-                        <img src="./img/icons/diamond.png">
-                    </div>
-                    <div class="date d6" data-aos="fade-up">
-                        <h1>2019</h1>
-                        <img src="./img/icons/diamond.png">
-                    </div>
-                    <div class="date d7" data-aos="fade-up">
-                        <h1>2019</h1>
-                        <img src="./img/icons/diamond.png">
-                    </div>
-                </div>
-
-                <div class="project-row row">
-                    <div class="project-col col-12">
-                        <div class="project-desc" data-aos="fade-up">
-                            <h1>DSS Lab</h1>
-                            <p>During my first internship I designed and developed the website for the Decision and Secure Systems Laboratory<p>
-                            <h2>Used: HTML5, Bootstrap 4, CSS, JavaScript.</h2>
-                            <div class="project-btns">
-                                <a class="btn1" href="https://dss-lab.github.io/" target="_blank">Visit</a>
-                            </div>
-                        </div>
-                        <div class="project-img" data-aos="fade-up">
-                            <img src="./img/portfolio/dss.png">
-                            <a data-fancybox="gallery" href="./img/portfolio/dss.png"><i class="fas fa-expand"></i></a>
+            <div class="project-row row">
+                <div class="project-col col-12">
+                    <div class="project-desc" data-aos="fade-up">
+                        <h1>Bazar Digital HN</h1>
+                        <p>Developed an e-commerce website for Honduran entrepreneurs to advertise and sell their
+                            products online.
+                        <p>
+                        <h2>Used: Django, PostgreSQL, JavaScript, CSS.</h2>
+                        <div class="project-btns">
+                            <a class="btn1" href="https://bazardigitalhn.herokuapp.com" target="_blank">Visit</a>
                         </div>
                     </div>
-                </div>
-
-                <div class="project-row row">
-                    <div class="project-col col-12">
-                        <div class="project-desc" data-aos="fade-up">
-                            <h1>Cybersecurity Wiki</h1>
-                            <p>I designed and developed a blog-like website meant to provide information on cybersecurity and its practices for a class.</p>
-                            <h2>Used: Django, Bootstrap 4, CSS, JavaScript.</h2>
-                            <div class="project-btns">
-                                <a class="btn1" href="https://github.com/leandroleberon/cybersecurity-wiki" target="_blank">Code</a>
-                                <a class="btn2" href="https://cybersecurity-wiki.herokuapp.com/" target="_blank">Visit</a>
-                            </div>
-                        </div>
-                        <div class="project-img" data-aos="fade-up">
-                            <img src="./img/portfolio/wiki.png">
-                            <a data-fancybox="gallery" href="./img/portfolio/wiki.png"><i class="fas fa-expand"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-row row">
-                    <div class="project-col col-12">
-                        <div class="project-desc" data-aos="fade-up">
-                            <h1>Astro Planner</h1>
-                            <p>For my senior project, I designed a modern and minimalist planner app for students.</p>
-                            <h2>Used: Figma, Photoshop</h2>
-                            <div class="project-btns">
-                                <a class="btn1" href="https://lleberon.me/astro-planner" target="_blank">Visit</a>
-                                <a class="btn2" href="https://www.figma.com/file/Rro9dMPuIOrYksvOlpFv7O/Astro-Planner-v2?node-id=0%3A1" target="_blank">Design</a>
-                                
-                            </div>
-                        </div>
-                        <div class="project-img" data-aos="fade-up">
-                            <img src="./img/portfolio/astroplanner.png">
-                            <a data-fancybox="gallery" href="./img/portfolio/astroplanner.png"><i class="fas fa-expand"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-row row">
-                    <div class="project-col col-12">
-                        <div class="project-desc" data-aos="fade-up">
-                            <h1>Weather App</h1>
-                            <p>I designed and developed a weather app with three different themes. It uses Open Weather's API.</p>
-                            <h2>Used: Electron, HTML5, CSS, JavaScript.</h2>
-                            <div class="project-btns">
-                                <a class="btn1" href="https://github.com/leandroleberon/weather-app" target="_blank">Code</a>
-                                <a class="btn2" href="https://github.com/leandroleberon/weather-app/tree/master/releases" target="_blank">Download</a>
-                            </div>
-                        </div>
-                        <div class="project-img" data-aos="fade-up">
-                            <img src="./img/portfolio/weatherapp.png">
-                            <a data-fancybox="gallery" href="./img/portfolio/weatherapp.png"><i class="fas fa-expand"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-row row">
-                    <div class="project-col col-12">
-                        <div class="project-desc" data-aos="fade-up">
-                            <h1>Homework Uploader</h1>
-                            <p>I developed a program that automatically uploads a homework to Canvas for a class project.</p>
-                            <h2>Used: Python, Tkinter, Selenium</h2>
-                            <div class="project-btns">
-                                <a class="btn1" href="#" target="_blank">Code</a>
-                                <a class="btn2" href="#" target="_blank">Download</a>
-                            </div>
-                        </div>
-                        <div class="project-img" data-aos="fade-up">
-                            <img src="./img/portfolio/hwuploader.png">
-                            <a data-fancybox="gallery" href="./img/portfolio/hwuploader.png"><i class="fas fa-expand"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-row row">
-                    <div class="project-col col-12">
-                        <div class="project-desc" data-aos="fade-up">
-                            <h1>Portfolio</h1>
-                            <p>I designed and developed my porfolio inspired by japanese culture.</p>
-                            <h2>Used: HTML5, CSS, JavaScript.</h2>
-                            <div class="project-btns">
-                                <a class="btn1" href="https://github.com/leandroleberon/portfolio" target="_blank">Code</a>
-                            </div>
-                        </div>
-                        <div class="project-img" data-aos="fade-up">
-                            <img src="./img/portfolio/portfolio.png">
-                            <a data-fancybox="gallery" href="./img/portfolio/portfolio.png"><i class="fas fa-expand"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-row row">
-                    <div class="project-col col-12">
-                        <div class="project-desc" data-aos="fade-up">
-                            <h1>Resume</h1>
-                            <p>I designed and developed a professional interactive resume for a class project.</p>
-                            <h2>Used: HTML5, Bootstrap 3, CSS, JavaScript.</h2>
-                            <div class="project-btns">
-                                <a class="btn1" href="https://github.com/leandroleberon/resume" target="_blank">Code</a>
-                                <a class="btn2" href="https://leandroleberon.github.io/resume/" target="_blank">Visit</a>
-                            </div>
-                        </div>
-                        <div class="project-img" data-aos="fade-up">
-                            <img src="./img/portfolio/resume.png">
-                            <a data-fancybox="gallery" href="./img/portfolio/resume.png"><i class="fas fa-expand"></i></a>
-                        </div>
+                    <div class="project-img" data-aos="fade-up">
+                        <img src="./img/portfolio/bazar.png">
+                        <a data-fancybox="gallery" href="./img/portfolio/bazar.png"><i class="fas fa-expand"></i></a>
                     </div>
                 </div>
             </div>
 
+            <div class="project-row row">
+                <div class="project-col col-12">
+                    <div class="project-desc" data-aos="fade-up">
+                        <h1>DSS Lab</h1>
+                        <p>Website for the Decision and Secure Systems Laboratory. Used to display the
+                            laboratory's info, news and articles.
+                        <p>
+                        <h2>Used: JavaScript, Bootstrap 4, HTML5, CSS.</h2>
+                        <div class="project-btns">
+                            <a class="btn1" href="https://dss-lab.github.io/" target="_blank">Visit</a>
+                        </div>
+                    </div>
+                    <div class="project-img" data-aos="fade-up">
+                        <img src="./img/portfolio/dss.png">
+                        <a data-fancybox="gallery" href="./img/portfolio/dss.png"><i class="fas fa-expand"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-row row">
+                <div class="project-col col-12">
+                    <div class="project-desc" data-aos="fade-up">
+                        <h1>Cybersecurity Wiki</h1>
+                        <p>I designed and developed a blog-like website meant to provide information on cybersecurity
+                            and its practices for a class.</p>
+                        <h2>Used: Django, PostgreSQL, JavaScript CSS.</h2>
+                        <div class="project-btns">
+                            <a class="btn1" href="https://cybersecurity-wiki.herokuapp.com/" target="_blank">Visit</a>
+                        </div>
+                    </div>
+                    <div class="project-img" data-aos="fade-up">
+                        <img src="./img/portfolio/wiki.png">
+                        <a data-fancybox="gallery" href="./img/portfolio/wiki.png"><i class="fas fa-expand"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-row row">
+                <div class="project-col col-12">
+                    <div class="project-desc" data-aos="fade-up">
+                        <h1>Astro Planner</h1>
+                        <p>For my senior project, I designed a modern and minimalist planner app for students.</p>
+                        <h2>Used: Figma, Photoshop</h2>
+                        <div class="project-btns">
+                            <a class="btn1" href="https://lleberon.me/astro-planner" target="_blank">Visit</a>
+                            <a class="btn2"
+                                href="https://www.figma.com/file/Rro9dMPuIOrYksvOlpFv7O/Astro-Planner-v2?node-id=0%3A1"
+                                target="_blank">Design</a>
+
+                        </div>
+                    </div>
+                    <div class="project-img" data-aos="fade-up">
+                        <img src="./img/portfolio/astroplanner.png">
+                        <a data-fancybox="gallery" href="./img/portfolio/astroplanner.png"><i
+                                class="fas fa-expand"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-row row">
+                <div class="project-col col-12">
+                    <div class="project-desc" data-aos="fade-up">
+                        <h1>Portfolio</h1>
+                        <p>I designed and developed my porfolio inspired by japanese culture.</p>
+                        <h2>Used: JavaScript, HTML5, CSS.</h2>
+                        <div class="project-btns">
+                            <a class="btn1" href="https://lleberon.me/portfolio" target="_blank">Visit</a>
+                        </div>
+                    </div>
+                    <div class="project-img" data-aos="fade-up">
+                        <img src="./img/portfolio/portfolio.png">
+                        <a data-fancybox="gallery" href="./img/portfolio/portfolio.png"><i
+                                class="fas fa-expand"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-row row">
+                <div class="project-col col-12">
+                    <div class="project-desc" data-aos="fade-up">
+                        <h1>Weather App</h1>
+                        <p>I designed and developed a weather app with three different themes. It uses Open Weather's
+                            API.</p>
+                        <h2>Used: Electron, JavaScript, HTML5, CSS.</h2>
+                        <div class="project-btns">
+                            <a class="btn1" href="https://github.com/leandroleberon/weather-app"
+                                target="_blank">Code</a>
+                            <a class="btn2" href="https://github.com/leandroleberon/weather-app/tree/master/releases"
+                                target="_blank">Download</a>
+                        </div>
+                    </div>
+                    <div class="project-img" data-aos="fade-up">
+                        <img src="./img/portfolio/weatherapp.png">
+                        <a data-fancybox="gallery" href="./img/portfolio/weatherapp.png"><i
+                                class="fas fa-expand"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-row row">
+                <div class="project-col col-12">
+                    <div class="project-desc" data-aos="fade-up">
+                        <h1>Homework Uploader</h1>
+                        <p>I developed a program that automatically uploads a homework to Canvas for a class project.
+                        </p>
+                        <h2>Used: Python, Tkinter, Selenium</h2>
+                        <div class="project-btns">
+                            <a class="btn1" href="#" target="_blank">Code</a>
+                            <a class="btn2" href="#" target="_blank">Download</a>
+                        </div>
+                    </div>
+                    <div class="project-img" data-aos="fade-up">
+                        <img src="./img/portfolio/hwuploader.png">
+                        <a data-fancybox="gallery" href="./img/portfolio/hwuploader.png"><i
+                                class="fas fa-expand"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-row row">
+                <div class="project-col col-12">
+                    <div class="project-desc" data-aos="fade-up">
+                        <h1>Resume</h1>
+                        <p>I designed and developed a professional interactive resume for a class project.</p>
+                        <h2>Used: JavaScript, Bootstrap 3, HTML5, CSS.</h2>
+                        <div class="project-btns">
+                            <a class="btn1" href="https://leandroleberon.github.io/resume/" target="_blank">Visit</a>
+                        </div>
+                    </div>
+                    <div class="project-img" data-aos="fade-up">
+                        <img src="./img/portfolio/resume.png">
+                        <a data-fancybox="gallery" href="./img/portfolio/resume.png"><i class="fas fa-expand"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <!---------- Gallery ------------>
-        <div id="gallery" class="section">
-            
-            <div class="header-row row pt-5" data-aos="fade-up">
-                <div class="header-col col-12 text-center">
-                    <h1>My Designs</h1>
-                </div>
+    </div>
+
+    <!---------- Gallery ------------>
+    <div id="gallery" class="section">
+
+        <div class="header-row row pt-5" data-aos="fade-up">
+            <div class="header-col col-12 text-center">
+                <h1>My Designs</h1>
             </div>
-            
-            <div id="gallerysun"></div>
-            <img id="clouds1" src="./img/bg/clouds.png">
-            <img id="clouds2" src="./img/bg/clouds2.png">
-            <img id="koi1" src="./img/bg/koi1.png">
-            <img id="koi2" src="./img/bg/koi2.png">
-
-            <div class="gallery-row row">
-                <div class="gallery-col col-12">
-                    <div class="gallery-btns text-center">
-                        <button class="filter-btn active" data-filter="*" data-aos="fade-up">All</button>
-                        <button class="filter-btn" data-filter=".web" data-aos="fade-up" data-aos-delay="100">Web</button>
-                        <button class="filter-btn" data-filter=".3d" data-aos="fade-up" data-aos-delay="200">3D</button>
-                        <button class="filter-btn" data-filter=".logos" data-aos="fade-up" data-aos-delay="300">Logos</button>
-                        <button class="filter-btn" data-filter=".other" data-aos="fade-up" data-aos-delay="400">Other</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="grid mt-3" data-aos="fade-up" data-aos-delay="500">
-                <div class="grid-item 3d">
-                    <img src="./img/gallery/doughnuts.png">
-                    <div class="overlay text-center">
-                        <h1>Coffee and Doughnuts</h1>
-                        <p>A 3D model of a cup of coffee with some doughnuts. Made with Blender.</p>
-                        <a data-fancybox="gallery" href="./img/gallery/doughnuts.png"><i class="fas fa-expand"></i></a>
-                    </div>
-                </div>
-                <div class="grid-item 3d">
-                    <img src="./img/gallery/flag.gif">
-                    <div class="overlay text-center">
-                        <h1>Waving Flag</h1>
-                        <p>A 3D model of a waving flag. Made with Blender.</p>
-                        <a data-fancybox="gallery" href="./img/gallery/flag.gif"><i class="fas fa-expand"></i></a>
-                    </div>
-                </div>
-                <div class="grid-item 3d">
-                    <img src="./img/gallery/concrete.png">
-                    <div class="overlay text-center">
-                        <h1>Concrete Reflection</h1>
-                        <p>A 3D model of light ball being reflected on a concrete surface. Made with Blender.</p>
-                        <a data-fancybox="gallery" href="./img/gallery/concrete.png"><i class="fas fa-expand"></i></a>
-                    </div>
-                </div>
-                <div class="grid-item 3d">
-                    <img src="./img/gallery/bowling.png">
-                    <div class="overlay text-center">
-                        <h1>Bowling Scene</h1>
-                        <p>A 3D model of a bowling ball hitting some pins. Made with Blender.</p>
-                        <a data-fancybox="gallery" href="./img/gallery/bowling.png"><i class="fas fa-expand"></i></a>
-                    </div>
-                </div>
-                <div class="grid-item logos">
-                    <img src="./img/gallery/dsslogo.png">
-                    <div class="overlay text-center">
-                        <h1>DSS Logo</h1>
-                        <p>The final logo design for the Decision and Secure Systems laboratory. Made with Illustrator.</p>
-                        <a data-fancybox="gallery" href="./img/gallery/dsslogo.png"><i class="fas fa-expand"></i></a>
-                    </div>
-                </div>
-                <div class="grid-item other">
-                    <img src="./img/gallery/pab.png">
-                    <div class="overlay text-center">
-                        <h1>Peripheral Artery Disease</h1>
-                        <p>An illustration of PAB I made for a scholar article. Made with Photoshop.</p>
-                        <a data-fancybox="gallery" href="./img/gallery/pab.png"><i class="fas fa-expand"></i></a>
-                    </div>
-                </div>
-                <div class="grid-item other">
-                    <img src="./img/gallery/deepsea.png">
-                    <div class="overlay text-center">
-                        <h1>Deep Sea</h1>
-                        <p>Made with Photoshop</p>
-                        <a data-fancybox="gallery" href="./img/gallery/deepsea.png"><i class="fas fa-expand"></i></a>
-                    </div>
-                </div>
-              </div>
-
         </div>
 
+        <div id="gallerysun"></div>
+        <img id="clouds1" src="./img/bg/clouds.png">
+        <img id="clouds2" src="./img/bg/clouds2.png">
+        <img id="koi1" src="./img/bg/koi1.png">
+        <img id="koi2" src="./img/bg/koi2.png">
 
-        <!---------- Transition 2 ------------>
-        <div id="transition2" class="section">
-            <img id="transition2-1" src="./img/bg/transition2.1.png">
-            <img id="transition2-2" src="./img/bg/transition2.2.png">
+        <div class="gallery-row row">
+            <div class="gallery-col col-12">
+                <div class="gallery-btns text-center">
+                    <button class="filter-btn active" data-filter="*" data-aos="fade-up">All</button>
+                    <button class="filter-btn" data-filter=".web" data-aos="fade-up" data-aos-delay="100">Web</button>
+                    <button class="filter-btn" data-filter=".3d" data-aos="fade-up" data-aos-delay="200">3D</button>
+                    <button class="filter-btn" data-filter=".logos" data-aos="fade-up"
+                        data-aos-delay="300">Logos</button>
+                    <button class="filter-btn" data-filter=".other" data-aos="fade-up"
+                        data-aos-delay="400">Other</button>
+                </div>
+            </div>
         </div>
 
-
-        <!---------- Contact ------------>
-        <div id="contact" class="section">
-
-            <div class="row" data-aos="fade-up">
-                <div class="col-12 text-center">
-                    <h1>Let's create something</h1>
+        <div class="grid mt-3" data-aos="fade-up" data-aos-delay="500">
+            <div class="grid-item 3d">
+                <img src="./img/gallery/doughnuts.png">
+                <div class="overlay text-center">
+                    <h1>Coffee and Doughnuts</h1>
+                    <p>A 3D model of a cup of coffee with some doughnuts. Made with Blender.</p>
+                    <a data-fancybox="gallery" href="./img/gallery/doughnuts.png"><i class="fas fa-expand"></i></a>
                 </div>
             </div>
-
-            <div class="row pt-5" data-aos="fade-up" data-aos-delay="100">
-                <div class="col-12 text-center">
-                    <a href="https://www.linkedin.com/in/leandroleberon/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/leandroleberon" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="mailto:leandroleveron@gmail.com" target="_top"><i class="fas fa-envelope"></i></a>
-                    <a href="tel:8503457072"><i class="fas fa-phone"></i></a>
+            <div class="grid-item 3d">
+                <img src="./img/gallery/flag.gif">
+                <div class="overlay text-center">
+                    <h1>Waving Flag</h1>
+                    <p>A 3D model of a waving flag. Made with Blender.</p>
+                    <a data-fancybox="gallery" href="./img/gallery/flag.gif"><i class="fas fa-expand"></i></a>
                 </div>
             </div>
-
-            <div class="row pt-5">
-                <div class="col-12 text-center">
-                    <p>© Leandro Leberon 2020. All rights reserved.</p>
+            <div class="grid-item 3d">
+                <img src="./img/gallery/concrete.png">
+                <div class="overlay text-center">
+                    <h1>Concrete Reflection</h1>
+                    <p>A 3D model of light ball being reflected on a concrete surface. Made with Blender.</p>
+                    <a data-fancybox="gallery" href="./img/gallery/concrete.png"><i class="fas fa-expand"></i></a>
                 </div>
             </div>
-            
+            <div class="grid-item 3d">
+                <img src="./img/gallery/bowling.png">
+                <div class="overlay text-center">
+                    <h1>Bowling Scene</h1>
+                    <p>A 3D model of a bowling ball hitting some pins. Made with Blender.</p>
+                    <a data-fancybox="gallery" href="./img/gallery/bowling.png"><i class="fas fa-expand"></i></a>
+                </div>
+            </div>
+            <div class="grid-item logos">
+                <img src="./img/gallery/dsslogo.png">
+                <div class="overlay text-center">
+                    <h1>DSS Logo</h1>
+                    <p>The final logo design for the Decision and Secure Systems laboratory. Made with Illustrator.</p>
+                    <a data-fancybox="gallery" href="./img/gallery/dsslogo.png"><i class="fas fa-expand"></i></a>
+                </div>
+            </div>
+            <div class="grid-item other">
+                <img src="./img/gallery/pab.png">
+                <div class="overlay text-center">
+                    <h1>Peripheral Artery Disease</h1>
+                    <p>An illustration of PAB I made for a scholar article. Made with Photoshop.</p>
+                    <a data-fancybox="gallery" href="./img/gallery/pab.png"><i class="fas fa-expand"></i></a>
+                </div>
+            </div>
+            <div class="grid-item other">
+                <img src="./img/gallery/deepsea.png">
+                <div class="overlay text-center">
+                    <h1>Deep Sea</h1>
+                    <p>Made with Photoshop</p>
+                    <a data-fancybox="gallery" href="./img/gallery/deepsea.png"><i class="fas fa-expand"></i></a>
+                </div>
+            </div>
         </div>
 
+    </div>
 
 
-        <!---------- JavaScript Files ------------>
+    <!---------- Transition 2 ------------>
+    <div id="transition2" class="section">
+        <img id="transition2-1" src="./img/bg/transition2.1.png">
+        <img id="transition2-2" src="./img/bg/transition2.2.png">
+    </div>
 
-        <!-- JQuery JS-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <!-- Popper JS-->
-        <script src="https://unpkg.com/@popperjs/core@2"></script>
-        <!-- Bootstrap JS-->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        <!-- Smooth Scroll-->
-        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
-        <!-- Fancy Box JS -->
-        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-        <!-- AOS JS -->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <!-- Simple Parallax JS -->
-        <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
-        <!-- Font Awesome -->
-        <script src="https://kit.fontawesome.com/741946e2e6.js"></script>
-        <!-- Isotope JS-->
-        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-        <!-- Page JS File -->
-        <script src="js/main.js"></script>
-    </body>
+
+    <!---------- Contact ------------>
+    <div id="contact" class="section">
+
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>Let's create something</h1>
+            </div>
+        </div>
+
+        <div class="row pt-5">
+            <div class="col-12 text-center">
+                <a href="https://www.linkedin.com/in/leandroleberon/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/leandroleberon" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:leandroleveron@gmail.com" target="_top"><i class="fas fa-envelope"></i></a>
+                <a href="tel:8503457072"><i class="fas fa-phone"></i></a>
+            </div>
+        </div>
+
+        <div class="row pt-5">
+            <div class="col-12 text-center">
+                <p>© Leandro Leberon 2020. All rights reserved.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!---------- JavaScript Files ------------>
+
+    <!-- JQuery JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS-->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <!-- Bootstrap JS-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Smooth Scroll-->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <!-- Fancy Box JS -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Simple Parallax JS -->
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/741946e2e6.js"></script>
+    <!-- Isotope JS-->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <!-- Page JS File -->
+    <script src="js/main.js"></script>
+</body>
+
 </html>
