@@ -97,24 +97,43 @@ jQuery(function ($) {
     });
 
     // Change Navigation Bar font Color
-    $(window).scroll(function () {
-      var navbar = $("#navbar");
-      var sidebar = $("#sidebar");
-      var whitelogo = $("#whitelogo");
-      var blacklogo = $("#blacklogo");
+    if ($(window).width() > 800) {
+      $(window).scroll(function () {
+        var navbar = $("#navbar");
+        var sidebar = $("#sidebar");
+        var whitelogo = $("#whitelogo");
+        var blacklogo = $("#blacklogo");
 
-      if ($(window).scrollTop() > 650) {
-        navbar.fadeOut("fast");
-        sidebar.fadeIn("slow");
-        whitelogo.fadeIn("slow");
-        blacklogo.fadeOut("fast");
-      } else {
-        navbar.fadeIn("slow");
+        if ($(window).scrollTop() > 650) {
+          navbar.fadeOut("fast");
+          sidebar.fadeIn("slow");
+          whitelogo.fadeIn("slow");
+          blacklogo.fadeOut("fast");
+        } else {
+          navbar.fadeIn("slow");
+          sidebar.fadeOut("fast");
+          whitelogo.fadeOut("fast");
+          blacklogo.fadeIn("slow");
+        }
+      });
+    } else {
+      $(window).scroll(function () {
+        var navbar = $("#navbar");
+        var sidebar = $("#sidebar");
+        var whitelogo = $("#whitelogo");
+        var blacklogo = $("#blacklogo");
+
         sidebar.fadeOut("fast");
-        whitelogo.fadeOut("fast");
-        blacklogo.fadeIn("slow");
-      }
-    });
+        navbar.fadeOut("fast");
+        if ($(window).scrollTop() > 650) {
+          whitelogo.fadeIn("slow");
+          blacklogo.fadeOut("fast");
+        } else {
+          whitelogo.fadeOut("fast");
+          blacklogo.fadeIn("slow");
+        }
+      });
+    }
 
     // Isotope
     var $grid = $(".grid").isotope({
@@ -129,6 +148,19 @@ jQuery(function ($) {
       $grid.isotope({ filter: filterValue });
       $(".filter-btn").removeClass("active");
       $(this).addClass("active");
+    });
+
+    //Isotope Show More
+    $("#gallery-show-more").click(function () {
+      var grid = $("#gallery-grid");
+      var gallerybtn = $("#gallery-show-more");
+
+      grid.toggleClass("gallery-contract");
+      if (grid.hasClass("gallery-contract")) {
+        gallerybtn.text("More");
+      } else {
+        gallerybtn.text("Less");
+      }
     });
 
     // Sidebar Underline Effect

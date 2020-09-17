@@ -45,6 +45,7 @@
         <a data-scroll href="#portfolio">Portfolio</a>
         <a data-scroll href="#gallery">Gallery</a>
         <a data-scroll href="#contact">Contact</a>
+        <a data-scroll href="">Resume</a>
     </div>
 
     <div id="sidebar">
@@ -72,6 +73,9 @@
         <div class="contact-nav nav">
             <a data-scroll href="#contact">Contact</a>
             <div class="underline"></div>
+        </div>
+        <div class="resume-nav nav">
+            <a href="#contact">Resume</a>
         </div>
 
     </div>
@@ -131,13 +135,11 @@
         <div id="picture-frame" data-aos="fade-right"></div>
         <img id="picture" src="./img/leandro.JPG">
 
-        <p data-aos="fade-left">I’m a senior IT student at Florida State University with a passion for web development,
-            graphic design and 3D modeling. I'm creative, curious, and constantly looking to learn something new.</p>
-
-
+        <p data-aos="fade-left">I'm Leandro Leberon, a full-stack web developer based in Tegucigalpa, Honduras. I create
+            dynamic and responsive websites with minimalistic and modern styles.</p>
         <img id="branch" src="./img/bg/branch.png" data-aos="fade-left">
 
-        <div id="about-iconbox">
+        <div id="about-iconbox" class="text-center">
             <div class="iconbox text-center" data-aos="fade-up" data-aos-delay="100">
                 <img class="about-icon" src="./img/icons/designer.png">
                 <h1>Designer</h1>
@@ -190,7 +192,7 @@
                     <img src="./img/icons/diamond.png">
                 </div>
                 <div class="date" data-aos="fade-up">
-                    <h1>2019</h1>
+                    <h1>2020</h1>
                     <img src="./img/icons/diamond.png">
                 </div>
                 <div class="date" data-aos="fade-up">
@@ -200,6 +202,28 @@
                 <div class="date" data-aos="fade-up">
                     <h1>2019</h1>
                     <img src="./img/icons/diamond.png">
+                </div>
+                <div class="date" data-aos="fade-up">
+                    <h1>2019</h1>
+                    <img src="./img/icons/diamond.png">
+                </div>
+            </div>
+
+            <div class="project-row row">
+                <div class="project-col col-12">
+                    <div class="project-desc" data-aos="fade-up">
+                        <h1>ICON</h1>
+                        <p>Designed and developed the landing page for ICON S. de RL.
+                        <p>
+                        <h2>Used: JavaScript, Bootstrap 4, HTML5, CSS.</h2>
+                        <div class="project-btns">
+                            <a class="btn1" href="https://iconhn.com" target="_blank">Visit</a>
+                        </div>
+                    </div>
+                    <div class="project-img" data-aos="fade-up">
+                        <img src="./img/portfolio/icon1.png">
+                        <a data-fancybox="gallery" href="./img/portfolio/icon1.png"><i class="fas fa-expand"></i></a>
+                    </div>
                 </div>
             </div>
 
@@ -226,7 +250,7 @@
                 <div class="project-col col-12">
                     <div class="project-desc" data-aos="fade-up">
                         <h1>DSS Lab</h1>
-                        <p>Website for the Decision and Secure Systems Laboratory. Used to display the
+                        <p>Developed the website for the Decision and Secure Systems Laboratory. Used to display the
                             laboratory's info, news and articles.
                         <p>
                         <h2>Used: JavaScript, Bootstrap 4, HTML5, CSS.</h2>
@@ -245,7 +269,7 @@
                 <div class="project-col col-12">
                     <div class="project-desc" data-aos="fade-up">
                         <h1>Cybersecurity Wiki</h1>
-                        <p>I designed and developed a blog-like website meant to provide information on cybersecurity
+                        <p>Designed and developed a blog-like website meant to provide information on cybersecurity
                             and its practices for a class.</p>
                         <h2>Used: Django, PostgreSQL, JavaScript CSS.</h2>
                         <div class="project-btns">
@@ -285,7 +309,7 @@
                 <div class="project-col col-12">
                     <div class="project-desc" data-aos="fade-up">
                         <h1>Portfolio</h1>
-                        <p>I designed and developed my porfolio inspired by japanese culture.</p>
+                        <p>Designed and developed my porfolio inspired by japanese culture.</p>
                         <h2>Used: JavaScript, HTML5, CSS.</h2>
                         <div class="project-btns">
                             <a class="btn1" href="https://lleberon.me/portfolio" target="_blank">Visit</a>
@@ -303,7 +327,7 @@
                 <div class="project-col col-12">
                     <div class="project-desc" data-aos="fade-up">
                         <h1>Weather App</h1>
-                        <p>I designed and developed a weather app with three different themes. It uses Open Weather's
+                        <p>Designed and developed a weather app with three different themes. It uses Open Weather's
                             API.</p>
                         <h2>Used: Electron, JavaScript, HTML5, CSS.</h2>
                         <div class="project-btns">
@@ -325,7 +349,7 @@
                 <div class="project-col col-12">
                     <div class="project-desc" data-aos="fade-up">
                         <h1>Homework Uploader</h1>
-                        <p>I developed a program that automatically uploads a homework to Canvas for a class project.
+                        <p>Developed a program that automatically uploads a homework to FSU Canvas for a class project.
                         </p>
                         <h2>Used: Python, Tkinter, Selenium</h2>
                         <div class="project-btns">
@@ -345,7 +369,7 @@
                 <div class="project-col col-12">
                     <div class="project-desc" data-aos="fade-up">
                         <h1>Resume</h1>
-                        <p>I designed and developed a professional interactive resume for a class project.</p>
+                        <p>Designed and developed a professional interactive resume for a class project.</p>
                         <h2>Used: JavaScript, Bootstrap 3, HTML5, CSS.</h2>
                         <div class="project-btns">
                             <a class="btn1" href="https://leandroleberon.github.io/resume/" target="_blank">Visit</a>
@@ -390,7 +414,71 @@
             </div>
         </div>
 
-        <div class="grid mt-3" data-aos="fade-up" data-aos-delay="500">
+        <div id="gallery-grid" class="grid mt-3 gallery-contract" data-aos="fade-up" data-aos-delay="500">
+            <div class="grid-item logos">
+                <img src="./img/gallery/iconlight.png">
+                <div class="overlay text-center">
+                    <h1>ICON Logo</h1>
+                    <p>The final logo design for the company ICON S. de RL. Made with Photoshop.</p>
+                    <a data-fancybox="gallery" href="./img/gallery/iconlight.png"><i class="fas fa-expand"></i></a>
+                </div>
+            </div>
+            <div class="grid-item logos">
+                <img src="./img/gallery/bazar.png">
+                <div class="overlay text-center">
+                    <h1>Bazar Digital Logo</h1>
+                    <p>The final logo design for the website Bazar Digital. Made with Photoshop.</p>
+                    <a data-fancybox="gallery" href="./img/gallery/bazar.png"><i class="fas fa-expand"></i></a>
+                </div>
+            </div>
+            <div class="grid-item logos">
+                <img src="./img/gallery/vcio2.png">
+                <div class="overlay text-center">
+                    <h1>VCIO Logo</h1>
+                    <p>The larger version of the logo for VCIO. Made with Photoshop.</p>
+                    <a data-fancybox="gallery" href="./img/gallery/vcio2.png"><i class="fas fa-expand"></i></a>
+                </div>
+            </div>
+            <div class="grid-item logos">
+                <img src="./img/gallery/vcio1.png">
+                <div class="overlay text-center">
+                    <h1>VCIO Logo</h1>
+                    <p>The final logo design for the company VCIO. Made with Photoshop.</p>
+                    <a data-fancybox="gallery" href="./img/gallery/vcio1.png"><i class="fas fa-expand"></i></a>
+                </div>
+            </div>
+            <div class="grid-item other">
+                <img src="./img/gallery/vcio3.png">
+                <div class="overlay text-center">
+                    <h1>VCIO Post</h1>
+                    <p>Social media post for VCIO. Made with Figma.</p>
+                    <a data-fancybox="gallery" href="./img/gallery/vcio3.png"><i class="fas fa-expand"></i></a>
+                </div>
+            </div>
+            <div class="grid-item other">
+                <img src="./img/gallery/infographic.png">
+                <div class="overlay text-center">
+                    <h1>CO2 Infographic</h1>
+                    <p>An infographic about the major causes of air pollution. Made with Figma.</p>
+                    <a data-fancybox="gallery" href="./img/gallery/infographic.png"><i class="fas fa-expand"></i></a>
+                </div>
+            </div>
+            <div class="grid-item logos">
+                <img src="./img/gallery/dsslogo.png">
+                <div class="overlay text-center">
+                    <h1>DSS Logo</h1>
+                    <p>The final logo design for the Decision and Secure Systems laboratory. Made with Illustrator.</p>
+                    <a data-fancybox="gallery" href="./img/gallery/dsslogo.png"><i class="fas fa-expand"></i></a>
+                </div>
+            </div>
+            <div class="grid-item web">
+                <img src="./img/gallery/kraken.png">
+                <div class="overlay text-center">
+                    <h1>Kraken</h1>
+                    <p>Concept for video game hightlights website Kraken. Made with Figma.</p>
+                    <a data-fancybox="gallery" href="./img/gallery/kraken.png"><i class="fas fa-expand"></i></a>
+                </div>
+            </div>
             <div class="grid-item 3d">
                 <img src="./img/gallery/doughnuts.png">
                 <div class="overlay text-center">
@@ -423,14 +511,6 @@
                     <a data-fancybox="gallery" href="./img/gallery/bowling.png"><i class="fas fa-expand"></i></a>
                 </div>
             </div>
-            <div class="grid-item logos">
-                <img src="./img/gallery/dsslogo.png">
-                <div class="overlay text-center">
-                    <h1>DSS Logo</h1>
-                    <p>The final logo design for the Decision and Secure Systems laboratory. Made with Illustrator.</p>
-                    <a data-fancybox="gallery" href="./img/gallery/dsslogo.png"><i class="fas fa-expand"></i></a>
-                </div>
-            </div>
             <div class="grid-item other">
                 <img src="./img/gallery/pab.png">
                 <div class="overlay text-center">
@@ -447,8 +527,18 @@
                     <a data-fancybox="gallery" href="./img/gallery/deepsea.png"><i class="fas fa-expand"></i></a>
                 </div>
             </div>
+            <div class="grid-item other">
+                <img src="./img/gallery/alice.png">
+                <div class="overlay text-center">
+                    <h1>Alice</h1>
+                    <p>Sticker for hancrafted jelly jar. Made with Figma.</p>
+                    <a data-fancybox="gallery" href="./img/gallery/alice.png"><i class="fas fa-expand"></i></a>
+                </div>
+            </div>
         </div>
-
+        <div id="gallery-button" class="text-center">
+            <span id="gallery-show-more" class="btn1">More</span>
+        </div>
     </div>
 
 
@@ -474,7 +564,7 @@
                         class="fab fa-linkedin-in"></i></a>
                 <a href="https://github.com/leandroleberon" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="mailto:leandroleveron@gmail.com" target="_top"><i class="fas fa-envelope"></i></a>
-                <a href="tel:8503457072"><i class="fas fa-phone"></i></a>
+                <a href="tel:+50432843294"><i class="fas fa-phone"></i></a>
             </div>
         </div>
 
