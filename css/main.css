@@ -92,6 +92,43 @@ body{
 
 
 /* --------- Navigation Bar --------- */
+#resume-modal{
+    background-color: #252525;
+    height: 250px;
+    width: 350px;
+    overflow: visible;
+}
+
+#modal-btns{
+    width: auto;
+    margin-top: 40px;
+}
+
+#resume-modal a{
+ color: white;
+ margin: 0 10px;
+}
+
+#resume-modal a:hover{
+    color: black;
+}
+
+#resume-modal h1{
+    font-weight: normal;
+    margin-top: 60px;
+    color: white;
+    font-size: 25px;
+    font-family: "Ubuntu";
+}
+
+.modal a.close-modal {
+    top: 10px;
+    right: 15px;
+    width: 15px;
+    background-image: url(https://i.ibb.co/5nYMMks/close.png);
+    transition: transform 0.1s ease;
+}
+
 #navbar{
     z-index: 100;
     position: fixed;

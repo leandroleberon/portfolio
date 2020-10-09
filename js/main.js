@@ -10,6 +10,14 @@ jQuery(function ($) {
       afterClose: ($.fancybox.defaults.hash = false),
     });
 
+    // Modals
+    $(".modalbtn").click(function (event) {
+      $(this).modal({
+        fadeDuration: 250
+      });
+      return false;
+    });
+
     // Simple Parallax JS
     var bird1 = document.getElementById("home-bird1");
     var bird2 = document.getElementById("home-bird2");
@@ -83,7 +91,9 @@ jQuery(function ($) {
     });
 
     // Smooth Scrolling
-    var scroll = new SmoothScroll('a[href*="#"]');
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      ignore: '[data-scroll-ignore]',
+    });
 
     //Hide Navigation Bar on scroll
     var prev = 0;

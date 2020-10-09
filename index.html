@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- jQuery Modal -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <!-- Fancy Box CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <!-- Font: Ubuntu -->
@@ -38,6 +40,15 @@
 
 <body>
 
+    <div id="resume-modal" class="modal text-center">
+        <h1>Which language?</h1>
+        <div id="modal-btns">
+            <a class="btn1">English</a>
+            <a class="btn1">Spanish</a>
+        </div>
+        <a href="#" rel="modal:close"></a>
+    </div>
+
     <!---------- Navigation Bar ------------>
     <div id="navbar" data-aos="fade-down" data-aos-duration="1000">
         <a data-scroll href="#home">Home</a>
@@ -45,7 +56,7 @@
         <a data-scroll href="#portfolio">Portfolio</a>
         <a data-scroll href="#gallery">Gallery</a>
         <a data-scroll href="#contact">Contact</a>
-        <a data-scroll href="">Resume</a>
+        <a data-scroll-ignore class="modalbtn" href="#resume-modal" rel="modal:open">Resume</a>
     </div>
 
     <div id="sidebar">
@@ -75,7 +86,7 @@
             <div class="underline"></div>
         </div>
         <div class="resume-nav nav">
-            <a href="#contact">Resume</a>
+            <a data-scroll-ignore class="modalbtn" href="#resume-modal" rel="modal:open">Resume</a>
         </div>
 
     </div>
@@ -583,7 +594,7 @@
     <!-- JQuery JS-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Popper JS-->
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <!-- Bootstrap JS-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <!-- Smooth Scroll-->
@@ -592,6 +603,8 @@
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <!-- Simple Parallax JS -->
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
     <!-- Font Awesome -->
